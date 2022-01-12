@@ -140,7 +140,9 @@ ul li {
 .benefits {
   padding: 100px 0;
 }
-
+.benefits-cards {
+  margin-bottom: 90px;
+}
 .benefits-section-title {
   font-size: 36px;
   font-weight: 600;
@@ -163,7 +165,7 @@ ul li {
   height: 160px;
   z-index: 2;
   border-radius: 50%;
-  border: 1.5px dashed #017637;
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='100' ry='100' stroke='%23009344FF' stroke-width='2' stroke-dasharray='5' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -173,6 +175,7 @@ ul li {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 65%;
 }
 
 .circle-card-box__title {
@@ -186,10 +189,26 @@ ul li {
   line-height: 1;
   padding: 0 20px;
   margin-bottom: 25px;
+  font-weight: 400;
 }
 
-@media only screen and (min-width: 920px) {
+.truck-img {
+  width: 50%;
+}
+
+@media only screen and (min-width: 992px) {
   .benefits-card-item:nth-child(2n) {
     transform: translateY(80px);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .cirle-card-box {
+    width: 140px;
+    height: 140px;
+  }
+  .cirle-card-box::before {
+    width: 153px;
+    height: 153px;
   }
 }
