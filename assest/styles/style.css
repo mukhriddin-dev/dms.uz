@@ -21,6 +21,7 @@ header {
 
 ul {
   list-style-type: none;
+  margin: 0;
 }
 ul li {
   display: inline-block;
@@ -38,7 +39,6 @@ ul li {
 .cabinet-btn {
   border: 1px solid #fff;
   padding: 10px 30px;
-  margin-top: -12px;
   margin-left: 40px;
 }
 
