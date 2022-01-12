@@ -147,9 +147,6 @@ ul li {
   margin-bottom: 80px;
 }
 
-.benefits-card-item:nth-child(2n) {
-  transform: translateY(80px);
-}
 .cirle-card-box {
   position: relative;
   width: 153px;
@@ -188,4 +185,11 @@ ul li {
   font-size: 12px;
   line-height: 1;
   padding: 0 20px;
+  margin-bottom: 25px;
+}
+
+@media only screen and (min-width: 920px) {
+  .benefits-card-item:nth-child(2n) {
+    transform: translateY(80px);
+  }
 }
