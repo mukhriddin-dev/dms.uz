@@ -74,6 +74,15 @@ ul li {
 
 /* HERO SECTION */
 
+.hero {
+  background-color: rgba(177, 203, 189, 0.25);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-info-box {
+  padding: 100px 0;
+}
 .hero-info-box__title {
   font-size: 42px;
   font-weight: 600;
@@ -100,4 +109,29 @@ ul li {
 
 .icon-box2 {
   margin: 0 100px;
+}
+
+/* KNOPKA CTA */
+
+.link-btn {
+  background-color: #009344;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 24px 77px;
+  color: #fff;
+  transition: 0.3s ease all;
+}
+
+.link-btn:hover {
+  color: #fff;
+  background-color: #017637;
+  box-shadow: 0 20px 40px 0 rgba(0, 147, 68, 0.25);
+}
+
+/* hero img */
+
+.hero-img {
+  position: absolute;
+  right: -20px;
+  bottom: 0;
 }
