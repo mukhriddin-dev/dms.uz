@@ -1,3 +1,5 @@
+@import url(main.css);
+
 *,
 *::after,
 *::before {
@@ -40,6 +42,11 @@ ul li {
   border: 1px solid #fff;
   padding: 10px 30px;
   margin-left: 40px;
+  cursor: pointer;
+  transition: 0.3s ease all;
+}
+.cabinet-btn:hover {
+  background-color: #017637;
 }
 
 .cabinet-btn__text {
@@ -60,4 +67,37 @@ ul li {
   height: 3px;
   margin-bottom: 5px;
   background-color: #fff;
+}
+.line3 {
+  margin-bottom: 0;
+}
+
+/* HERO SECTION */
+
+.hero-info-box__title {
+  font-size: 42px;
+  font-weight: 600;
+  margin-bottom: 52px;
+}
+
+.hero-info-box__text {
+  font-size: 24px;
+}
+
+.hero-info-box__icon {
+  display: flex;
+  margin: 40px 0;
+}
+
+.icon-box__svg {
+  width: 67px;
+}
+
+.icon-box__title {
+  display: block;
+  font-size: 18px;
+}
+
+.icon-box2 {
+  margin: 0 100px;
 }
