@@ -135,3 +135,18 @@ ul li {
   right: -20px;
   bottom: 0;
 }
+
+/* ********  Наши преимущества *********** */
+.benefits {
+  padding: 100px 0;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.circle-card {
+  /* background-color: rgba(0, 147, 68, 0.25); */
+  background-color: red;
+}
