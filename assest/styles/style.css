@@ -180,7 +180,7 @@ ul li {
 
 .circle-card-box__title {
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 600;
   margin-bottom: 8px;
 }
 
@@ -189,7 +189,7 @@ ul li {
   line-height: 1;
   padding: 0 20px;
   margin-bottom: 25px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .truck-img {
@@ -242,4 +242,65 @@ ul li {
   font-weight: 400;
   line-height: 1.2;
   letter-spacing: 1.2px;
+}
+
+/* ******Products section****** */
+.products-section-title {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 100px;
+}
+.product-box {
+  background-color: #009344;
+  border-radius: 3px;
+  position: relative;
+  min-height: 350px;
+  margin-bottom: 80px;
+}
+
+.product-box-img {
+  position: absolute;
+  background-color: #bfe4d0;
+  border-radius: 3px;
+  width: 85%;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.product-box-img img {
+  max-width: 80%;
+  padding: 30px 10px;
+}
+
+.product-info {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+}
+
+.product-title {
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+.product-text {
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.product-box2 {
+  min-height: 400px;
+}
+
+.product-box2 .product-info {
+  bottom: 30px;
+}
+
+@media only screen and (min-width: 992px) {
+  .topmargin {
+    margin-top: -50px;
+  }
 }
