@@ -1,0 +1,63 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #009344;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 26px 0;
+}
+
+.logo-img {
+  max-width: 125px;
+  vertical-align: top;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+}
+ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.menu__link,
+.menu__link:hover {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+}
+
+/* Cabinet btn style */
+.cabinet-btn {
+  border: 1px solid #fff;
+  padding: 10px 30px;
+  margin-left: 40px;
+}
+
+.cabinet-btn__text {
+  color: #fff;
+  text-align: center;
+  margin: 0;
+}
+
+/* active menu btn */
+.line {
+  cursor: pointer;
+  margin-left: 50px;
+}
+.line .line1,
+.line2,
+.line3 {
+  width: 60px;
+  height: 3px;
+  margin-bottom: 5px;
+  background-color: #fff;
+}
