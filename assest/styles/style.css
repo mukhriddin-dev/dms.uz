@@ -196,6 +196,64 @@ ul li {
   width: 50%;
 }
 
+
+/*  Калькулятор*/
+
+
+.price_list{
+  position: relative;
+  left:-1.4rem
+}
+
+.range-description{
+  position: relative;
+  margin-left: 25px;
+  font-size: 13px;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  box-shadow: 0px 1px 1000px #0000004b;
+  background: #009344;
+  border-radius: 14px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 1px solid #000000;
+  height: 15px;
+  width: 15px;
+  border-radius: 3px;
+  background: rgba(0, 0, 0, 0.945);
+  cursor: pointer;
+  border-radius: 50%; 
+  box-shadow: 1px 1px 100px #0000004d; 
+}
+
+.btnS{
+  width: 170px;
+  font-size: 14px;
+  padding: 3px;
+}
+.btnS:active{
+  box-shadow: 1px 1px 15px #009344;
+  background: #ffff;
+}
+
+.calc_left{
+  position: relative;
+margin-top: 3.7rem;
+}
+.calc_right{
+  position: relative;
+}
+
+
+
+/* end calculator */
+
+
 @media only screen and (min-width: 992px) {
   .benefits-card-item:nth-child(2n) {
     transform: translateY(80px);
