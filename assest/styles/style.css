@@ -428,7 +428,7 @@ footer {
   font-size: 18px;
   margin-top: 15px;
   line-height: 1.2;
-  padding: 0 100px 0 0;
+  padding: 0 50px 0 0;
 }
 
 .social-links {
@@ -447,7 +447,7 @@ footer {
 
 .footer-menu__title {
   font-size: 1.5em;
-  margin-bottom: 15px;
+  margin: 15px 0;
 }
 .footer-ul {
   padding: 0;
@@ -465,4 +465,48 @@ footer {
   color: #000000;
   border-bottom: 2px dashed #009344;
   margin-bottom: 10px;
+}
+
+/* form-control */
+.form-control {
+  background-color: transparent !important;
+  border-radius: 0px !important;
+  border: 1px solid #2d3032;
+  color: #2d3032;
+}
+.form-control:active,
+.form-control:focus {
+  border-color: #015e24;
+  box-shadow: 0 0 0 0.25rem #00934527;
+}
+
+.butn {
+  border-radius: 0;
+  background-color: #009344;
+  margin-bottom: 22px;
+  width: 100%;
+}
+
+.butn:focus,
+.butn:active {
+  box-shadow: none;
+}
+
+.btn-check:active + .btn-success:focus,
+.btn-check:checked + .btn-success:focus,
+.btn-success.active:focus,
+.btn-success:active:focus,
+.show > .btn-success.dropdown-toggle:focus {
+  box-shadow: none;
+}
+
+.butn:hover {
+  color: #fff;
+  background-color: #017637;
+  box-shadow: 0 20px 40px 0 rgba(0, 147, 68, 0.25);
+}
+
+.phone {
+  margin: 0;
+  line-height: 1.3;
 }
