@@ -8,6 +8,8 @@
   box-sizing: border-box;
 }
 
+/* --------------------------------- Header --------------------------------- */
+
 header {
   background-color: #009344;
   display: flex;
@@ -72,7 +74,7 @@ ul li {
   margin-bottom: 0;
 }
 
-/* HERO SECTION */
+/* ------------------------------ Hero section ------------------------------ */
 
 .hero {
   background-color: rgba(177, 203, 189, 0.25);
@@ -136,7 +138,7 @@ ul li {
   bottom: 0;
 }
 
-/* ********  Наши преимущества *********** */
+/* ---------------------------- Benefits section ---------------------------- */
 .benefits {
   padding: 100px 0;
 }
@@ -196,59 +198,6 @@ ul li {
   width: 50%;
 }
 
-/*  Калькулятор*/
-
-.price_list {
-  position: relative;
-  left: -1.4rem;
-}
-
-.range-description {
-  position: relative;
-  margin-left: 25px;
-  font-size: 13px;
-}
-input[type="range"]::-webkit-slider-runnable-track {
-  width: 100%;
-  height: 8.4px;
-  cursor: pointer;
-  box-shadow: 0px 1px 1000px #0000004b;
-  background: #009344;
-  border-radius: 14px;
-}
-
-input[type="range"]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  border: 1px solid #000000;
-  height: 15px;
-  width: 15px;
-  border-radius: 3px;
-  background: rgba(0, 0, 0, 0.945);
-  cursor: pointer;
-  border-radius: 50%;
-  box-shadow: 1px 1px 100px #0000004d;
-}
-
-.btnS {
-  width: 170px;
-  font-size: 14px;
-  padding: 3px;
-}
-.btnS:active {
-  box-shadow: 1px 1px 15px #009344;
-  background: #ffff;
-}
-
-.calc_left {
-  position: relative;
-  margin-top: 3.7rem;
-}
-.calc_right {
-  position: relative;
-}
-
-/* end calculator */
-
 @media only screen and (min-width: 992px) {
   .benefits-card-item:nth-child(2n) {
     transform: translateY(80px);
@@ -266,7 +215,7 @@ input[type="range"]::-webkit-slider-thumb {
   }
 }
 
-/* ******STATICS SECTION***** */
+/* --------------------------- Statistics section --------------------------- */
 
 .statistics {
   background-color: #009344;
@@ -297,7 +246,7 @@ input[type="range"]::-webkit-slider-thumb {
   letter-spacing: 1.2px;
 }
 
-/* ******Products section****** */
+/* ----------------------------- Product section ---------------------------- */
 .products-section-title {
   font-size: 36px;
   font-weight: 600;
@@ -358,7 +307,58 @@ input[type="range"]::-webkit-slider-thumb {
   }
 }
 
-/* ***Step section**** */
+/* --------------------------- Calculator section --------------------------- */
+
+.price_list {
+  position: relative;
+  left: -1.4rem;
+}
+
+.range-description {
+  position: relative;
+  margin-left: 25px;
+  font-size: 13px;
+}
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  box-shadow: 0px 1px 1000px #0000004b;
+  background: #009344;
+  border-radius: 14px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 1px solid #000000;
+  height: 15px;
+  width: 15px;
+  border-radius: 3px;
+  background: rgba(0, 0, 0, 0.945);
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 1px 1px 100px #0000004d;
+}
+
+.btnS {
+  width: 170px;
+  font-size: 14px;
+  padding: 3px;
+}
+.btnS:active {
+  box-shadow: 1px 1px 15px #009344;
+  background: #ffff;
+}
+
+.calc_left {
+  position: relative;
+  margin-top: 3.7rem;
+}
+.calc_right {
+  position: relative;
+}
+
+/* ------------------------------ Steps section ----------------------------- */
 .step-card {
   position: relative;
   background-color: #bfe4d0;
@@ -413,9 +413,9 @@ input[type="range"]::-webkit-slider-thumb {
   font-size: 18px;
 }
 
-/* *********FOOTER SECTION ******** */
+/* ----------------------------- Footer menu section ----------------------------- */
 
-footer {
+.footer-menu {
   background-color: #bfe4d0;
   padding: 40px 0;
 }
@@ -463,8 +463,11 @@ footer {
   text-decoration: none;
   font-size: 18px;
   color: #000000;
-  border-bottom: 2px dashed #009344;
   margin-bottom: 10px;
+  transition: 0.3s ease all;
+}
+.footer-ul li a:hover {
+  color: #009344;
 }
 
 /* form-control */
@@ -509,4 +512,20 @@ footer {
 .phone {
   margin: 0;
   line-height: 1.3;
+}
+
+/* ---------------------------- copyright footer ---------------------------- */
+footer {
+  background-color: #009344;
+}
+
+.copyight-text {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+  color: #fff;
+  padding: 20px 0;
+  font-weight: 400;
+  opacity: 70%;
 }
