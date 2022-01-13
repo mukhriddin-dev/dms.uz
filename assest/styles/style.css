@@ -1,8 +1,5 @@
 @import url(main.css);
 
-/* News css file ulangan joy */
-@import url(news.css);
-
 *,
 *::after,
 *::before {
@@ -10,8 +7,6 @@
   margin: 0;
   box-sizing: border-box;
 }
-
-/* --------------------------------- Header --------------------------------- */
 
 header {
   background-color: #009344;
@@ -77,7 +72,7 @@ ul li {
   margin-bottom: 0;
 }
 
-/* ------------------------------ Hero section ------------------------------ */
+/* HERO SECTION */
 
 .hero {
   background-color: rgba(177, 203, 189, 0.25);
@@ -141,7 +136,7 @@ ul li {
   bottom: 0;
 }
 
-/* ---------------------------- Benefits section ---------------------------- */
+/* ********  Наши преимущества *********** */
 .benefits {
   padding: 100px 0;
 }
@@ -201,6 +196,64 @@ ul li {
   width: 50%;
 }
 
+
+/*  Калькулятор*/
+
+
+.price_list{
+  position: relative;
+  left:-1.4rem
+}
+
+.range-description{
+  position: relative;
+  margin-left: 25px;
+  font-size: 13px;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  box-shadow: 0px 1px 1000px #0000004b;
+  background: #009344;
+  border-radius: 14px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 1px solid #000000;
+  height: 15px;
+  width: 15px;
+  border-radius: 3px;
+  background: rgba(0, 0, 0, 0.945);
+  cursor: pointer;
+  border-radius: 50%; 
+  box-shadow: 1px 1px 100px #0000004d; 
+}
+
+.btnS{
+  width: 170px;
+  font-size: 14px;
+  padding: 3px;
+}
+.btnS:active{
+  box-shadow: 1px 1px 15px #009344;
+  background: #ffff;
+}
+
+.calc_left{
+  position: relative;
+margin-top: 3.7rem;
+}
+.calc_right{
+  position: relative;
+}
+
+
+
+/* end calculator */
+
+
 @media only screen and (min-width: 992px) {
   .benefits-card-item:nth-child(2n) {
     transform: translateY(80px);
@@ -218,7 +271,7 @@ ul li {
   }
 }
 
-/* --------------------------- Statistics section --------------------------- */
+/* ******STATICS SECTION***** */
 
 .statistics {
   background-color: #009344;
@@ -249,7 +302,7 @@ ul li {
   letter-spacing: 1.2px;
 }
 
-/* ----------------------------- Product section ---------------------------- */
+/* ******Products section****** */
 .products-section-title {
   font-size: 36px;
   font-weight: 600;
@@ -308,227 +361,4 @@ ul li {
   .topmargin {
     margin-top: -50px;
   }
-}
-
-/* --------------------------- Calculator section --------------------------- */
-
-.price_list {
-  position: relative;
-  left: -1.4rem;
-}
-
-.range-description {
-  position: relative;
-  margin-left: 25px;
-  font-size: 13px;
-}
-input[type="range"]::-webkit-slider-runnable-track {
-  width: 100%;
-  height: 8.4px;
-  cursor: pointer;
-  box-shadow: 0px 1px 1000px #0000004b;
-  background: #009344;
-  border-radius: 14px;
-}
-
-input[type="range"]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  border: 1px solid #000000;
-  height: 15px;
-  width: 15px;
-  border-radius: 3px;
-  background: rgba(0, 0, 0, 0.945);
-  cursor: pointer;
-  border-radius: 50%;
-  box-shadow: 1px 1px 100px #0000004d;
-}
-
-.btnS {
-  width: 170px;
-  font-size: 14px;
-  padding: 3px;
-}
-.btnS:active {
-  box-shadow: 1px 1px 15px #009344;
-  background: #ffff;
-}
-
-.calc_left {
-  position: relative;
-  margin-top: 3.7rem;
-}
-.calc_right {
-  position: relative;
-}
-
-/* ------------------------------ Steps section ----------------------------- */
-.step-card {
-  position: relative;
-  background-color: #bfe4d0;
-  padding: 40px 60px;
-  margin-bottom: 50px;
-  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23009344FF' stroke-width='2' stroke-dasharray='5' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
-}
-
-.step-card::before {
-  content: "";
-  position: absolute;
-  width: 50px;
-  height: 5px;
-  background-color: #bfe4d0;
-  z-index: 2;
-  top: 0;
-  left: 28px;
-}
-
-.step-card::after {
-  content: "1";
-  position: absolute;
-  font-size: 48px;
-  font-weight: 500;
-  top: -38px;
-  left: 42px;
-  z-index: 111;
-  color: #009344;
-}
-
-.step-card2::after {
-  content: "2";
-}
-
-.step-card3::after {
-  content: "3";
-}
-
-.step-card4::after {
-  content: "4";
-}
-
-.step-card5::after {
-  content: "5";
-}
-
-.step-card6::after {
-  content: "6";
-}
-
-.step-text {
-  font-size: 18px;
-}
-
-/* ----------------------------- Footer menu section ----------------------------- */
-
-.footer-menu {
-  background-color: #bfe4d0;
-  padding: 40px 0;
-}
-
-.logo-foot {
-  max-width: 40%;
-}
-
-.footer-text {
-  font-size: 18px;
-  margin-top: 15px;
-  line-height: 1.2;
-  padding: 0 50px 0 0;
-}
-
-.social-links {
-  margin-top: 50px;
-}
-
-.social-link-item,
-.social-link-item:hover {
-  font-size: 2rem;
-  color: #000000;
-  text-decoration: none;
-}
-.social-link-item:nth-child(2) {
-  margin: 0 40px;
-}
-
-.footer-menu__title {
-  font-size: 1.5em;
-  margin: 15px 0;
-}
-.footer-ul {
-  padding: 0;
-  margin: 0;
-}
-.footer-ul li {
-  display: block;
-  margin: 0;
-  padding: 0;
-}
-
-.footer-ul li a {
-  text-decoration: none;
-  font-size: 18px;
-  color: #000000;
-  margin-bottom: 10px;
-  transition: 0.3s ease all;
-}
-.footer-ul li a:hover {
-  color: #009344;
-}
-
-/* form-control */
-.form-control {
-  background-color: transparent !important;
-  border-radius: 0px !important;
-  border: 1px solid #2d3032;
-  color: #2d3032;
-}
-.form-control:active,
-.form-control:focus {
-  border-color: #015e24;
-  box-shadow: 0 0 0 0.25rem #00934527;
-}
-
-.butn {
-  border-radius: 0;
-  background-color: #009344;
-  margin-bottom: 22px;
-  width: 100%;
-}
-
-.butn:focus,
-.butn:active {
-  box-shadow: none;
-}
-
-.btn-check:active + .btn-success:focus,
-.btn-check:checked + .btn-success:focus,
-.btn-success.active:focus,
-.btn-success:active:focus,
-.show > .btn-success.dropdown-toggle:focus {
-  box-shadow: none;
-}
-
-.butn:hover {
-  color: #fff;
-  background-color: #017637;
-  box-shadow: 0 20px 40px 0 rgba(0, 147, 68, 0.25);
-}
-
-.phone {
-  margin: 0;
-  line-height: 1.3;
-}
-
-/* ---------------------------- copyright footer ---------------------------- */
-footer {
-  background-color: #009344;
-}
-
-.copyight-text {
-  font-size: 16px;
-  margin: 0;
-  padding: 0;
-  line-height: 1.2;
-  color: #fff;
-  padding: 20px 0;
-  font-weight: 400;
-  opacity: 70%;
 }
