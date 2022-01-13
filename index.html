@@ -10,6 +10,12 @@
     <link rel="stylesheet" href="./assest/styles/style.css" />
     <link rel="stylesheet" href="./assest/styles/style.css" />
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    
+    <!-- ------------------ carousel uchun ishlatilgan csslar ------------------ -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css'>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
+     <!-- ------------------ carousel uchun ishlatilgan csslar tugagan joyi------------------ -->
+
     <title>www.dms.uz</title> 
     </style>
   </head>
@@ -393,6 +399,30 @@
 
 
 <!-- ---------------------------- News section ----------------------------- -->
+<div class="wrapper-with-margin">
+  <div id="owl-demo" class="owl-carousel">
+       <div>1</div>
+  
+       <div>2</div>
+  
+       <div>3</div>
+  
+       <div>4</div>
+  
+      <div>5</div>
+    
+      <div>6</div>
+  
+       <div>7</div>
+  
+       <div>8</div>
+  
+       <div>9</div>
+  
+      <div>10</div>
+  
+  </div>
+  </div>
 
 
 
@@ -491,10 +521,22 @@
       </div>
     </footer>
 
-  </body>
 
-
-  
+    <!-- ---------------- carousel uchun ishlatilgan scriptlar ----------------- -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.js'></script><script  src="./script.js"></script>
+    
+<script>
+  $(document).ready(function () {
+    var carousel = $("#owl-demo");
+    carousel.owlCarousel({
+    navigation:true,
+    navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+  });  
+});
+</script>
+  <!-- ---------------- carousel uchun ishlatilgan scriptlar tugagan joyi ----------------- -->
   <script src="./assest/scripts/bootstrap.min.js"></script>
   <script src="./assest/scripts/jQuery.js"></script>
+</body>
 </html>

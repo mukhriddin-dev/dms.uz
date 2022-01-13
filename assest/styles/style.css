@@ -1,5 +1,8 @@
 @import url(main.css);
 
+/* News css file ulangan joy */
+@import url(news.css);
+
 *,
 *::after,
 *::before {
