@@ -1,208 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="../favicon/favicon.ico" />
+    <link rel="stylesheet" href="../styles/bootstrap.min.css" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <title>Калькулятор</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Favicon-->
-  <link rel="icon" type="image/x-icon" href="../favicon/favicon.ico" />
-  <link rel="stylesheet" href="../styles/bootstrap.min.css" />
-  <link rel="stylesheet" href="../styles/style.css" />
-  <title>Калькулятор</title>
-</head>
-
-<body>
-  <!-- HEADER -->
-  <section>
-    <header>
-      <div class="logo">
-        <img src="../images/logo/logo.png" alt="Logo Image" class="logo-img" />
-      </div>
-      <ul>
-        <li>
-          <a href="#" class="menu__link">Главная</a>
-        </li>
-        <li>
-          <a href="#" class="menu__link">О компании</a>
-        </li>
-        <li>
-          <a href="#" class="menu__link">Трекинг</a>
-        </li>
-        <li>
-          <a href="#" class="menu__link">Калькулятор</a>
-        </li>
-        <li>
-          <a href="#" class="menu__link">Тарифы</a>
-        </li>
-        <li>
-          <a href="#" class="menu__link">Новости</a>
-        </li>
-        <li>
-          <a href="#" class="menu__link">Филиалы</a>
-        </li>
-        <li>
-          <a href="#" class="menu__link">Контакты</a>
-        </li>
-      </ul>
-      <!-- Cabinet btn -->
-      <div class="cabinet-btn">
-        <p class="cabinet-btn__text">Личный кабинет</p>
-      </div>
-
-      <!-- active menu btn -->
-      <div class="line">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
-      </div>
-    </header>
-  </section>
-
-  <section class="calculator">
-
-    <div class="container mt-5">
-      <div class="row">
-        <div class="col-xl-8 calc_left">
-          <div class="row">
-            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-              <h1 class="mt-4">Калькулятор</h1>
-              <h3 class="mt-4">Рассчитайте стоимость своей посылки</h3>
-            </div>
-
-            <div class="col-xl-6 mt-4">
-              <p>Выберите регион отправителя:</p>
-            </div>
-
-            <div class="col-xl-6 mt-4">
-              <select class="form-select w-100" aria-label="Default select example">
-                <option selected>Название региона ↓</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </select>
-            </div>
-
-            <div class="col-xl-6 mt-4">
-              <p>Выберите тип посылки:</p>
-            </div>
-
-            <div class="col-xl-6 mt-4">
-              <select class="form-select w-100 " aria-label="Default select example">
-                <option selected>Название региона ↓</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </select>
-            </div>
-
-            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mt-4">
-              <p>Выберите регион отправителя:</p>
-            </div>
-
-            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mt-4">
-              <select class="form-select w-100" aria-label="Default select example">
-                <option selected>Тип посылки ↓</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </select>
-            </div>
-
-            <div class="col-xl-6 mt-4">
-              <p>Выберите регион отправителя:</p>
-            </div>
-
-            <div class="col-xl-6 mt-4">
-              <input type="range" class="form-range" min="0" max="4" id="examRange" />
-              <div>
-                <span class="range-description">До 10 кг</span>
-                <span class="range-description">До 50 кг</span>
-                <span class="range-description">До 250 кг</span>
-                <span class="range-description">До 1 тонны</span>
-              </div>
-
-            </div>
-
-            <div class="col-xl-6 mt-4">
-              <p>Выберите регион отправителя:</p>
-            </div>
-
-            <div class="col-xl-6 mt-4 d-flex justify-content-around p-1">
-              <button class="btn btn-light btnS shadow-sm border rounded-0">Да</button>
-              <button class="btn btn-light btnS shadow-sm border  rounded-0">Нет</button>
-            </div>
-
-            <div class="col-xl-6 mt-4">
-              <p>Вызов курьера:</p>
-            </div>
-
-            <div class="col-xl-6 mt-4 d-flex justify-content-around p-1">
-              <button class="btn btn-light btnS shadow-sm border rounded-0">С курьером</button>
-              <button class="btn btn-light btnS shadow-sm border  rounded-0">Ваш номер телефона</button>
-            </div>
-
-            <div class="col-xl-6 mt-4">
-
-            </div>
-
-            <div class="col-xl-6 mt-4">
-              <div class="btn btn-lg btn-success w-100 border rounded-0">Перейти к тарифам</div>
-            </div>
-
-
-
-          </div>
-
+  <body>
+    <!-- HEADER -->
+    <section>
+      <header>
+        <div class="logo">
+          <img
+            src="../images/logo/logo.png"
+            alt="Logo Image"
+            class="logo-img"
+          />
+        </div>
+        <ul>
+          <li>
+            <a href="#" class="menu__link">Главная</a>
+          </li>
+          <li>
+            <a href="#" class="menu__link">О компании</a>
+          </li>
+          <li>
+            <a href="#" class="menu__link">Трекинг</a>
+          </li>
+          <li>
+            <a href="#" class="menu__link">Калькулятор</a>
+          </li>
+          <li>
+            <a href="#" class="menu__link">Тарифы</a>
+          </li>
+          <li>
+            <a href="#" class="menu__link">Новости</a>
+          </li>
+          <li>
+            <a href="#" class="menu__link">Филиалы</a>
+          </li>
+          <li>
+            <a href="#" class="menu__link">Контакты</a>
+          </li>
+        </ul>
+        <!-- Cabinet btn -->
+        <div class="cabinet-btn">
+          <p class="cabinet-btn__text">Личный кабинет</p>
         </div>
 
-        <div class="col-xl-4 calc_right">
-          <div class="row">
-            <div class="col-xl-12">
-              <img class="mt-4 img-fluid" width='348' src="../images/img/uzrooms.png" alt="geo_image" />
+        <!-- active menu btn -->
+        <div class="line">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </header>
+    </section>
 
-              <div class="card d-flex mt-4 justify-content-center text-center align-center p-3">
-                <ul class="d-flex flex-column justify-content-center price_list">
-                  <li>
-                    <p>Откуда: г. Ташкент</p>
-                  </li>
-                  <li>
-                    <p>Куда: г. Нукус</p>
-                  </li>
-                  <li>
-                    <p>Что отправляем: Мебель</p>
-                  </li>
-                  <li>
-                    <p>Общий вес: 725 кг</p>
-                  </li>
-                  <li>
-                    <p>Доставка: Да</p>
-                  </li>
-                  <li>
-                    <p>Вызов курьера: Нет</p>
-                  </li>
-                  <li>
-                    <h4>Итого: 99999 сум</h4>
-                  </li>
-                  <li>
-                    <input placeholder="Ваше имя" class="form-control m-2 rounded-0" type="text" />
-                  </li>
-                  <li>
-                    <input placeholder="Ваш номер телефона" class="form-control m-2 rounded-0" type="text" />
-                  </li>
-                  <li>
-                    <div class="btn btn-success w-100 m-2 border  rounded-0">
-                      Оставить заявку
-                    </div>
-                  </li>
-                </ul>
+    <section class="calculator">
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-xl-8 calc_left">
+            <div class="row">
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                <h1 class="mt-4">Калькулятор</h1>
+                <h3 class="mt-4">Рассчитайте стоимость своей посылки</h3>
+              </div>
+
+              <div class="col-xl-6 mt-4">
+                <p>Выберите регион отправителя:</p>
+              </div>
+
+              <div class="col-xl-6 mt-4">
+                <select
+                  class="form-select w-100"
+                  aria-label="Default select example"
+                >
+                  <option selected>Название региона ↓</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+
+              <div class="col-xl-6 mt-4">
+                <p>Выберите тип посылки:</p>
+              </div>
+
+              <div class="col-xl-6 mt-4">
+                <select
+                  class="form-select w-100"
+                  aria-label="Default select example"
+                >
+                  <option selected>Название региона ↓</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+
+              <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mt-4">
+                <p>Выберите регион отправителя:</p>
+              </div>
+
+              <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mt-4">
+                <select
+                  class="form-select w-100"
+                  aria-label="Default select example"
+                >
+                  <option selected>Тип посылки ↓</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+
+              <div class="col-xl-6 mt-4">
+                <p>Выберите регион отправителя:</p>
+              </div>
+
+              <div class="col-xl-6 mt-4">
+                <input
+                  type="range"
+                  class="form-range"
+                  min="0"
+                  max="4"
+                  id="examRange"
+                />
+                <div>
+                  <span class="range-description">До 10 кг</span>
+                  <span class="range-description">До 50 кг</span>
+                  <span class="range-description">До 250 кг</span>
+                  <span class="range-description">До 1 тонны</span>
+                </div>
+              </div>
+
+              <div class="col-xl-6 mt-4">
+                <p>Выберите регион отправителя:</p>
+              </div>
+
+              <div class="col-xl-6 mt-4 d-flex justify-content-around p-1">
+                <button class="btn btn-light btnS shadow-sm border rounded-0">
+                  Да
+                </button>
+                <button class="btn btn-light btnS shadow-sm border rounded-0">
+                  Нет
+                </button>
+              </div>
+
+              <div class="col-xl-6 mt-4">
+                <p>Вызов курьера:</p>
+              </div>
+
+              <div class="col-xl-6 mt-4 d-flex justify-content-around p-1">
+                <button class="btn btn-light btnS shadow-sm border rounded-0">
+                  С курьером
+                </button>
+                <button class="btn btn-light btnS shadow-sm border rounded-0">
+                  Ваш номер телефона
+                </button>
+              </div>
+
+              <div class="col-xl-6 mt-4"></div>
+
+              <div class="col-xl-6 mt-4">
+                <div class="btn btn-lg btn-success w-100 border rounded-0">
+                  Перейти к тарифам
+                </div>
               </div>
             </div>
           </div>
+
+          <div class="col-xl-4 calc_right">
+            <div class="row">
+              <div class="col-xl-12">
+                <img
+                  class="mt-4 img-fluid"
+                  width="348"
+                  src="../images/img/uzrooms.png"
+                  alt="geo_image"
+                />
+
+                <div
+                  class="card d-flex mt-4 justify-content-center text-center align-center p-3"
+                >
+                  <ul
+                    class="d-flex flex-column justify-content-center price_list"
+                  >
+                    <li>
+                      <p>Откуда: г. Ташкент</p>
+                    </li>
+                    <li>
+                      <p>Куда: г. Нукус</p>
+                    </li>
+                    <li>
+                      <p>Что отправляем: Мебель</p>
+                    </li>
+                    <li>
+                      <p>Общий вес: 725 кг</p>
+                    </li>
+                    <li>
+                      <p>Доставка: Да</p>
+                    </li>
+                    <li>
+                      <p>Вызов курьера: Нет</p>
+                    </li>
+                    <li>
+                      <h4>Итого: 99999 сум</h4>
+                    </li>
+                    <li>
+                      <input
+                        placeholder="Ваше имя"
+                        class="form-control m-2 rounded-0"
+                        type="text"
+                      />
+                    </li>
+                    <li>
+                      <input
+                        placeholder="Ваш номер телефона"
+                        class="form-control m-2 rounded-0"
+                        type="text"
+                      />
+                    </li>
+                    <li>
+                      <div class="btn btn-success w-100 m-2 border rounded-0">
+                        Оставить заявку
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-</body>
-
+    </section>
+  </body>
 </html>
