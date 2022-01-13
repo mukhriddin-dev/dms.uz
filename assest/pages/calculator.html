@@ -62,69 +62,78 @@
       </header>
     </section>
 
+    <!-- ------------------------- Calculator section -------------------------- -->
+
     <section class="calculator">
       <div class="container mt-5">
         <div class="row">
-          <div class="col-xl-8 calc_left">
+          <div class="col-lg-8 calc_left">
             <div class="row">
-              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                <h1 class="mt-4">Калькулятор</h1>
-                <h3 class="mt-4">Рассчитайте стоимость своей посылки</h3>
+              <div class="col-12">
+                <!-- <h1 class="mt-4">Калькулятор</h1> -->
+                <h2 class="section-title">Калькулятор</h2>
+                <h3 class="size-24 text-lg-start text-center">
+                  Рассчитайте стоимость своей посылки
+                </h3>
               </div>
 
-              <div class="col-xl-6 mt-4">
+              <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 mt-4">
                 <p>Выберите регион отправителя:</p>
               </div>
 
-              <div class="col-xl-6 mt-4">
+              <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 mt-4">
                 <select
-                  class="form-select w-100"
+                  class="form-select w-100 butn2 btn"
                   aria-label="Default select example"
                 >
-                  <option selected>Название региона ↓</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
+                  <option selected class="text-center">
+                    Название региона ↓
+                  </option>
+                  <option value="1" class="text-start">One</option>
+                  <option value="2" class="text-start">Two</option>
+                  <option value="3" class="text-start">Three</option>
                 </select>
               </div>
 
-              <div class="col-xl-6 mt-4">
+              <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 mt-4">
+                <p>Выберите регион получателя:</p>
+              </div>
+
+              <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 mt-4">
+                <select
+                  class="form-select w-100 butn2 btn"
+                  aria-label="Default select example"
+                >
+                  <option selected class="text-center">
+                    Название региона ↓
+                  </option>
+                  <option value="1" class="text-start">One</option>
+                  <option value="2" class="text-start">Two</option>
+                  <option value="3" class="text-start">Three</option>
+                </select>
+              </div>
+
+              <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 mt-4">
                 <p>Выберите тип посылки:</p>
               </div>
 
-              <div class="col-xl-6 mt-4">
+              <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 mt-4">
                 <select
-                  class="form-select w-100"
+                  class="form-select w-100 butn2 btn"
                   aria-label="Default select example"
                 >
-                  <option selected>Название региона ↓</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
+                  <option selected class="text-center">Тип посылки ↓</option>
+                  <option value="1" class="text-start">One</option>
+                  <option value="2" class="text-start">Two</option>
+                  <option value="3" class="text-start">Three</option>
                 </select>
               </div>
 
-              <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mt-4">
-                <p>Выберите регион отправителя:</p>
+              <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 mt-4">
+                <p>Выберите вес посылки:</p>
               </div>
 
-              <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mt-4">
-                <select
-                  class="form-select w-100"
-                  aria-label="Default select example"
-                >
-                  <option selected>Тип посылки ↓</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
-              </div>
-
-              <div class="col-xl-6 mt-4">
-                <p>Выберите регион отправителя:</p>
-              </div>
-
-              <div class="col-xl-6 mt-4">
+              <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 mt-4">
                 <input
                   type="range"
                   class="form-range"
@@ -132,7 +141,7 @@
                   max="4"
                   id="examRange"
                 />
-                <div>
+                <div class="d-flex justify-content-between">
                   <span class="range-description">До 10 кг</span>
                   <span class="range-description">До 50 кг</span>
                   <span class="range-description">До 250 кг</span>
@@ -140,45 +149,47 @@
                 </div>
               </div>
 
-              <div class="col-xl-6 mt-4">
-                <p>Выберите регион отправителя:</p>
+              <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 mt-4">
+                <p>Доставка:</p>
               </div>
 
-              <div class="col-xl-6 mt-4 d-flex justify-content-around p-1">
-                <button class="btn btn-light btnS shadow-sm border rounded-0">
-                  Да
-                </button>
-                <button class="btn btn-light btnS shadow-sm border rounded-0">
-                  Нет
-                </button>
+              <div
+                class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 mt-4 d-flex justify-content-around p-1"
+              >
+                <button class="btn btnS butn2 shadow-none active">Да</button>
+                <button class="btn btnS butn2 shadow-none active">Нет</button>
               </div>
 
-              <div class="col-xl-6 mt-4">
+              <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 mt-4">
                 <p>Вызов курьера:</p>
               </div>
 
-              <div class="col-xl-6 mt-4 d-flex justify-content-around p-1">
-                <button class="btn btn-light btnS shadow-sm border rounded-0">
+              <div
+                class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 mt-4 d-flex justify-content-around p-1"
+              >
+                <button class="btn btnS butn2 shadow-none active2">
                   С курьером
                 </button>
-                <button class="btn btn-light btnS shadow-sm border rounded-0">
+                <button class="btn btnS butn2 shadow-none active2">
                   Ваш номер телефона
                 </button>
               </div>
 
-              <div class="col-xl-6 mt-4"></div>
+              <div class="col-lg-6 mt-4"></div>
 
-              <div class="col-xl-6 mt-4">
-                <div class="btn btn-lg btn-success w-100 border rounded-0">
-                  Перейти к тарифам
-                </div>
+              <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 mt-4">
+                <a href="#" class="d-block link-btn text-center"
+                  >Перейти к тарифам
+                </a>
               </div>
             </div>
           </div>
 
-          <div class="col-xl-4 calc_right">
+          <div class="col-lg-4 calc_right">
             <div class="row">
-              <div class="col-xl-12">
+              <div
+                class="col-lg-12 col-md-8 offset-md-2 offset-lg-0 mt-4 text-center"
+              >
                 <img
                   class="mt-4 img-fluid"
                   width="348"
@@ -211,26 +222,33 @@
                       <p>Вызов курьера: Нет</p>
                     </li>
                     <li>
-                      <h4>Итого: 99999 сум</h4>
+                      <h4 class="mb-4">Итого: 99999 сум</h4>
                     </li>
                     <li>
-                      <input
-                        placeholder="Ваше имя"
-                        class="form-control m-2 rounded-0"
-                        type="text"
-                      />
-                    </li>
-                    <li>
-                      <input
-                        placeholder="Ваш номер телефона"
-                        class="form-control m-2 rounded-0"
-                        type="text"
-                      />
-                    </li>
-                    <li>
-                      <div class="btn btn-success w-100 m-2 border rounded-0">
-                        Оставить заявку
-                      </div>
+                      <form>
+                        <div class="form-group mb-3">
+                          <input
+                            type="text"
+                            class="form-control text-center"
+                            placeholder="Ваше имя"
+                            required
+                          />
+                        </div>
+                        <div class="form-group mb-3">
+                          <input
+                            type="text"
+                            class="form-control text-center"
+                            placeholder="Ваш номер телефона"
+                            required
+                          />
+                        </div>
+                        <button
+                          type="submit"
+                          class="btn btn-success d-block butn butn3"
+                        >
+                          Оставить заявку
+                        </button>
+                      </form>
                     </li>
                   </ul>
                 </div>

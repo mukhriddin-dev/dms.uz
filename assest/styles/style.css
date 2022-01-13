@@ -120,6 +120,7 @@ ul li {
   padding: 24px 77px;
   color: #fff;
   transition: 0.3s ease all;
+  letter-spacing: 1.2;
 }
 
 .link-btn:hover {
@@ -408,7 +409,10 @@ input[type="range"]::-webkit-slider-thumb {
 .calc_right {
   position: relative;
 }
-
+.card {
+  border-color: #2d3032;
+  border-radius: 0;
+}
 /* ------------------------------ Steps section ----------------------------- */
 .step-card {
   position: relative;

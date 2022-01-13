@@ -11,3 +11,55 @@ body {
 .container {
   max-width: 1110px !important;
 }
+
+.size-24 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+.form-select {
+  background-image: none !important;
+}
+.form-select:focus {
+  border-color: #2d3032;
+  outline: 0;
+  box-shadow: none;
+}
+.butn2 {
+  border-radius: 0;
+  border-color: #2d3032;
+  margin-bottom: 7px;
+  width: 100%;
+}
+
+.butn:focus,
+.butn:active {
+  box-shadow: none;
+}
+
+.butn:hover {
+  color: #fff;
+  background-color: #017637;
+  box-shadow: 0 20px 40px 0 rgba(0, 147, 68, 0.25);
+}
+
+.active:active,
+.active:focus,
+.active2:active,
+.active2:focus {
+  background-color: #017637;
+  color: #fff;
+  border-color: #017637;
+}
+
+.butn3 {
+  margin-bottom: 18px;
+}
