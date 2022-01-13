@@ -234,6 +234,7 @@ input[type="range"]::-webkit-slider-thumb {
   width: 170px;
   font-size: 14px;
   padding: 3px;
+  margin: 0 3px;
 }
 .btnS:active {
   box-shadow: 1px 1px 15px #009344;
@@ -360,10 +361,16 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 /* --------------------------- Calculator section --------------------------- */
-
+.calculator-home {
+  background-color: #bfe4d0;
+  padding: 50px 0;
+  margin: 50px 0;
+}
 .price_list {
   position: relative;
   left: -1.4rem;
+  padding-top: 12px;
+  /* padding-bottom: 6px; */
 }
 
 .range-description {
@@ -412,6 +419,7 @@ input[type="range"]::-webkit-slider-thumb {
 .card {
   border-color: #2d3032;
   border-radius: 0;
+  background-color: transparent;
 }
 /* ------------------------------ Steps section ----------------------------- */
 .step-card {
