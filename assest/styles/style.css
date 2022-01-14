@@ -593,3 +593,23 @@ footer {
   font-weight: 400;
   opacity: 50%;
 }
+
+/* ----------------------------- Treking section ---------------------------- */
+.treking-section {
+  position: relative;
+  padding: 50px 0;
+}
+
+.deliv-img-box {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100% !important;
+  z-index: -1;
+}
+
+.deliv-img-box img {
+  float: right;
+  /* max-width: 60%; */
+  max-height: 100% !important;
+}
