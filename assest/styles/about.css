@@ -1,0 +1,23 @@
+.about-section-txt {
+  font-size: 18px;
+  line-height: 25px;
+}
+.divider-txt {
+  margin-bottom: 30px;
+}
+.divider-txt2 {
+  margin-bottom: 60px;
+}
+
+/* .about-section-img {
+  position: absolute;
+  bottom: 0;
+  left: -30px;
+  border: 1px solid red;
+} */
+
+@media only screen and (min-width: 992px) {
+  .about-sec-img {
+    width: 100%;
+  }
+}

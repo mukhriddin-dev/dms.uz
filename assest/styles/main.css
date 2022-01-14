@@ -63,3 +63,9 @@ body {
 .butn3 {
   margin-bottom: 18px;
 }
+
+.main-section-title {
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
