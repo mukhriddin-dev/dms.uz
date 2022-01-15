@@ -1,0 +1,26 @@
+@media only screen and (max-width: 768px) {
+  .tab-info-main,
+  .tab-info:nth-child(2n) {
+    background-color: #bfe4d0;
+  }
+}
+
+.table-name {
+  font-weight: 700;
+}
+.tarif-title {
+  margin: 0;
+  padding: 10px;
+}
+
+.warn-txt {
+  margin: 30px 0 80px;
+  font-style: italic;
+}
+
+.tarif-calc-info {
+  padding: 10px;
+  line-height: 30px;
+  font-style: italic;
+  letter-spacing: 1.2;
+}
