@@ -3,6 +3,10 @@
   .tab-info:nth-child(2n) {
     background-color: #bfe4d0;
   }
+
+  .tab-info .text-center {
+    border-bottom: 1px solid #bfe4d08c;
+  }
 }
 
 .table-name {
