@@ -6,7 +6,8 @@ const reg1 = document.querySelector('#reg1'),
   priceList = document.querySelectorAll('#price_list li p'),
   typeProduct = document.querySelector('#typeProduct'),
   priceRange = document.querySelector('#priceRange'),
-  btnS = document.querySelectorAll('.btnS');
+  btnS = document.querySelectorAll('.btnS'),
+  cost=document.querySelector('.cost');
 
 console.log(priceList);
 
@@ -32,6 +33,10 @@ let check1 = btnS[0].classList.contains('active');
 let check2 = btnS[1].classList.contains('active');
 let check3 = btnS[2].classList.contains('active');
 let check4 = btnS[3].classList.contains('active');
+
+// def value ====
+let costValue=99999;
+let costCurer=15000;
 
 btnS[0].addEventListener('click', () => {
   if (check1) {
