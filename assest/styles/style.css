@@ -23,7 +23,7 @@ header {
 
 .logo-img {
   max-width: 125px;
-  vertical-align: top;
+  vertical-align: middle;
 }
 
 ul {
@@ -46,7 +46,7 @@ ul li {
 .cabinet-btn {
   border: 1px solid #fff;
   padding: 10px 30px;
-  margin-left: 40px;
+  /* margin-left: 10px; */
   cursor: pointer;
   transition: 0.3s ease all;
 }
@@ -61,7 +61,7 @@ ul li {
 }
 
 /* active menu btn */
-.line {
+/* .line {
   cursor: pointer;
   margin-left: 50px;
 }
@@ -75,7 +75,7 @@ ul li {
 }
 .line3 {
   margin-bottom: 0;
-}
+} */
 
 /* HERO SECTION */
 

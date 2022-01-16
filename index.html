@@ -1,683 +1,1081 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="./assest/favicon/favicon.ico" />
+    <link rel="stylesheet" href="./assest/styles/bootstrap.min.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Favicon-->
-  <link rel="icon" type="image/x-icon" href="./assest/favicon/favicon.ico" />
-  <link rel="stylesheet" href="./assest/styles/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assest/styles/style.css" />
+    <link rel="stylesheet" href="./assest/styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
 
-  <link rel="stylesheet" href="./assest/styles/style.css" />
-  <link rel="stylesheet" href="./assest/styles/style.css" />
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- ------------------ carousel uchun ishlatilgan csslar ------------------ -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
+    <!-- ------------------ carousel uchun ishlatilgan csslar tugagan joyi------------------ -->
 
-  <!-- ------------------ carousel uchun ishlatilgan csslar ------------------ -->
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css'>
-  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
-  <link rel="stylesheet" href="./style.css">
-  <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
-  <!-- ------------------ carousel uchun ishlatilgan csslar tugagan joyi------------------ -->
+    <!-- amCharts javascript sources -->
+    <script
+      type="text/javascript"
+      src="https://www.amcharts.com/lib/3/ammap.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://www.amcharts.com/lib/3/maps/js/uzbekistanLow.js"
+    ></script>
 
-  <!-- amCharts javascript sources -->
-  <script type="text/javascript" src="https://www.amcharts.com/lib/3/ammap.js"></script>
-  <script type="text/javascript" src="https://www.amcharts.com/lib/3/maps/js/uzbekistanLow.js"></script>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="./assest/styles/swiper.min.css" />
+    <!-- ---------------------- Gilroy font ulangan qismi ---------------------- -->
+    <!-- <link rel="stylesheet" href="https://cdn.rawgit.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css"> -->
 
-  	<!-- Link Swiper's CSS -->
-	<link rel="stylesheet" href="./assest/styles/swiper.min.css">
-  <!-- ---------------------- Gilroy font ulangan qismi ---------------------- -->
-  <!-- <link rel="stylesheet" href="https://cdn.rawgit.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css"> -->
+    <title>www.dms.uz</title>
 
-  <title>www.dms.uz</title>
-  </style>
-</head>
+    <style>
+      nav {
+        /* height: 6rem; */
+        width: 100vw;
+        /* background-color: #131418; */
+        /* box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2); */
+        /* display: flex; */
+        /* position: fixed; */
+        z-index: 10;
+      }
 
-<body>
-  <!-- ------------------------------- Header -------------------------------- -->
+      /*Styling logo*/
+      /* .logo {
+        padding: 1vh 1vw;
+        text-align: center;
+      }
+      .logo img {
+        height: 5rem;
+        width: 5rem;
+      } */
 
-  <!-- ---------------------------- Hero section ----------------------------- -->
-  <section class="hero px-3  position-relative2">
-    <div class="hero-info-box container">
-      <div class="row">
-        <div class="col-md-7 col-12  text-center text-md-start">
-          <h1 class="hero-info-box__title">Экспресс почта по Узбекистану</h1>
-          <p class="hero-info-box__text">Работа с нами проходит:</p>
-          <div class="hero-info-box__icon">
-            <div class="icon-box1 my-3 my-md-0">
-              <img src="./assest/images/icons/icon/speed.svg" alt="Icons" class="icon-box__svg d-block mx-auto" />
-              <span class="icon-box__title">Быстро</span>
-            </div>
-            <div class="icon-box1 icon-box2 my-3 my-md-0">
-              <img src="./assest/images/icons/icon/safe.svg" alt="Icons" class="icon-box__svg d-block mx-auto" />
-              <span class="icon-box__title">Надежно</span>
-            </div>
-            <div class="icon-box1 my-3 my-md-0">
-              <img src="./assest/images/icons/icon/flag.svg" alt="Icons" class="icon-box__svg d-block mx-auto" />
-              <span class="icon-box__title">Удобно</span>
-            </div>
-          </div>
-    
-          <!-- Кнопка CTA -->
-          <a href="#" class="d-inline-block link-btn"> Кнопка CTA </a>
+      /*Styling Links*/
+      .nav-links {
+        display: flex;
+        list-style: none;
+        /* width: 88vw; */
+        padding: 0 0.7vw;
+        justify-content: space-evenly;
+        align-items: center;
+        text-transform: uppercase;
+      }
+      .nav-links li a {
+        text-decoration: none;
+        /* margin: 0 0.7vw; */
+      }
+      /* .nav-links li a:hover {
+        color: #61dafb;
+      } */
+      .nav-links li {
+        position: relative;
+      }
+      /* .nav-links li a::before {
+        content: "";
+        display: block;
+        height: 3px;
+        width: 0%;
+        background-color: #61dafb;
+        position: absolute;
+        transition: all ease-in-out 250ms;
+        margin: 0 0 0 10%;
+      } */
+      .nav-links li a:hover::before {
+        /* width: 80%; */
+      }
+
+      /*Styling Hamburger Icon*/
+      .hamburger div {
+        width: 30px;
+        height: 3px;
+        background: #f2f5f7;
+        margin: 5px;
+        transition: all 0.3s ease;
+      }
+      .hamburger {
+        display: none;
+      }
+
+      /*Stying for small screens*/
+      @media screen and (max-width: 992px) {
+        nav {
+          position: fixed;
+          z-index: 3;
+        }
+        .hamburger {
+          display: block;
+          position: absolute;
+          cursor: pointer;
+          right: 5%;
+          top: 50%;
+          transform: translate(-5%, -50%);
+          z-index: 2;
+          transition: all 0.7s ease;
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          background-color: red;
+        }
+        .nav-links {
+          position: fixed;
+          background: #009344;
+          height: 100vh;
+          width: 100%;
+          flex-direction: column;
+          clip-path: circle(50px at 90% -20%);
+          -webkit-clip-path: circle(50px at 90% -10%);
+          transition: all 1s ease-out;
+          pointer-events: none;
+        }
+        .nav-links.open {
+          clip-path: circle(1200px at 90% -10%);
+          -webkit-clip-path: circle(1200px at 90% -10%);
+          pointer-events: all;
+          top: 0;
+          left: 0;
+        }
+        .nav-links li {
+          opacity: 0;
+        }
+        .nav-links li:nth-child(1) {
+          transition: all 0.5s ease 0.2s;
+        }
+        .nav-links li:nth-child(2) {
+          transition: all 0.5s ease 0.4s;
+        }
+        .nav-links li:nth-child(3) {
+          transition: all 0.5s ease 0.6s;
+        }
+        .nav-links li:nth-child(4) {
+          transition: all 0.5s ease 0.7s;
+        }
+        .nav-links li:nth-child(5) {
+          transition: all 0.5s ease 0.8s;
+        }
+        .nav-links li:nth-child(6) {
+          transition: all 0.5s ease 0.9s;
+          margin: 0;
+        }
+        .nav-links li:nth-child(7) {
+          transition: all 0.5s ease 1s;
+          margin: 0;
+        }
+        li.fade {
+          opacity: 1;
+        }
+      }
+      /*Animating Hamburger Icon on Click*/
+      .toggle .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+      }
+      .toggle .line2 {
+        transition: all 0.7s ease;
+        width: 0;
+      }
+      .toggle .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- ------------------------------- Header -------------------------------- -->
+    <header>
+      <nav class="container-fluid">
+        <div class="hamburger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
         </div>
-     
-        <!-- hero img -->
-        <div class="col-12 col-md-5 d-none d-md-block">
-          <div class="hero-img2">
-            <img src="./assest/images/img/users.png" alt="" class="user-img img-fluid" width="100%" />
+        <ul class="nav-links">
+          <div class="logo">
+            <img
+              src="./assest/images/logo/logo.png"
+              alt="Logo Image"
+              class="logo-img"
+            />
           </div>
-        </div>
-        <div class="row mt-5">
-          <div class="col-12 col-md-5 d-block d-md-none">
-            <div class="text-center">
-              <img src="./assest/images/img/users.png" alt="" class="user-img img-fluida" width="80%" />
-            </div>
+          <li>
+            <a href="#" class="menu__link">Главная</a>
+          </li>
+          <li>
+            <a href="./assest/pages/about.html" class="menu__link"
+              >О компании</a
+            >
+          </li>
+          <li>
+            <a href="./assest/pages/treking.html" class="menu__link">Трекинг</a>
+          </li>
+          <li>
+            <a href="./assest/pages/calculator.html" class="menu__link"
+              >Калькулятор</a
+            >
+          </li>
+          <li>
+            <a href="./assest/pages/tarif.html" class="menu__link">Тарифы</a>
+          </li>
+          <li>
+            <a href="./assest/pages/news.html" class="menu__link">Новости</a>
+          </li>
+          <li>
+            <a href="./assest/pages/filial.html" class="menu__link">Филиалы</a>
+          </li>
+          <li>
+            <a href="./assest/pages/contact.html" class="menu__link"
+              >Контакты</a
+            >
+          </li>
+          <!-- Cabinet btn -->
+          <div class="cabinet-btn d-inline-block">
+            <p class="cabinet-btn__text">Личный кабинет</p>
           </div>
-        </div>
-      </div>
-     
-     
-    </div>
-  </section>
 
-  <!-- -------------------------- Benefits section --------------------------- -->
-  <section class="benefits">
-    <div class="container">
-      <h2 class="benefits-section-title">Наши преимущества</h2>
-      <div class="row benefits-cards">
-        <div class="col-lg-2 col-md-4 col-sm-6 col-12 benefits-card-item mx-auto">
-          <div class="cirle-card-box d-block mx-auto">
-            <img src="./assest/images/icons/bike.svg" alt="" class="circle-card__img" />
+          <!-- active menu btn -->
+          <div class="line">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
           </div>
-          <span class="d-block circle-card-box__title text-center">
-            Преимущество 1
-          </span>
-          <span class="d-block circle-card-box__text text-center">
-            Краткое описание в двух строках
-          </span>
-        </div>
-        <div class="col-lg-2 col-md-4 col-sm-6 col-12 benefits-card-item mx-auto">
-          <div class="cirle-card-box d-block  mx-auto">
-            <img src="./assest/images/icons/push.svg" alt="" class="circle-card__img" />
-          </div>
-          <span class="d-block circle-card-box__title text-center">
-            Преимущество 2
-          </span>
-          <span class="d-block circle-card-box__text text-center">
-            Краткое описание в двух строках
-          </span>
-        </div>
-        <div class="col-lg-2 col-md-4 col-sm-6 col-12 benefits-card-item mx-auto">
-          <div class="cirle-card-box d-block  mx-auto">
-            <img src="./assest/images/icons/quote.svg" alt="" class="circle-card__img" />
-          </div>
-          <span class="d-block circle-card-box__title text-center">
-            Преимущество 3
-          </span>
-          <span class="d-block circle-card-box__text text-center">
-            Краткое описание в двух строках
-          </span>
-        </div>
-        <div class="col-lg-2 col-md-4 col-sm-6 col-12 benefits-card-item mx-auto">
-          <div class="cirle-card-box d-block mx-auto">
-            <img src="./assest/images/icons/chats.svg" alt="" class="circle-card__img" />
-          </div>
-          <span class="d-block circle-card-box__title text-center">
-            Преимущество 4
-          </span>
-          <span class="d-block circle-card-box__text text-center">
-            Краткое описание в двух строках
-          </span>
-        </div>
-        <div class="col-lg-2 col-md-4 col-sm-6 col-12 benefits-card-item mx-auto">
-          <div class="cirle-card-box d-block mx-auto">
-            <img src="./assest/images/icons/socials.svg" alt="" class="circle-card__img" />
-          </div>
-          <span class="d-block circle-card-box__title text-center">
-            Преимущество 5
-          </span>
-          <span class="d-block circle-card-box__text text-center">
-            Краткое описание в двух строках
-          </span>
-        </div>
-        <div class="col-lg-2 col-md-4 col-sm-6 col-12 benefits-card-item mx-auto">
-          <div class="cirle-card-box d-block mx-auto">
-            <img src="./assest/images/icons/person.svg" alt="" class="circle-card__img" />
-          </div>
-          <span class="d-block circle-card-box__title text-center">
-            Преимущество 6
-          </span>
-          <span class="d-block circle-card-box__text text-center">
-            Краткое описание в двух строках
-          </span>
-        </div>
-      </div>
-      <img src="./assest/images/icons/truck_mock.svg" alt="" class="d-block mx-auto truck-img">
-    </div>
-  </section>
+        </ul>
+      </nav>
+    </header>
 
-  <!-- ------------------------- Statistics section -------------------------- -->
-  <section class="statistics">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-md-6 col-lg-3 stat-info">
-          <p class="stat-num">100.000+</p>
-          <p class="stat-num__info">
-            Количество клиентов
-          </p>
-        </div>
-        <div class="col-12 col-md-6 col-lg-3 stat-info">
-          <p class="stat-num">1.000+</p>
-          <p class="stat-num__info">
-            Сколько компании <br> сотрудничают с нами
-          </p>
-        </div>
-        <div class="col-12 col-md-6 col-lg-3 stat-info">
-          <p class="stat-num">20.000+</p>
-          <p class="stat-num__info">
-            Отправок <br> в месяц
-          </p>
-        </div>
-        <div class="col-12 col-md-6 col-lg-3 stat-info">
-          <p class="stat-num">12</p>
-          <p class="stat-num__info">
-            Количество <br> филиалов
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- --------------------------- Product section --------------------------- -->
-  <section class="products container">
-    <h2 class="products-section-title">Доставим все, что вам нужно</h2>
-    <div class="row">
-      <div class="col-12 col-sm-6 col-lg-4">
-        <div class="product-box d-block mx-auto text-center">
-          <div class="product-box-img d-block mx-auto">
-            <img src="./assest/images/img/furinuture.png" alt="" class="d-block mx-auto">
-          </div>
-          <div class="product-info">
-            <h2 class="product-title">Мебель</h2>
-            <p class="product-text">
-              Краткое описание в двух строках
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12 col-sm-6 col-lg-4">
-        <div class="product-box product-box2 d-block mx-auto text-center">
-          <div class="product-box-img d-block mx-auto">
-            <img src="./assest/images/img/Elettrodomestic.png" alt="" class="d-block mx-auto">
-          </div>
-          <div class="product-info">
-            <h2 class="product-title">Бытовая техника</h2>
-            <p class="product-text">
-              Краткое описание в двух строках
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12 col-sm-6 col-lg-4">
-        <div class="product-box d-block mx-auto text-center">
-          <div class="product-box-img d-block mx-auto">
-            <img src="./assest/images/img/stapeltray.png" alt="" class="d-block mx-auto">
-          </div>
-          <div class="product-info">
-            <h2 class="product-title">Растения и прочее</h2>
-            <p class="product-text">
-              Краткое описание в двух строках
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12 col-sm-6 col-lg-4">
-        <div class="product-box product-box2 d-block mx-auto text-center topmargin">
-          <div class="product-box-img d-block mx-auto">
-            <img src="./assest/images/img/Elettrodomestic.png" alt="" class="d-block mx-auto">
-          </div>
-          <div class="product-info">
-            <h2 class="product-title">Бытовая техника</h2>
-            <p class="product-text">
-              Краткое описание в двух строках
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12 col-sm-6 col-lg-4">
-        <div class="product-box d-block mx-auto text-center">
-          <div class="product-box-img d-block mx-auto">
-            <img src="./assest/images/img/stapeltray.png" alt="" class="d-block mx-auto">
-          </div>
-          <div class="product-info">
-            <h2 class="product-title">Растения и прочее</h2>
-            <p class="product-text">
-              Краткое описание в двух строках
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12 col-sm-6 col-lg-4">
-        <div class="product-box product-box2 d-block mx-auto text-center topmargin">
-          <div class="product-box-img d-block mx-auto">
-            <img src="./assest/images/img/Elettrodomestic.png" alt="" class="d-block mx-auto">
-          </div>
-          <div class="product-info">
-            <h2 class="product-title">Бытовая техника</h2>
-            <p class="product-text">
-              Краткое описание в двух строках
-            </p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- ------------------------- Calculator section -------------------------- -->
-  <section class="calculator calculator-home">
-
-    <div class="container mt-5">
-      <div class="row align-items-center mb-4">
-        <div class="col-12 col-lg-8 text-lg-start text-center">
-          <!-- <h1 class="mt-4">Калькулятор</h1> -->
-          <h2 class="section-title">Калькулятор</h2>
-          <h3 class="size-24 text-lg-start text-center">
-            Рассчитайте стоимость своей посылки
-          </h3>
-        </div>
-        <div class="col-4 d-none d-lg-block">
-          <img class="img-fluid d-block" width="348" src="./assest/images/img/uzrooms.png" alt="geo_image" />
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-8">
-          <div class="row text-center text-lg-start">
-            <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0">
-              <p>Выберите регион отправителя:</p>
-            </div>
-
-            <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0">
-              <select class="form-select w-100 butn2 btn" aria-label="Default select example" id="reg1">
-                <option value="невыбранный" selected class="text-center">
-                  Название региона ↓
-                </option>
-                <option class="text-start">г. Ташкент</option>
-                <option class="text-start">Two</option>
-                <option class="text-start">Three</option>
-              </select>
-            </div>
-
-            <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 mt-4">
-              <p>Выберите регион получателя:</p>
-            </div>
-
-            <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 mt-4">
-              <select class="form-select w-100 butn2 btn" aria-label="Default select example" id="reg2">
-                <option selected value="невыбранный" class="text-center">
-                  Название региона ↓
-                </option>
-                <option class="text-start">Нукус</option>
-                <option class="text-start">Two</option>
-                <option class="text-start">Three</option>
-              </select>
-            </div>
-
-            <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 mt-4">
-              <p>Выберите тип посылки:</p>
-            </div>
-
-            <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 mt-4">
-              <select class="form-select w-100 butn2 btn" aria-label="Default select example" id="typeProduct">
-                <option value="невыбранный" selected class="text-center">
-                  Тип посылки ↓
-                </option>
-                <option class="text-start">Мебель</option>
-                <option class="text-start">Two</option>
-                <option class="text-start">Three</option>
-              </select>
-            </div>
-
-            <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 mt-4">
-              <p>Выберите вес посылки:</p>
-            </div>
-
-            <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 mt-4">
-              <input type="range" class="form-range" min="0" max="1000" id="priceRange" />
-              <div class="d-flex justify-content-between">
-                <span class="range-description">До 10 кг</span>
-                <span class="range-description">До 50 кг</span>
-                <span class="range-description">До 250 кг</span>
-                <span class="range-description">До 1 тонны</span>
+    <!-- ---------------------------- Hero section ----------------------------- -->
+    <section class="hero px-3 position-relative2">
+      <div class="hero-info-box container">
+        <div class="row">
+          <div class="col-md-7 col-12 text-center text-md-start">
+            <h1 class="hero-info-box__title">Экспресс почта по Узбекистану</h1>
+            <p class="hero-info-box__text">Работа с нами проходит:</p>
+            <div class="hero-info-box__icon">
+              <div class="icon-box1 my-3 my-md-0">
+                <img
+                  src="./assest/images/icons/icon/speed.svg"
+                  alt="Icons"
+                  class="icon-box__svg d-block mx-auto"
+                />
+                <span class="icon-box__title">Быстро</span>
+              </div>
+              <div class="icon-box1 icon-box2 my-3 my-md-0">
+                <img
+                  src="./assest/images/icons/icon/safe.svg"
+                  alt="Icons"
+                  class="icon-box__svg d-block mx-auto"
+                />
+                <span class="icon-box__title">Надежно</span>
+              </div>
+              <div class="icon-box1 my-3 my-md-0">
+                <img
+                  src="./assest/images/icons/icon/flag.svg"
+                  alt="Icons"
+                  class="icon-box__svg d-block mx-auto"
+                />
+                <span class="icon-box__title">Удобно</span>
               </div>
             </div>
 
-            <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 mt-4">
-              <p>Доставка:</p>
-            </div>
+            <!-- Кнопка CTA -->
+            <a href="#" class="d-inline-block link-btn"> Кнопка CTA </a>
+          </div>
 
-            <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 mt-4 d-flex justify-content-center p-1">
-              <input type="button" class="btn btnS butn2 shadow-none" value="Да" />
-              <input type="button" class="btn btnS butn2 shadow-none" value="Нет" />
-            </div>
-
-            <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 mt-4">
-              <p>Вызов курьера:</p>
-            </div>
-
-            <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 mt-4 d-flex justify-content-center p-1">
-              <button class="btn btnS butn2 shadow-none active2">
-                С курьером
-              </button>
-              <button class="btn btnS butn2 shadow-none active2">
-                Ваш номер телефона
-              </button>
-            </div>
-
-            <div class="col-lg-6 mt-4"></div>
-
-            <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 my-4">
-              <a href="#" class="d-block link-btn text-center">Перейти к тарифам
-              </a>
+          <!-- hero img -->
+          <div class="col-12 col-md-5 d-none d-md-block">
+            <div class="hero-img2">
+              <img
+                src="./assest/images/img/users.png"
+                alt=""
+                class="user-img img-fluid"
+                width="100%"
+              />
             </div>
           </div>
-        </div>
-
-        <div class="col-lg-4 calc_right">
-          <div class="col-lg-12 col-md-8 offset-md-2 offset-lg-0 text-center">
-            <div class="card d-flex justify-content-center text-center align-center p-3">
-              <ul class="d-flex flex-column justify-content-center price_list" id="price_list">
-                <li>
-                  <p>Откуда: г. Ташкент</p>
-                </li>
-                <li>
-                  <p>Куда: г. Нукус</p>
-                </li>
-                <li>
-                  <p>Что отправляем: Мебель</p>
-                </li>
-                <li>
-                  <p>Общий вес: 725 кг</p>
-                </li>
-                <li>
-                  <p>Доставка: Да</p>
-                </li>
-                <li>
-                  <p>Вызов курьера: Нет</p>
-                </li>
-                <li>
-                  <h4 class="mb-4">Итого: 99999 сум</h4>
-                </li>
-                <li>
-                  <form>
-                    <div class="form-group mb-3">
-                      <input type="text" class="form-control text-center" placeholder="Ваше имя" required />
-                    </div>
-                    <div class="form-group mb-3">
-                      <input type="text" class="form-control text-center" placeholder="Ваш номер телефона" required />
-                    </div>
-                    <button type="submit" class="btn btn-success d-block butn butn3">
-                      Оставить заявку
-                    </button>
-                  </form>
-                </li>
-              </ul>
+          <div class="row mt-5">
+            <div class="col-12 col-md-5 d-block d-md-none">
+              <div class="text-center">
+                <img
+                  src="./assest/images/img/users.png"
+                  alt=""
+                  class="user-img img-fluida"
+                  width="80%"
+                />
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-  </section>
+    <!-- -------------------------- Benefits section --------------------------- -->
+    <section class="benefits">
+      <div class="container">
+        <h2 class="benefits-section-title">Наши преимущества</h2>
+        <div class="row benefits-cards">
+          <div
+            class="col-lg-2 col-md-4 col-sm-6 col-12 benefits-card-item mx-auto"
+          >
+            <div class="cirle-card-box d-block mx-auto">
+              <img
+                src="./assest/images/icons/bike.svg"
+                alt=""
+                class="circle-card__img"
+              />
+            </div>
+            <span class="d-block circle-card-box__title text-center">
+              Преимущество 1
+            </span>
+            <span class="d-block circle-card-box__text text-center">
+              Краткое описание в двух строках
+            </span>
+          </div>
+          <div
+            class="col-lg-2 col-md-4 col-sm-6 col-12 benefits-card-item mx-auto"
+          >
+            <div class="cirle-card-box d-block mx-auto">
+              <img
+                src="./assest/images/icons/push.svg"
+                alt=""
+                class="circle-card__img"
+              />
+            </div>
+            <span class="d-block circle-card-box__title text-center">
+              Преимущество 2
+            </span>
+            <span class="d-block circle-card-box__text text-center">
+              Краткое описание в двух строках
+            </span>
+          </div>
+          <div
+            class="col-lg-2 col-md-4 col-sm-6 col-12 benefits-card-item mx-auto"
+          >
+            <div class="cirle-card-box d-block mx-auto">
+              <img
+                src="./assest/images/icons/quote.svg"
+                alt=""
+                class="circle-card__img"
+              />
+            </div>
+            <span class="d-block circle-card-box__title text-center">
+              Преимущество 3
+            </span>
+            <span class="d-block circle-card-box__text text-center">
+              Краткое описание в двух строках
+            </span>
+          </div>
+          <div
+            class="col-lg-2 col-md-4 col-sm-6 col-12 benefits-card-item mx-auto"
+          >
+            <div class="cirle-card-box d-block mx-auto">
+              <img
+                src="./assest/images/icons/chats.svg"
+                alt=""
+                class="circle-card__img"
+              />
+            </div>
+            <span class="d-block circle-card-box__title text-center">
+              Преимущество 4
+            </span>
+            <span class="d-block circle-card-box__text text-center">
+              Краткое описание в двух строках
+            </span>
+          </div>
+          <div
+            class="col-lg-2 col-md-4 col-sm-6 col-12 benefits-card-item mx-auto"
+          >
+            <div class="cirle-card-box d-block mx-auto">
+              <img
+                src="./assest/images/icons/socials.svg"
+                alt=""
+                class="circle-card__img"
+              />
+            </div>
+            <span class="d-block circle-card-box__title text-center">
+              Преимущество 5
+            </span>
+            <span class="d-block circle-card-box__text text-center">
+              Краткое описание в двух строках
+            </span>
+          </div>
+          <div
+            class="col-lg-2 col-md-4 col-sm-6 col-12 benefits-card-item mx-auto"
+          >
+            <div class="cirle-card-box d-block mx-auto">
+              <img
+                src="./assest/images/icons/person.svg"
+                alt=""
+                class="circle-card__img"
+              />
+            </div>
+            <span class="d-block circle-card-box__title text-center">
+              Преимущество 6
+            </span>
+            <span class="d-block circle-card-box__text text-center">
+              Краткое описание в двух строках
+            </span>
+          </div>
+        </div>
+        <img
+          src="./assest/images/icons/truck_mock.svg"
+          alt=""
+          class="d-block mx-auto truck-img"
+        />
+      </div>
+    </section>
 
-
-  <!-- ---------------------------- Steps section ---------------------------- -->
-  <section class="step container">
-    <h2 class="products-section-title">Этапы нашей работы</h2>
-    <div class="row">
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="step-card d-flex text-start align-items-center">
-          <p class="step-text d-block m-0">Этап работы 1 <br>
-            Краткая информация</p>
+    <!-- ------------------------- Statistics section -------------------------- -->
+    <section class="statistics">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-3 stat-info">
+            <p class="stat-num">100.000+</p>
+            <p class="stat-num__info">Количество клиентов</p>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 stat-info">
+            <p class="stat-num">1.000+</p>
+            <p class="stat-num__info">
+              Сколько компании <br />
+              сотрудничают с нами
+            </p>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 stat-info">
+            <p class="stat-num">20.000+</p>
+            <p class="stat-num__info">
+              Отправок <br />
+              в месяц
+            </p>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 stat-info">
+            <p class="stat-num">12</p>
+            <p class="stat-num__info">
+              Количество <br />
+              филиалов
+            </p>
+          </div>
         </div>
       </div>
+    </section>
 
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="step-card step-card2 d-flex text-start align-items-center">
-          <p class="step-text d-block m-0">Этап работы 2 <br>
-            Краткая информация</p>
+    <!-- --------------------------- Product section --------------------------- -->
+    <section class="products container">
+      <h2 class="products-section-title">Доставим все, что вам нужно</h2>
+      <div class="row">
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="product-box d-block mx-auto text-center">
+            <div class="product-box-img d-block mx-auto">
+              <img
+                src="./assest/images/img/furinuture.png"
+                alt=""
+                class="d-block mx-auto"
+              />
+            </div>
+            <div class="product-info">
+              <h2 class="product-title">Мебель</h2>
+              <p class="product-text">Краткое описание в двух строках</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="product-box product-box2 d-block mx-auto text-center">
+            <div class="product-box-img d-block mx-auto">
+              <img
+                src="./assest/images/img/Elettrodomestic.png"
+                alt=""
+                class="d-block mx-auto"
+              />
+            </div>
+            <div class="product-info">
+              <h2 class="product-title">Бытовая техника</h2>
+              <p class="product-text">Краткое описание в двух строках</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="product-box d-block mx-auto text-center">
+            <div class="product-box-img d-block mx-auto">
+              <img
+                src="./assest/images/img/stapeltray.png"
+                alt=""
+                class="d-block mx-auto"
+              />
+            </div>
+            <div class="product-info">
+              <h2 class="product-title">Растения и прочее</h2>
+              <p class="product-text">Краткое описание в двух строках</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div
+            class="product-box product-box2 d-block mx-auto text-center topmargin"
+          >
+            <div class="product-box-img d-block mx-auto">
+              <img
+                src="./assest/images/img/Elettrodomestic.png"
+                alt=""
+                class="d-block mx-auto"
+              />
+            </div>
+            <div class="product-info">
+              <h2 class="product-title">Бытовая техника</h2>
+              <p class="product-text">Краткое описание в двух строках</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="product-box d-block mx-auto text-center">
+            <div class="product-box-img d-block mx-auto">
+              <img
+                src="./assest/images/img/stapeltray.png"
+                alt=""
+                class="d-block mx-auto"
+              />
+            </div>
+            <div class="product-info">
+              <h2 class="product-title">Растения и прочее</h2>
+              <p class="product-text">Краткое описание в двух строках</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div
+            class="product-box product-box2 d-block mx-auto text-center topmargin"
+          >
+            <div class="product-box-img d-block mx-auto">
+              <img
+                src="./assest/images/img/Elettrodomestic.png"
+                alt=""
+                class="d-block mx-auto"
+              />
+            </div>
+            <div class="product-info">
+              <h2 class="product-title">Бытовая техника</h2>
+              <p class="product-text">Краткое описание в двух строках</p>
+            </div>
+          </div>
         </div>
       </div>
+    </section>
 
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="step-card step-card3 d-flex text-start align-items-center">
-          <p class="step-text d-block m-0">Этап работы 3 <br>
-            Краткая информация</p>
+    <!-- ------------------------- Calculator section -------------------------- -->
+    <section class="calculator calculator-home">
+      <div class="container mt-5">
+        <div class="row align-items-center mb-4">
+          <div class="col-12 col-lg-8 text-lg-start text-center">
+            <!-- <h1 class="mt-4">Калькулятор</h1> -->
+            <h2 class="section-title">Калькулятор</h2>
+            <h3 class="size-24 text-lg-start text-center">
+              Рассчитайте стоимость своей посылки
+            </h3>
+          </div>
+          <div class="col-4 d-none d-lg-block">
+            <img
+              class="img-fluid d-block"
+              width="348"
+              src="./assest/images/img/uzrooms.png"
+              alt="geo_image"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="row text-center text-lg-start">
+              <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0">
+                <p>Выберите регион отправителя:</p>
+              </div>
+
+              <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0">
+                <select
+                  class="form-select w-100 butn2 btn"
+                  aria-label="Default select example"
+                  id="reg1"
+                >
+                  <option value="невыбранный" selected class="text-center">
+                    Название региона ↓
+                  </option>
+                  <option class="text-start">г. Ташкент</option>
+                  <option class="text-start">Two</option>
+                  <option class="text-start">Three</option>
+                </select>
+              </div>
+
+              <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 mt-4">
+                <p>Выберите регион получателя:</p>
+              </div>
+
+              <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 mt-4">
+                <select
+                  class="form-select w-100 butn2 btn"
+                  aria-label="Default select example"
+                  id="reg2"
+                >
+                  <option selected value="невыбранный" class="text-center">
+                    Название региона ↓
+                  </option>
+                  <option class="text-start">Нукус</option>
+                  <option class="text-start">Two</option>
+                  <option class="text-start">Three</option>
+                </select>
+              </div>
+
+              <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 mt-4">
+                <p>Выберите тип посылки:</p>
+              </div>
+
+              <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 mt-4">
+                <select
+                  class="form-select w-100 butn2 btn"
+                  aria-label="Default select example"
+                  id="typeProduct"
+                >
+                  <option value="невыбранный" selected class="text-center">
+                    Тип посылки ↓
+                  </option>
+                  <option class="text-start">Мебель</option>
+                  <option class="text-start">Two</option>
+                  <option class="text-start">Three</option>
+                </select>
+              </div>
+
+              <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 mt-4">
+                <p>Выберите вес посылки:</p>
+              </div>
+
+              <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 mt-4">
+                <input
+                  type="range"
+                  class="form-range"
+                  min="0"
+                  max="100"
+                  id="priceRange"
+                />
+                <div class="d-flex justify-content-between">
+                  <span class="range-description">До 10 кг</span>
+                  <span class="range-description">До 50 кг</span>
+                  <span class="range-description">До 250 кг</span>
+                  <span class="range-description">До 1 тонны</span>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 mt-4">
+                <p>Доставка:</p>
+              </div>
+
+              <div
+                class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 mt-4 d-flex justify-content-center p-1"
+              >
+                <input
+                  type="button"
+                  class="btn btnS butn2 shadow-none"
+                  value="Да"
+                />
+                <input
+                  type="button"
+                  class="btn btnS butn2 shadow-none"
+                  value="Нет"
+                />
+              </div>
+
+              <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 mt-4">
+                <p>Вызов курьера:</p>
+              </div>
+
+              <div
+                class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 mt-4 d-flex justify-content-center p-1"
+              >
+                <button class="btn btnS butn2 shadow-none active2">
+                  С курьером
+                </button>
+                <button class="btn btnS butn2 shadow-none active2">
+                  Ваш номер телефона
+                </button>
+              </div>
+
+              <div class="col-lg-6 mt-4"></div>
+
+              <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 my-4">
+                <a href="#" class="d-block link-btn text-center"
+                  >Перейти к тарифам
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 calc_right">
+            <div class="col-lg-12 col-md-8 offset-md-2 offset-lg-0 text-center">
+              <div
+                class="card d-flex justify-content-center text-center align-center p-3"
+              >
+                <ul
+                  class="d-flex flex-column justify-content-center price_list"
+                  id="price_list"
+                >
+                  <li>
+                    <p>Откуда: г. Ташкент</p>
+                  </li>
+                  <li>
+                    <p>Куда: г. Нукус</p>
+                  </li>
+                  <li>
+                    <p>Что отправляем: Мебель</p>
+                  </li>
+                  <li>
+                    <p>Общий вес: 725 кг</p>
+                  </li>
+                  <li>
+                    <p>Доставка: Да</p>
+                  </li>
+                  <li>
+                    <p>Вызов курьера: Нет</p>
+                  </li>
+                  <li>
+                    <h4 class="mb-4">Итого: 99999 сум</h4>
+                  </li>
+                  <li>
+                    <form>
+                      <div class="form-group mb-3">
+                        <input
+                          type="text"
+                          class="form-control text-center"
+                          placeholder="Ваше имя"
+                          required
+                        />
+                      </div>
+                      <div class="form-group mb-3">
+                        <input
+                          type="text"
+                          class="form-control text-center"
+                          placeholder="Ваш номер телефона"
+                          required
+                        />
+                      </div>
+                      <button
+                        type="submit"
+                        class="btn btn-success d-block butn butn3"
+                      >
+                        Оставить заявку
+                      </button>
+                    </form>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+    </section>
 
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="step-card step-card4 d-flex text-start align-items-center">
-          <p class="step-text d-block m-0">Этап работы 4 <br>
-            Краткая информация</p>
+    <!-- ---------------------------- Steps section ---------------------------- -->
+    <section class="step container">
+      <h2 class="products-section-title">Этапы нашей работы</h2>
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="step-card d-flex text-start align-items-center">
+            <p class="step-text d-block m-0">
+              Этап работы 1 <br />
+              Краткая информация
+            </p>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div
+            class="step-card step-card2 d-flex text-start align-items-center"
+          >
+            <p class="step-text d-block m-0">
+              Этап работы 2 <br />
+              Краткая информация
+            </p>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div
+            class="step-card step-card3 d-flex text-start align-items-center"
+          >
+            <p class="step-text d-block m-0">
+              Этап работы 3 <br />
+              Краткая информация
+            </p>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div
+            class="step-card step-card4 d-flex text-start align-items-center"
+          >
+            <p class="step-text d-block m-0">
+              Этап работы 4 <br />
+              Краткая информация
+            </p>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div
+            class="step-card step-card5 d-flex text-start align-items-center"
+          >
+            <p class="step-text d-block m-0">
+              Этап работы 5 <br />
+              Краткая информация
+            </p>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div
+            class="step-card step-card6 d-flex text-start align-items-center"
+          >
+            <p class="step-text d-block m-0">
+              Этап работы 6 <br />
+              Краткая информация
+            </p>
+          </div>
         </div>
       </div>
+    </section>
 
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="step-card step-card5 d-flex text-start align-items-center">
-          <p class="step-text d-block m-0">Этап работы 5 <br>
-            Краткая информация</p>
-        </div>
-      </div>
-
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="step-card step-card6 d-flex text-start align-items-center">
-          <p class="step-text d-block m-0">Этап работы 6 <br>
-            Краткая информация</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-
-  <!-- ------------------------- Branch card section ------------------------- -->
-  <section class='branch container'>
-    <div class="row">
-      <div class="col-lg-4 col-md-12">
-
-      </div>
-      <div class="col-8 col-lg-8 col-md-12">
-        <!-- <div style="margin: 0;background-color: rgba(255,255,255,1);">
+    <!-- ------------------------- Branch card section ------------------------- -->
+    <section class="branch container">
+      <div class="row">
+        <div class="col-lg-4 col-md-12"></div>
+        <div class="col-8 col-lg-8 col-md-12">
+          <!-- <div style="margin: 0;background-color: rgba(255,255,255,1);">
       <div id="map" style="width: 100%; height: 714px;"></div>
     </div> -->
+        </div>
       </div>
-    </div>
+    </section>
 
-  </section>
-
-
-  <!-- ---------------------------- News section ----------------------------- -->
-  <section class="container wrapper-with-margin">
-    <h2 class="products-section-title">Наш блог</h2>
-    <!-- Slider main container -->
-      <div class="position-relative container-fluid" >
-            <div class="container swiper-container" style="overflow: hidden; margin-bottom: 100px;">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                
-                    <img class="card-img-top" src="./assest/images/img/Rectangle1.png" alt="Card image cap">
-                    <div class="card-body">
-                      <h5 class="card-title">Название</h5>
-                      <p class="card-text">Краткое описание
-                        В двух строках.</p>
-                      <a href="#" class="btn btn-primary">Читать далее</a>
-                    </div>
-                  
-                </div>
-                <div class="swiper-slide">
-                  <img class="card-img-top" src="./assest/images/img/Rectangle2.png" alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title">Название</h5>
-                    <p class="card-text">Краткое описание
-                      В двух строках.</p>
-                    <a href="#" class="btn btn-primary">Читать далее</a>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <img class="card-img-top" src="./assest/images/img/Rectangle3.png" alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title">Название</h5>
-                    <p class="card-text">Краткое описание
-                      В двух строках.</p>
-                    <a href="#" class="btn btn-primary">Читать далее</a>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <img class="card-img-top" src="./assest/images/img/Rectangle1.png" alt="Card image cap">
-                  <div class="card-body text-start">
-                    <h5 class="card-title text-start">Название</h5>
-                    <p class="card-text text-start">Краткое описание
-                      В двух строках.</p>
-                    <a href="#" class="btn btn-primary">Читать далее</a>
-                  </div>
-                </div>
-                <div class="swiper-slide"> 
-                  <img class="card-img-top" src="./assest/images/img/Rectangle2.png" alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title">Название</h5>
-                    <p class="card-text">Краткое описание
-                      В двух строках.</p>
-                    <a href="#" class="btn btn-primary">Читать далее</a>
-                  </div>
-                </div>
+    <!-- ---------------------------- News section ----------------------------- -->
+    <section class="container wrapper-with-margin">
+      <h2 class="products-section-title">Наш блог</h2>
+      <!-- Slider main container -->
+      <div class="position-relative container-fluid">
+        <div
+          class="container swiper-container"
+          style="overflow: hidden; margin-bottom: 100px"
+        >
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                class="card-img-top"
+                src="./assest/images/img/Rectangle1.png"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Название</h5>
+                <p class="card-text">Краткое описание В двух строках.</p>
+                <a href="#" class="btn btn-primary">Читать далее</a>
               </div>
             </div>
+            <div class="swiper-slide">
+              <img
+                class="card-img-top"
+                src="./assest/images/img/Rectangle2.png"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Название</h5>
+                <p class="card-text">Краткое описание В двух строках.</p>
+                <a href="#" class="btn btn-primary">Читать далее</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="card-img-top"
+                src="./assest/images/img/Rectangle3.png"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Название</h5>
+                <p class="card-text">Краткое описание В двух строках.</p>
+                <a href="#" class="btn btn-primary">Читать далее</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="card-img-top"
+                src="./assest/images/img/Rectangle1.png"
+                alt="Card image cap"
+              />
+              <div class="card-body text-start">
+                <h5 class="card-title text-start">Название</h5>
+                <p class="card-text text-start">
+                  Краткое описание В двух строках.
+                </p>
+                <a href="#" class="btn btn-primary">Читать далее</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="card-img-top"
+                src="./assest/images/img/Rectangle2.png"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Название</h5>
+                <p class="card-text">Краткое описание В двух строках.</p>
+                <a href="#" class="btn btn-primary">Читать далее</a>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
       </div>
-</section>
+    </section>
 
+    <!-- ------------------------- Footer menu section ------------------------- -->
+    <section class="footer-menu">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4">
+            <!-- <img src="./assest/images/logo/logo-min.png" alt="" class="logo-foot"> -->
+            <h1>LOGO</h1>
 
-<!-- ------------------------- Footer menu section ------------------------- -->
-  <section class="footer-menu">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-md-6 col-lg-4">
-          <!-- <img src="./assest/images/logo/logo-min.png" alt="" class="logo-foot"> -->
-          <h1>LOGO</h1>
-          
-          <p class="footer-text">Необходимый текст, который
-            будет состоять из 10-12 слов
-            Размещается тут</p>
+            <p class="footer-text">
+              Необходимый текст, который будет состоять из 10-12 слов
+              Размещается тут
+            </p>
 
             <div class="social-links text-center text-md-start">
-              
-            <a href="#" class="social-link-item d-inline-block">
-              <i class="fab fa-facebook"></i>
-            </a>
-            
-            <a href="#" class="social-link-item d-inline-block">
-              <i class="fab fa-instagram"></i>
-            </a>
+              <a href="#" class="social-link-item d-inline-block">
+                <i class="fab fa-facebook"></i>
+              </a>
 
+              <a href="#" class="social-link-item d-inline-block">
+                <i class="fab fa-instagram"></i>
+              </a>
 
-            <a href="#" class="social-link-item d-inline-block">
-              <i class="fab fa-telegram"></i>
-            </a>
-            
-            
+              <a href="#" class="social-link-item d-inline-block">
+                <i class="fab fa-telegram"></i>
+              </a>
+            </div>
           </div>
-        </div>
 
-        <div class="col-12 col-md-6 col-lg-4">
-          <h3 class="footer-menu__title">Навигация по сайту</h3>
-          <ul class="footer-ul">
-            <li><a href="#" class="footer-link">Главная</a></li>
-            <li><a href="#" class="footer-link">Калькулятор</a></li>
-            <li><a href="#" class="footer-link">Филиалы</a></li>
-            <li><a href="#" class="footer-link">О компании</a></li>
-            <li><a href="#" class="footer-link">Тарифы</a></li>
-            <li><a href="#" class="footer-link">Контакты</a></li>
-            <li><a href="#" class="footer-link">Трекинг</a></li>
-            <li><a href="#" class="footer-link">Новости</a></li>
-          </ul>
+          <div class="col-12 col-md-6 col-lg-4">
+            <h3 class="footer-menu__title">Навигация по сайту</h3>
+            <ul class="footer-ul">
+              <li><a href="#" class="footer-link">Главная</a></li>
+              <li><a href="#" class="footer-link">Калькулятор</a></li>
+              <li><a href="#" class="footer-link">Филиалы</a></li>
+              <li><a href="#" class="footer-link">О компании</a></li>
+              <li><a href="#" class="footer-link">Тарифы</a></li>
+              <li><a href="#" class="footer-link">Контакты</a></li>
+              <li><a href="#" class="footer-link">Трекинг</a></li>
+              <li><a href="#" class="footer-link">Новости</a></li>
+            </ul>
+          </div>
 
-        </div>
-        
-        <div class="col-12 col-md-6 offset-md-3 offset-lg-0 col-lg-4">
-          <div class="col-12">
-            <h3 class="footer-menu__title">Оставьте свою заявку</h3>
-            <form>
-              <div class="form-group mb-3">
-                <input type="text" class="form-control text-center" placeholder="Ваше имя" required>
-              </div>
-              <div class="form-group mb-3">
-                <input type="text" class="form-control text-center" placeholder="Ваш номер телефона" required>
-              </div>
-              <button type="submit" class="btn btn-success d-block butn">Оставить заявку</button>
-            </form>
-          </div>
-          <div class="col-12">
-            <p class="phone">Телефоны горячей линии:</p>
-          </div>
-          <div class="col-12">
-            <p class="phone">+ 998 (99) 999-99-99</p>
-          </div>
-          <div class="col-12">
-            <p class="phone">+ 998 (99) 999-99-99</p>
+          <div class="col-12 col-md-6 offset-md-3 offset-lg-0 col-lg-4">
+            <div class="col-12">
+              <h3 class="footer-menu__title">Оставьте свою заявку</h3>
+              <form>
+                <div class="form-group mb-3">
+                  <input
+                    type="text"
+                    class="form-control text-center"
+                    placeholder="Ваше имя"
+                    required
+                  />
+                </div>
+                <div class="form-group mb-3">
+                  <input
+                    type="text"
+                    class="form-control text-center"
+                    placeholder="Ваш номер телефона"
+                    required
+                  />
+                </div>
+                <button type="submit" class="btn btn-success d-block butn">
+                  Оставить заявку
+                </button>
+              </form>
+            </div>
+            <div class="col-12">
+              <p class="phone">Телефоны горячей линии:</p>
+            </div>
+            <div class="col-12">
+              <p class="phone">+ 998 (99) 999-99-99</p>
+            </div>
+            <div class="col-12">
+              <p class="phone">+ 998 (99) 999-99-99</p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-md-4">
-          <p class="copyight-text text-center text-md-start">
-            ООО “DMS EXPRESS” все права защищены
-          </p>
-        </div>
-        <div class="col-12 col-md-4">
-          <p class="copyight-text text-center text-md-start">
-            Счетчик Яндекс.Метрика
-          </p>
-        </div>
-        <div class="col-12 col-md-4">
-          <p class="copyight-text text-center text-md-start">
-            Разработано с ♡ в Media Solutions
-          </p>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <p class="copyight-text text-center text-md-start">
+              ООО “DMS EXPRESS” все права защищены
+            </p>
+          </div>
+          <div class="col-12 col-md-4">
+            <p class="copyight-text text-center text-md-start">
+              Счетчик Яндекс.Метрика
+            </p>
+          </div>
+          <div class="col-12 col-md-4">
+            <p class="copyight-text text-center text-md-start">
+              Разработано с ♡ в Media Solutions
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
+    <!-- navbar js -->
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const navLinks = document.querySelector(".nav-links");
+      const links = document.querySelectorAll(".nav-links li");
 
+      hamburger.addEventListener("click", () => {
+        //Animate Links
+        navLinks.classList.toggle("open");
+        links.forEach((link) => {
+          link.classList.toggle("fade");
+        });
 
-  <!-- News Section JS -->
-  <script src="./assest/scripts/swiper-bundle.min.js"></script>
-  <script src="./assest/scripts/news.js"></script>
+        //Hamburger Animation
+        hamburger.classList.toggle("toggle");
+      });
+    </script>
 
+    <!-- News Section JS -->
+    <script src="./assest/scripts/swiper-bundle.min.js"></script>
+    <script src="./assest/scripts/news.js"></script>
 
-
- 
-
-  <!-- ------------------------------- scripts ------------------------------- -->
-  <script src="./assest/scripts/calculator.js"></script>
-  <script src="./assest/scripts/bootstrap.min.js"></script>
-  <script src="./assest/scripts/jQuery.js"></script>
-  <script src="./assest/scripts/map.js"></script>
-  <!-- news -->
-  
-</body>
-
+    <!-- ------------------------------- scripts ------------------------------- -->
+    <script src="./assest/scripts/calculator.js"></script>
+    <script src="./assest/scripts/bootstrap.min.js"></script>
+    <script src="./assest/scripts/jQuery.js"></script>
+    <script src="./assest/scripts/map.js"></script>
+    <!-- news -->
+  </body>
 </html>
