@@ -86,8 +86,9 @@ ul li {
 }
 
 .hero-info-box {
-  padding: 100px 0;
+  padding: 100px 0 0 !important;
 }
+
 .hero-info-box__title {
   font-size: 42px;
   font-weight: 600;
@@ -100,6 +101,7 @@ ul li {
 
 .hero-info-box__icon {
   display: flex;
+  flex-direction: column;
   margin: 40px 0;
 }
 
@@ -112,8 +114,24 @@ ul li {
   font-size: 18px;
 }
 
-.icon-box2 {
-  margin: 0 100px;
+@media only screen and (min-width: 768px) {
+  .hero-info-box {
+    padding: 100px 0 !important;
+  }
+  .hero-info-box__icon {
+    display: flex;
+    flex-direction: row;
+    margin: 40px 0;
+  }
+
+  .icon-box2 {
+    margin: 0 100px;
+  }
+
+  .hero-img2 {
+    position: absolute;
+    bottom: 0;
+  }
 }
 
 /* KNOPKA CTA */
@@ -135,10 +153,17 @@ ul li {
 }
 
 /* hero img */
-
+/* 
 .hero-img {
   position: absolute;
-  right: -20px;
+  right: 20%;
+  bottom: 0;
+  border: 1px solid red;
+} */
+
+.hero-img2 {
+  position: absolute;
+  /* width: 10%; */
   bottom: 0;
 }
 
