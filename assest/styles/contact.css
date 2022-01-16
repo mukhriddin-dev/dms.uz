@@ -1,0 +1,30 @@
+.contact-section {
+  position: relative;
+}
+
+.contact-wrapper {
+  overflow: hidden;
+}
+
+.contact-box {
+  border: 1px solid #2d3032;
+  background-color: #fff;
+  z-index: 222;
+  margin: 100px 0;
+  /* overflow: hidden; */
+}
+@media only screen and (max-width: 768px) {
+  .contact-box {
+    border: none;
+  }
+}
+
+/* map style */
+
+.map-height {
+  position: absolute;
+  top: -20%;
+  /* bottom: -15%; */
+  left: 0;
+  height: 120% !important;
+}
