@@ -51,10 +51,16 @@ body {
   box-shadow: 0 20px 40px 0 rgba(0, 147, 68, 0.25);
 }
 
-.active:active,
+/* .active:active,
 .active:focus,
 .active2:active,
 .active2:focus {
+  background-color: #017637;
+  color: #fff;
+  border-color: #017637;
+} */
+
+.active{
   background-color: #017637;
   color: #fff;
   border-color: #017637;
