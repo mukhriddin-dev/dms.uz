@@ -1,0 +1,98 @@
+.map-div{
+  width: 720px;
+  height: 450px;
+ /* background: red; */
+}
+
+
+.map-div path{
+  fill: #009344;
+  stroke: rgba(0, 0, 0, 0.829);
+  stroke-width: 2px;
+  transition: fill 0.3s ease;
+ 
+  
+}
+.map-div path:hover {
+  fill: rgba(72, 241, 95, 0.795);
+  stroke:rgb(0, 0, 0);
+  stroke-width:1px;
+  fill-rule: evenodd;
+}
+
+.map-div path:active{
+  fill: #0f703d;
+  stroke-width:1px;
+  stroke: #fff;
+}
+
+.map-div path:focus{
+  fill: #0f703d;
+  stroke-width:1px;
+  stroke: #fff;
+}
+
+
+
+
+#bukhoro:active{
+  margin: 2px;
+}
+
+.boxListdist{
+  width: 100%;
+  height: 150px;
+  background: #009344;
+  color: rgb(0, 0, 0);
+}
+
+.boxListdist ul li{
+  list-style: none;
+}
+
+#UZ828::after{
+  content:'';
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background: red;
+}
+
+.branch-section-title{
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 100px;
+}
+
+.link-btn-map{
+  background-color: #009344;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 24px 50px;
+  color: #fff;
+  transition: 0.3s ease all;
+  letter-spacing: 1.2;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+.link-btn-map t{
+  position: relative;
+  top:-8px  
+}
+
+.boxDistrict h2{
+  position: relative;
+  margin: 2rem 0;
+}
+
+.boxDistrict h4{
+  position: relative;
+  margin: 2rem 0;
+}
+
+.link-btn-map:hover {
+  color: #fff;
+  background-color: #017637;
+  box-shadow: 0 20px 40px 0 rgba(0, 147, 68, 0.25);
+}
