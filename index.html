@@ -534,82 +534,67 @@
 
 
   <!-- ---------------------------- News section ----------------------------- -->
-  <div class="container wrapper-with-margin">
+  <section class="container wrapper-with-margin">
     <h2 class="products-section-title">Наш блог</h2>
     <!-- Slider main container -->
-    
-
-<!-- 2-variant -->
-<section class="position-relative container-fluid" >
-<div class="container swiper-container" style="overflow: hidden; margin-bottom: 100px;">
-  <div class="swiper-wrapper">
-    <div class="swiper-slide">
-     
-        <img class="card-img-top" src="./assest/images/img/Rectangle1.png" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Название</h5>
-          <p class="card-text">Краткое описание
-            В двух строках.</p>
-          <a href="#" class="btn btn-primary">Читать далее</a>
-        </div>
-      
-    </div>
-    <div class="swiper-slide">
-      <img class="card-img-top" src="./assest/images/img/Rectangle2.png" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">Название</h5>
-        <p class="card-text">Краткое описание
-          В двух строках.</p>
-        <a href="#" class="btn btn-primary">Читать далее</a>
+      <div class="position-relative container-fluid" >
+            <div class="container swiper-container" style="overflow: hidden; margin-bottom: 100px;">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                
+                    <img class="card-img-top" src="./assest/images/img/Rectangle1.png" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Название</h5>
+                      <p class="card-text">Краткое описание
+                        В двух строках.</p>
+                      <a href="#" class="btn btn-primary">Читать далее</a>
+                    </div>
+                  
+                </div>
+                <div class="swiper-slide">
+                  <img class="card-img-top" src="./assest/images/img/Rectangle2.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Название</h5>
+                    <p class="card-text">Краткое описание
+                      В двух строках.</p>
+                    <a href="#" class="btn btn-primary">Читать далее</a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img class="card-img-top" src="./assest/images/img/Rectangle3.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Название</h5>
+                    <p class="card-text">Краткое описание
+                      В двух строках.</p>
+                    <a href="#" class="btn btn-primary">Читать далее</a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img class="card-img-top" src="./assest/images/img/Rectangle1.png" alt="Card image cap">
+                  <div class="card-body text-start">
+                    <h5 class="card-title text-start">Название</h5>
+                    <p class="card-text text-start">Краткое описание
+                      В двух строках.</p>
+                    <a href="#" class="btn btn-primary">Читать далее</a>
+                  </div>
+                </div>
+                <div class="swiper-slide"> 
+                  <img class="card-img-top" src="./assest/images/img/Rectangle2.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Название</h5>
+                    <p class="card-text">Краткое описание
+                      В двух строках.</p>
+                    <a href="#" class="btn btn-primary">Читать далее</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       </div>
-    </div>
-    <div class="swiper-slide">
-      <img class="card-img-top" src="./assest/images/img/Rectangle3.png" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">Название</h5>
-        <p class="card-text">Краткое описание
-          В двух строках.</p>
-        <a href="#" class="btn btn-primary">Читать далее</a>
-      </div>
-    </div>
-    <div class="swiper-slide">
-      <img class="card-img-top" src="./assest/images/img/Rectangle1.png" alt="Card image cap">
-      <div class="card-body text-start">
-        <h5 class="card-title text-start">Название</h5>
-        <p class="card-text text-start">Краткое описание
-          В двух строках.</p>
-        <a href="#" class="btn btn-primary">Читать далее</a>
-      </div>
-    </div>
-    <div class="swiper-slide"> 
-      <img class="card-img-top" src="./assest/images/img/Rectangle2.png" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">Название</h5>
-        <p class="card-text">Краткое описание
-          В двух строках.</p>
-        <a href="#" class="btn btn-primary">Читать далее</a>
-      </div>
-    </div>
-
-  </div>
-  <!-- <div class="swiper-pagination"></div>-->
-</div>
-
-
-
-
-
-  <div class="swiper-button-prev"></div>
-
-
-  <div class="swiper-button-next"></div>
-</div>
-
 </section>
 
-<!-- /2 -->
 
-</div>
 <!-- ------------------------- Footer menu section ------------------------- -->
   <section class="footer-menu">
     <div class="container">
@@ -708,37 +693,7 @@
 
   <!-- News Section JS -->
   <script src="./assest/scripts/swiper-bundle.min.js"></script>
-  <script>
-    	var swiper = new Swiper('.swiper-container', {
-      slidesPerView: 1,
-      spaceBetween: 10,
-      loop: true,
-      // init: false,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      breakpoints: {
-        580: {
-          slidesPerView: 2,
-          spaceBetween: 20,
-        },
-        768: {
-          slidesPerView: 3,
-          spaceBetween: 20,
-        },
-        992: {
-          slidesPerView: 3,
-          spaceBetween: 30,
-        },
-      }
-        
-    });
-  </script>
+  <script src="./assest/scripts/news.js"></script>
 
 
 

@@ -6,7 +6,6 @@
 body {
   font-family: "Gilroy", sans-serif;
   font-size: 16px;
-  /* background-color: royalblue; */
 }
 
 .container {
@@ -15,7 +14,6 @@ body {
 
 .size-24 {
   font-size: 24px;
-  /* margin-bottom: 35px; */
   margin-top: 0;
   padding-top: 0;
 }
@@ -51,15 +49,6 @@ body {
   background-color: #017637;
   box-shadow: 0 20px 40px 0 rgba(0, 147, 68, 0.25);
 }
-
-/* .active:active,
-.active:focus,
-.active2:active,
-.active2:focus {
-  background-color: #017637;
-  color: #fff;
-  border-color: #017637;
-} */
 
 .active {
   background-color: #017637;
