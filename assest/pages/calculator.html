@@ -64,35 +64,44 @@
 
     <!-- ------------------------- Calculator section -------------------------- -->
 
-    <section class="calculator">
+    <section class="calculator py-5">
       <div class="container mt-5">
+        <div class="row align-items-center mb-4">
+          <div class="col-12 col-lg-8 text-lg-start text-center">
+            <!-- <h1 class="mt-4">Калькулятор</h1> -->
+            <h2 class="section-title">Калькулятор</h2>
+            <h3 class="size-24 text-lg-start text-center">
+              Рассчитайте стоимость своей посылки
+            </h3>
+          </div>
+          <div class="col-4 d-none d-lg-block">
+            <img
+              class="img-fluid d-block"
+              width="348"
+              src="../images/img/uzrooms.png"
+              alt="geo_image"
+            />
+          </div>
+        </div>
         <div class="row">
-          <div class="col-lg-8 calc_left">
-            <div class="row">
-              <div class="col-12">
-                <!-- <h1 class="mt-4">Калькулятор</h1> -->
-                <h2 class="section-title">Калькулятор</h2>
-                <h3 class="size-24 text-lg-start text-center">
-                  Рассчитайте стоимость своей посылки
-                </h3>
-              </div>
-
-              <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 mt-4">
+          <div class="col-lg-8">
+            <div class="row text-center text-lg-start">
+              <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0">
                 <p>Выберите регион отправителя:</p>
               </div>
 
-              <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 mt-4">
+              <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0">
                 <select
                   class="form-select w-100 butn2 btn"
                   aria-label="Default select example"
                   id="reg1"
                 >
-                  <option value="невыбранный"  selected class="text-center">
+                  <option value="невыбранный" selected class="text-center">
                     Название региона ↓
                   </option>
-                  <option  class="text-start">г. Ташкент</option>
-                  <option  class="text-start">Two</option>
-                  <option  class="text-start">Three</option>
+                  <option class="text-start">г. Ташкент</option>
+                  <option class="text-start">Two</option>
+                  <option class="text-start">Three</option>
                 </select>
               </div>
 
@@ -124,12 +133,13 @@
                   class="form-select w-100 butn2 btn"
                   aria-label="Default select example"
                   id="typeProduct"
-                  
                 >
-                  <option value="невыбранный"  selected class="text-center">Тип посылки ↓</option>
-                  <option  class="text-start"> Мебель</option>
-                  <option  class="text-start">Two</option>
-                  <option  class="text-start">Three</option>
+                  <option value="невыбранный" selected class="text-center">
+                    Тип посылки ↓
+                  </option>
+                  <option class="text-start">Мебель</option>
+                  <option class="text-start">Two</option>
+                  <option class="text-start">Three</option>
                 </select>
               </div>
 
@@ -158,11 +168,18 @@
               </div>
 
               <div
-                class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 mt-4 d-flex justify-content-around p-1"
+                class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 mt-4 d-flex justify-content-center p-1"
               >
-                <input type='button' class="btn btnS butn2 shadow-none" value="Да" />
-                <input type='button' class="btn btnS butn2 shadow-none" value='Нет'/>
-
+                <input
+                  type="button"
+                  class="btn btnS butn2 shadow-none"
+                  value="Да"
+                />
+                <input
+                  type="button"
+                  class="btn btnS butn2 shadow-none"
+                  value="Нет"
+                />
               </div>
 
               <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 mt-4">
@@ -170,7 +187,7 @@
               </div>
 
               <div
-                class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 mt-4 d-flex justify-content-around p-1"
+                class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 mt-4 d-flex justify-content-center p-1"
               >
                 <button class="btn btnS butn2 shadow-none active2">
                   С курьером
@@ -182,7 +199,7 @@
 
               <div class="col-lg-6 mt-4"></div>
 
-              <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 mt-4">
+              <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 my-4">
                 <a href="#" class="d-block link-btn text-center"
                   >Перейти к тарифам
                 </a>
@@ -191,73 +208,62 @@
           </div>
 
           <div class="col-lg-4 calc_right">
-            <div class="row">
+            <div class="col-lg-12 col-md-8 offset-md-2 offset-lg-0 text-center">
               <div
-                class="col-lg-12 col-md-8 offset-md-2 offset-lg-0 mt-4 text-center"
+                class="card d-flex justify-content-center text-center align-center p-3"
               >
-                <img
-                  class="mt-4 img-fluid"
-                  width="348"
-                  src="../images/img/uzrooms.png"
-                  alt="geo_image"
-                />
-
-                <div
-                  class="card d-flex mt-4 justify-content-center text-center align-center p-3"
+                <ul
+                  class="d-flex flex-column justify-content-center price_list"
+                  id="price_list"
                 >
-                  <ul
-                    class="d-flex flex-column justify-content-center price_list"
-                    id="price_list"
-                  >
-                    <li>
-                      <p>Откуда: г. Ташкент</p>
-                    </li>
-                    <li>
-                      <p>Куда: г. Нукус</p>
-                    </li>
-                    <li>
-                      <p>Что отправляем: Мебель</p>
-                    </li>
-                    <li>
-                      <p>Общий вес: 725 кг</p>
-                    </li>
-                    <li>
-                      <p>Доставка: невыбранный</p>
-                    </li>
-                    <li>
-                      <p>Вызов курьера: невыбранный</p>
-                    </li>
-                    <li>
-                      <h4 class="mb-4">Итого: 99999 сум</h4>
-                    </li>
-                    <li>
-                      <form>
-                        <div class="form-group mb-3">
-                          <input
-                            type="text"
-                            class="form-control text-center"
-                            placeholder="Ваше имя"
-                            required
-                          />
-                        </div>
-                        <div class="form-group mb-3">
-                          <input
-                            type="text"
-                            class="form-control text-center"
-                            placeholder="Ваш номер телефона"
-                            required
-                          />
-                        </div>
-                        <button
-                          type="submit"
-                          class="btn btn-success d-block butn butn3"
-                        >
-                          Оставить заявку
-                        </button>
-                      </form>
-                    </li>
-                  </ul>
-                </div>
+                  <li>
+                    <p>Откуда: г. Ташкент</p>
+                  </li>
+                  <li>
+                    <p>Куда: г. Нукус</p>
+                  </li>
+                  <li>
+                    <p>Что отправляем: Мебель</p>
+                  </li>
+                  <li>
+                    <p>Общий вес: 725 кг</p>
+                  </li>
+                  <li>
+                    <p>Доставка: Да</p>
+                  </li>
+                  <li>
+                    <p>Вызов курьера: Нет</p>
+                  </li>
+                  <li>
+                    <h4 class="mb-4">Итого: 99999 сум</h4>
+                  </li>
+                  <li>
+                    <form>
+                      <div class="form-group mb-3">
+                        <input
+                          type="text"
+                          class="form-control text-center"
+                          placeholder="Ваше имя"
+                          required
+                        />
+                      </div>
+                      <div class="form-group mb-3">
+                        <input
+                          type="text"
+                          class="form-control text-center"
+                          placeholder="Ваш номер телефона"
+                          required
+                        />
+                      </div>
+                      <button
+                        type="submit"
+                        class="btn btn-success d-block butn butn3"
+                      >
+                        Оставить заявку
+                      </button>
+                    </form>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>

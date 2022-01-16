@@ -244,13 +244,17 @@ input[type="range"]::-webkit-slider-thumb {
   background: #ffff;
 }
 
-.calc_left {
+.btnS.active:hover {
+  color: #fff;
+}
+
+/* .calc_left {
   position: relative;
   margin-top: 3.7rem;
 }
 .calc_right {
   position: relative;
-}
+} */
 
 /* end calculator */
 
@@ -616,4 +620,3 @@ footer {
   max-height: 100% !important;
 }
 /* maps */
-
