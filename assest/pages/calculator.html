@@ -1,269 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="../favicon/favicon.ico" />
-    <link rel="stylesheet" href="../styles/bootstrap.min.css" />
-    <link rel="stylesheet" href="../styles/style.css" />
-    <title>Калькулятор</title>
-  </head>
 
-  <body>
-    <!-- HEADER -->
-    <section>
-      <header>
-        <div class="logo">
-          <img
-            src="../images/logo/logo.png"
-            alt="Logo Image"
-            class="logo-img"
-          />
-        </div>
-        <ul>
-          <li>
-            <a href="#" class="menu__link">Главная</a>
-          </li>
-          <li>
-            <a href="#" class="menu__link">О компании</a>
-          </li>
-          <li>
-            <a href="#" class="menu__link">Трекинг</a>
-          </li>
-          <li>
-            <a href="#" class="menu__link">Калькулятор</a>
-          </li>
-          <li>
-            <a href="#" class="menu__link">Тарифы</a>
-          </li>
-          <li>
-            <a href="#" class="menu__link">Новости</a>
-          </li>
-          <li>
-            <a href="#" class="menu__link">Филиалы</a>
-          </li>
-          <li>
-            <a href="#" class="menu__link">Контакты</a>
-          </li>
-        </ul>
-        <!-- Cabinet btn -->
-        <div class="cabinet-btn">
-          <p class="cabinet-btn__text">Личный кабинет</p>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Favicon-->
+  <link rel="icon" type="image/x-icon" href="../favicon/favicon.ico" />
+  <link rel="stylesheet" href="../styles/bootstrap.min.css" />
+  <link rel="stylesheet" href="../styles/style.css" />
+  <title>Калькулятор</title>
+</head>
 
-        <!-- active menu btn -->
-        <div class="line">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
-        </div>
-      </header>
-    </section>
+<body>
+  <!-- HEADER -->
+  <section>
+    <header>
+      <div class="logo">
+        <img src="../images/logo/logo.png" alt="Logo Image" class="logo-img" />
+      </div>
+      <ul>
+        <li>
+          <a href="#" class="menu__link">Главная</a>
+        </li>
+        <li>
+          <a href="#" class="menu__link">О компании</a>
+        </li>
+        <li>
+          <a href="#" class="menu__link">Трекинг</a>
+        </li>
+        <li>
+          <a href="#" class="menu__link">Калькулятор</a>
+        </li>
+        <li>
+          <a href="#" class="menu__link">Тарифы</a>
+        </li>
+        <li>
+          <a href="#" class="menu__link">Новости</a>
+        </li>
+        <li>
+          <a href="#" class="menu__link">Филиалы</a>
+        </li>
+        <li>
+          <a href="#" class="menu__link">Контакты</a>
+        </li>
+      </ul>
+      <!-- Cabinet btn -->
+      <div class="cabinet-btn">
+        <p class="cabinet-btn__text">Личный кабинет</p>
+      </div>
 
-    <!-- ------------------------- Calculator section -------------------------- -->
+      <!-- active menu btn -->
+      <div class="line">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </header>
+  </section>
 
-    <section class="calculator">
-      <div class="container mt-5">
-        <div class="row">
-          <div class="col-lg-8 calc_left">
-            <div class="row">
-              <div class="col-12">
-                <!-- <h1 class="mt-4">Калькулятор</h1> -->
-                <h2 class="section-title">Калькулятор</h2>
-                <h3 class="size-24 text-lg-start text-center">
-                  Рассчитайте стоимость своей посылки
-                </h3>
-              </div>
+  <!-- ------------------------- Calculator section -------------------------- -->
 
-              <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 mt-4">
-                <p>Выберите регион отправителя:</p>
-              </div>
+  <section class="calculator">
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-lg-8 calc_left">
+          <div class="row">
+            <div class="col-12">
+              <!-- <h1 class="mt-4">Калькулятор</h1> -->
+              <h2 class="section-title">Калькулятор</h2>
+              <h3 class="size-24 text-lg-start text-center">
+                Рассчитайте стоимость своей посылки
+              </h3>
+            </div>
 
-              <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 mt-4">
-                <select
-                  class="form-select w-100 butn2 btn"
-                  aria-label="Default select example"
-                  id="reg1"
-                >
-                  <option value="невыбранный"  selected class="text-center">
-                    Название региона ↓
-                  </option>
-                  <option  class="text-start">г. Ташкент</option>
-                  <option  class="text-start">Two</option>
-                  <option  class="text-start">Three</option>
-                </select>
-              </div>
+            <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 mt-4">
+              <p>Выберите регион отправителя:</p>
+            </div>
 
-              <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 mt-4">
-                <p>Выберите регион получателя:</p>
-              </div>
+            <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 mt-4">
+              <select class="form-select w-100 butn2 btn" aria-label="Default select example" id="reg1">
+                <option value="none" selected class="text-center">
+                  Название региона ↓
+                </option>
+                <option>Ташкент</option>
+                <option>Бухара</option>
+                <option>Самарканд</option>
+                <option>Андижан</option>
+                <option>Наманган</option>
+                <option>Ургенч</option>
+                <option>Нукус</option>
+                <option>Фергана</option>
+                <option>Навои</option>
+                <option>Коканд</option>
+                <option>Джизах</option>
+                <option>Термез</option>
+                <option>Карши</option>
+                <option>Гулистан</option>
+              </select>
+            </div>
 
-              <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 mt-4">
-                <select
-                  class="form-select w-100 butn2 btn"
-                  aria-label="Default select example"
-                  id="reg2"
-                >
-                  <option selected value="невыбранный" class="text-center">
-                    Название региона ↓
-                  </option>
-                  <option class="text-start">Нукус</option>
-                  <option class="text-start">Two</option>
-                  <option class="text-start">Three</option>
-                </select>
-              </div>
+            <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 mt-4">
+              <p>Выберите регион получателя:</p>
+            </div>
 
-              <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 mt-4">
-                <p>Выберите тип посылки:</p>
-              </div>
+            <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 mt-4">
+              <select class="form-select w-100 butn2 btn" aria-label="Default select example" id="reg2">
+                <option selected value="невыбранный" class="text-center">
+                  Название региона ↓
+                </option>
+                <option>Ташкент</option>
+                <option>Бухара</option>
+                <option>Самарканд</option>
+                <option>Андижан</option>
+                <option>Наманган</option>
+                <option>Ургенч</option>
+                <option>Нукус</option>
+                <option>Фергана</option>
+                <option>Навои</option>
+                <option>Коканд</option>
+                <option>Джизах</option>
+                <option>Термез</option>
+                <option>Карши</option>
+                <option>Гулистан</option>
+              </select>
+            </div>
 
-              <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 mt-4">
-                <select
-                  class="form-select w-100 butn2 btn"
-                  aria-label="Default select example"
-                  id="typeProduct"
-                  
-                >
-                  <option value="невыбранный"  selected class="text-center">Тип посылки ↓</option>
-                  <option  class="text-start"> Мебель</option>
-                  <option  class="text-start">Two</option>
-                  <option  class="text-start">Three</option>
-                </select>
-              </div>
+            <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 mt-4">
+              <p>Выберите тип посылки:</p>
+            </div>
 
-              <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 mt-4">
-                <p>Выберите вес посылки:</p>
-              </div>
+            <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 mt-4">
+              <select class="form-select w-100 butn2 btn" aria-label="Default select example" id="typeProduct">
+                <option value="невыбранный" selected class="text-center">Тип посылки ↓</option>
+                <option class="text-start"> Мебель</option>
+                <option class="text-start">Two</option>
+                <option class="text-start">Three</option>
+              </select>
+            </div>
 
-              <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 mt-4">
-                <input
-                  type="range"
-                  class="form-range"
-                  min="0"
-                  max="1000"
-                  id="priceRange"
-                />
-                <div class="d-flex justify-content-between">
-                  <span class="range-description">До 10 кг</span>
-                  <span class="range-description">До 50 кг</span>
-                  <span class="range-description">До 250 кг</span>
-                  <span class="range-description">До 1 тонны</span>
-                </div>
-              </div>
+            <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 mt-4">
+              <p>Выберите вес посылки:</p>
+            </div>
 
-              <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 mt-4">
-                <p>Доставка:</p>
-              </div>
-
-              <div
-                class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 mt-4 d-flex justify-content-around p-1"
-              >
-                <input type='button' class="btn btnS butn2 shadow-none" value="Да" />
-                <input type='button' class="btn btnS butn2 shadow-none" value='Нет'/>
-
-              </div>
-
-              <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 mt-4">
-                <p>Вызов курьера:</p>
-              </div>
-
-              <div
-                class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 mt-4 d-flex justify-content-around p-1"
-              >
-                <button class="btn btnS butn2 shadow-none active2">
-                  С курьером
-                </button>
-                <button class="btn btnS butn2 shadow-none active2">
-                  Ваш номер телефона
-                </button>
-              </div>
-
-              <div class="col-lg-6 mt-4"></div>
-
-              <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 mt-4">
-                <a href="#" class="d-block link-btn text-center"
-                  >Перейти к тарифам
-                </a>
+            <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 mt-4">
+              <input type="range" class="form-range" min="0" max="1000" id="priceRange" />
+              <div class="d-flex justify-content-between">
+                <span class="range-description">До 10 кг</span>
+                <span class="range-description">До 50 кг</span>
+                <span class="range-description">До 250 кг</span>
+                <span class="range-description">До 1 тонны</span>
               </div>
             </div>
+
+            <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 mt-4">
+              <p>Доставка:</p>
+            </div>
+
+            <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 mt-4 d-flex justify-content-around p-1">
+              <input type='button' class="btn btnS butn2 shadow-none" value="Да" />
+              <input type='button' class="btn btnS butn2 shadow-none" value='Нет' />
+
+            </div>
+
+            <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 mt-4">
+              <p>Вызов курьера:</p>
+            </div>
+
+            <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 mt-4 d-flex justify-content-around p-1">
+              <button class="btn btnS butn2 shadow-none active2">
+                С курьером
+              </button>
+              <button class="btn btnS butn2 shadow-none active2">
+                Ваш номер телефона
+              </button>
+            </div>
+
+            <div class="col-lg-6 mt-4"></div>
+
+            <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 mt-4">
+              <a href="#" class="d-block link-btn text-center">Перейти к тарифам
+              </a>
+            </div>
           </div>
+        </div>
 
-          <div class="col-lg-4 calc_right">
-            <div class="row">
-              <div
-                class="col-lg-12 col-md-8 offset-md-2 offset-lg-0 mt-4 text-center"
-              >
-                <img
-                  class="mt-4 img-fluid"
-                  width="348"
-                  src="../images/img/uzrooms.png"
-                  alt="geo_image"
-                />
+        <div class="col-lg-4 calc_right">
+          <div class="row">
+            <div class="col-lg-12 col-md-8 offset-md-2 offset-lg-0 mt-4 text-center">
+              <img class="mt-4 img-fluid" width="348" src="../images/img/uzrooms.png" alt="geo_image" />
 
-                <div
-                  class="card d-flex mt-4 justify-content-center text-center align-center p-3"
-                >
-                  <ul
-                    class="d-flex flex-column justify-content-center price_list"
-                    id="price_list"
-                  >
-                    <li>
-                      <p>Откуда: г. Ташкент</p>
-                    </li>
-                    <li>
-                      <p>Куда: г. Нукус</p>
-                    </li>
-                    <li>
-                      <p>Что отправляем: Мебель</p>
-                    </li>
-                    <li>
-                      <p>Общий вес: 725 кг</p>
-                    </li>
-                    <li>
-                      <p>Доставка: невыбранный</p>
-                    </li>
-                    <li>
-                      <p>Вызов курьера: невыбранный</p>
-                    </li>
-                    <li>
-                      <h4 class="mb-4 cost">Итого: 99999 сум</h4>
-                    </li>
-                    <li>
-                      <form>
-                        <div class="form-group mb-3">
-                          <input
-                            type="text"
-                            class="form-control text-center"
-                            placeholder="Ваше имя"
-                            required
-                          />
-                        </div>
-                        <div class="form-group mb-3">
-                          <input
-                            type="text"
-                            class="form-control text-center"
-                            placeholder="Ваш номер телефона"
-                            required
-                          />
-                        </div>
-                        <button
-                          type="submit"
-                          class="btn btn-success d-block butn butn3"
-                        >
-                          Оставить заявку
-                        </button>
-                      </form>
-                    </li>
-                  </ul>
-                </div>
+              <div class="card d-flex mt-4 justify-content-center text-center align-center p-3">
+                <ul class="d-flex flex-column justify-content-center price_list" id="price_list">
+                  <li>
+                    <p>Откуда: невыбранный</p>
+                  </li>
+                  <li>
+                    <p>Куда: невыбранный</p>
+                  </li>
+                  <li>
+                    <p>Что отправляем: невыбранный</p>
+                  </li>
+                  <li>
+                    <p>Общий вес: 725 кг</p>
+                  </li>
+                  <li>
+                    <p>Доставка: невыбранный</p>
+                  </li>
+                  <li>
+                    <p>Вызов курьера: невыбранный</p>
+                  </li>
+                  <li>
+                    <h4 class="mb-4 cost">Итого: 99999 сум</h4>
+                  </li>
+                  <li>
+                    <form>
+                      <div class="form-group mb-3">
+                        <input type="text" class="form-control text-center" placeholder="Ваше имя" required />
+                      </div>
+                      <div class="form-group mb-3">
+                        <input type="text" class="form-control text-center" placeholder="Ваш номер телефона" required />
+                      </div>
+                      <button type="submit" class="btn btn-success d-block butn butn3">
+                        Оставить заявку
+                      </button>
+                    </form>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <script src="../scripts/calculator.js"></script>
-  </body>
+    </div>
+  </section>
+  <script src="../scripts/calculator.js"></script>
+</body>
+
 </html>
