@@ -85,13 +85,14 @@
                 <select
                   class="form-select w-100 butn2 btn"
                   aria-label="Default select example"
+                  id="reg1"
                 >
-                  <option selected class="text-center">
+                  <option value="невыбранный"  selected class="text-center">
                     Название региона ↓
                   </option>
-                  <option value="1" class="text-start">One</option>
-                  <option value="2" class="text-start">Two</option>
-                  <option value="3" class="text-start">Three</option>
+                  <option  class="text-start">г. Ташкент</option>
+                  <option  class="text-start">Two</option>
+                  <option  class="text-start">Three</option>
                 </select>
               </div>
 
@@ -103,13 +104,14 @@
                 <select
                   class="form-select w-100 butn2 btn"
                   aria-label="Default select example"
+                  id="reg2"
                 >
-                  <option selected class="text-center">
+                  <option selected value="невыбранный" class="text-center">
                     Название региона ↓
                   </option>
-                  <option value="1" class="text-start">One</option>
-                  <option value="2" class="text-start">Two</option>
-                  <option value="3" class="text-start">Three</option>
+                  <option class="text-start">Нукус</option>
+                  <option class="text-start">Two</option>
+                  <option class="text-start">Three</option>
                 </select>
               </div>
 
@@ -121,11 +123,13 @@
                 <select
                   class="form-select w-100 butn2 btn"
                   aria-label="Default select example"
+                  id="typeProduct"
+                  
                 >
-                  <option selected class="text-center">Тип посылки ↓</option>
-                  <option value="1" class="text-start">One</option>
-                  <option value="2" class="text-start">Two</option>
-                  <option value="3" class="text-start">Three</option>
+                  <option value="невыбранный"  selected class="text-center">Тип посылки ↓</option>
+                  <option  class="text-start"> Мебель</option>
+                  <option  class="text-start">Two</option>
+                  <option  class="text-start">Three</option>
                 </select>
               </div>
 
@@ -138,8 +142,8 @@
                   type="range"
                   class="form-range"
                   min="0"
-                  max="4"
-                  id="examRange"
+                  max="1000"
+                  id="priceRange"
                 />
                 <div class="d-flex justify-content-between">
                   <span class="range-description">До 10 кг</span>
@@ -156,8 +160,9 @@
               <div
                 class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 mt-4 d-flex justify-content-around p-1"
               >
-                <button class="btn btnS butn2 shadow-none active">Да</button>
-                <button class="btn btnS butn2 shadow-none active">Нет</button>
+                <input type='button' class="btn btnS butn2 shadow-none" value="Да" />
+                <input type='button' class="btn btnS butn2 shadow-none" value='Нет'/>
+
               </div>
 
               <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 mt-4">
@@ -202,6 +207,7 @@
                 >
                   <ul
                     class="d-flex flex-column justify-content-center price_list"
+                    id="price_list"
                   >
                     <li>
                       <p>Откуда: г. Ташкент</p>
@@ -258,5 +264,6 @@
         </div>
       </div>
     </section>
+    <script src="../scripts/calculator.js"></script>
   </body>
 </html>
