@@ -60,7 +60,7 @@ body {
   border-color: #017637;
 } */
 
-.active{
+.active {
   background-color: #017637;
   color: #fff;
   border-color: #017637;
@@ -75,4 +75,23 @@ body {
   font-weight: 500;
   margin-bottom: 50px;
   padding: 0 10px;
+}
+
+/* news card style */
+
+.swiper-slide {
+  background: #bfe4d0 !important;
+  text-align: left !important;
+}
+
+.btn-primary,
+.btn-primary:hover {
+  background-color: #009344;
+  border: none;
+}
+
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: #017637;
+  border: none;
 }

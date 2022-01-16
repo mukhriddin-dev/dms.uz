@@ -535,11 +535,12 @@
 
   <!-- ---------------------------- News section ----------------------------- -->
   <div class="container wrapper-with-margin">
+    <h2 class="products-section-title">Наш блог</h2>
     <!-- Slider main container -->
     
 
 <!-- 2-variant -->
-<div class="container swiper-container" style="overflow: hidden; margin-bottom: 100px;">
+<div class="container swiper-container mySwiper" style="overflow: hidden; margin-bottom: 100px;">
   <div class="swiper-wrapper">
     <div class="swiper-slide">
      
@@ -571,16 +572,16 @@
       </div>
     </div>
     <div class="swiper-slide">
-      <img class="card-img-top" src="./assest/images/img/Rectangle4.png" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">Название</h5>
-        <p class="card-text">Краткое описание
+      <img class="card-img-top" src="./assest/images/img/Rectangle1.png" alt="Card image cap">
+      <div class="card-body text-start">
+        <h5 class="card-title text-start">Название</h5>
+        <p class="card-text text-start">Краткое описание
           В двух строках.</p>
         <a href="#" class="btn btn-primary">Читать далее</a>
       </div>
     </div>
     <div class="swiper-slide"> 
-      <img class="card-img-top" src="./assest/images/img/Rectangle3.png" alt="Card image cap">
+      <img class="card-img-top" src="./assest/images/img/Rectangle2.png" alt="Card image cap">
       <div class="card-body">
         <h5 class="card-title">Название</h5>
         <p class="card-text">Краткое описание
@@ -590,10 +591,11 @@
     </div>
 
   </div>
-  <div class="swiper-pagination"></div>
   <!-- <div class="swiper-button-next"></div> -->
   <!-- <div class="swiper-button-prev"></div> -->
+  <!-- <div class="swiper-pagination"></div> -->
 </div>
+
 
 
 <!-- /2 -->
@@ -718,16 +720,21 @@
         },
         768: {
           slidesPerView: 3,
-          spaceBetween: 40,
+          spaceBetween: 20,
         },
         992: {
           slidesPerView: 3,
-          spaceBetween: 50,
+          spaceBetween: 30,
         },
       }
         
     });
   </script>
+
+
+
+ 
+
   <!-- ------------------------------- scripts ------------------------------- -->
   <script src="./assest/scripts/calculator.js"></script>
   <script src="./assest/scripts/bootstrap.min.js"></script>
