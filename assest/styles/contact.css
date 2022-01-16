@@ -8,11 +8,12 @@
 
 .contact-box {
   border: 1px solid #2d3032;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.5);
   z-index: 222;
   margin: 100px 0;
-  /* overflow: hidden; */
+  backdrop-filter: blur(5px);
 }
+
 @media only screen and (max-width: 768px) {
   .contact-box {
     border: none;
@@ -24,7 +25,6 @@
 .map-height {
   position: absolute;
   top: -20%;
-  /* bottom: -15%; */
   left: 0;
   height: 120% !important;
 }
