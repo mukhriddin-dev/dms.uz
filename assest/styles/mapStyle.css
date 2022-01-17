@@ -1,70 +1,64 @@
-.map-div{
+/* .map-div {
   width: 720px;
   height: 450px;
- /* background: red; */
-}
+  /* background: red; 
+} */
 
-
-.map-div path{
+.map-div path {
   fill: #009344;
   stroke: rgba(0, 0, 0, 0.829);
   stroke-width: 2px;
   transition: fill 0.3s ease;
- 
-  
 }
 .map-div path:hover {
   fill: rgba(72, 241, 95, 0.795);
-  stroke:rgb(0, 0, 0);
-  stroke-width:1px;
+  stroke: rgb(0, 0, 0);
+  stroke-width: 1px;
   fill-rule: evenodd;
 }
 
-.map-div path:active{
+.map-div path:active {
   fill: #0f703d;
-  stroke-width:1px;
+  stroke-width: 1px;
   stroke: #fff;
 }
 
-.map-div path:focus{
+.map-div path:focus {
   fill: #0f703d;
-  stroke-width:1px;
+  stroke-width: 1px;
   stroke: #fff;
 }
 
-
-
-
-#bukhoro:active{
+#bukhoro:active {
   margin: 2px;
 }
 
-.boxListdist{
+.boxListdist {
   width: 100%;
   height: 150px;
   background: #009344;
   color: rgb(0, 0, 0);
 }
 
-.boxListdist ul li{
+.boxListdist ul li {
   list-style: none;
 }
 
-#UZ828::after{
-  content:'';
+#UZ828::after {
+  content: "";
   display: inline-block;
   width: 5px;
   height: 5px;
   background: red;
 }
 
-.branch-section-title{
+.branch-section-title {
   font-size: 36px;
   font-weight: 600;
   margin-bottom: 100px;
 }
 
-.link-btn-map{
+.link-btn-map {
   background-color: #009344;
   font-size: 18px;
   text-decoration: none;
@@ -76,17 +70,17 @@
   display: flex;
   align-items: center;
 }
-.link-btn-map t{
+.link-btn-map t {
   position: relative;
-  top:-8px  
+  top: -8px;
 }
 
-.boxDistrict h2{
+.boxDistrict h2 {
   position: relative;
   margin: 2rem 0;
 }
 
-.boxDistrict h4{
+.boxDistrict h4 {
   position: relative;
   margin: 2rem 0;
 }
@@ -97,83 +91,124 @@
   box-shadow: 0 20px 40px 0 rgba(0, 147, 68, 0.25);
 }
 
-.icon-container{
-  position: relative;
+.icon-container {
+  /* position: relative; */
+  position: absolute !important;
   width: 100px;
   height: 100px;
-  
+  /* top: 0; */
 }
 
-.icon-container .icon-loc:nth-child(1){
+.icon-loc {
+  width: 25px !important;
+  /* display: block !important; */
+  position: absolute !important;
+}
+
+/* nukus */
+#nukus {
+  position: absolute !important;
+  top: 500% !important;
+  left: 40% !important;
+}
+
+/* xorazm */
+#xorazm {
+  position: absolute !important;
+  top: 900% !important;
+  left: 70% !important;
+}
+
+/* navoi */
+#navoi {
+  position: absolute !important;
+  top: 950% !important;
+  left: 130% !important;
+}
+
+/* samarqand */
+#samarkand {
+  position: absolute !important;
+  top: 1200% !important;
+  left: 170% !important;
+}
+
+/* sirdaryo */
+#sirdaryo {
+  position: absolute !important;
+  top: 1150% !important;
+  left: 240% !important;
+}
+/* surxondaryo */
+#surxondaryo {
+  position: absolute !important;
+  /* top: 100px !important;
+  left: 240px !important; */
+  bottom: 20% !important;
+  right: 20% !important;
+}
+
+/* 
+.icon-container .icon-loc:nth-child(2) {
   width: 25px;
   position: relative;
-  top:-23rem;
-  left:5rem;
+  top: -16rem;
+  left: 14rem;
   cursor: pointer;
 }
 
-.icon-container .icon-loc:nth-child(2){
+.icon-container .icon-loc:nth-child(3) {
   width: 25px;
   position: relative;
-  top:-16rem;
-  left:14rem;
+  top: -19rem;
+  left: 20rem;
   cursor: pointer;
 }
 
-.icon-container .icon-loc:nth-child(3){
+.icon-container .icon-loc:nth-child(4) {
   width: 25px;
   position: relative;
-  top:-19rem;
-  left:20rem;
+  top: -10rem;
+  left: 21rem;
   cursor: pointer;
 }
 
-.icon-container .icon-loc:nth-child(4){
+.icon-container .icon-loc:nth-child(5) {
   width: 25px;
   position: relative;
-  top:-10rem;
-  left:21rem;
+  top: -10rem;
+  left: 23rem;
   cursor: pointer;
 }
 
-
-.icon-container .icon-loc:nth-child(5){
+.icon-container .icon-loc:nth-child(6) {
   width: 25px;
   position: relative;
-  top:-10rem;
-  left:23rem;
+  top: -11rem;
+  left: 10rem;
   cursor: pointer;
 }
 
-.icon-container .icon-loc:nth-child(6){
+.icon-container .icon-loc:nth-child(7) {
   width: 25px;
   position: relative;
-  top:-11rem;
-  left:10rem;
+  top: -12rem;
+  left: 21rem;
   cursor: pointer;
 }
 
-.icon-container .icon-loc:nth-child(7){
+.icon-container .icon-loc:nth-child(8) {
   width: 25px;
   position: relative;
-  top:-12rem;
-  left:21rem;
+  top: -15rem;
+  left: 22rem;
   cursor: pointer;
 }
 
-.icon-container .icon-loc:nth-child(8){
+.icon-container .icon-loc:nth-child(9) {
   width: 25px;
   position: relative;
-  top:-15rem;
-  left:22rem;
+  top: -14rem;
+  left: 23rem;
   cursor: pointer;
-}
-
-.icon-container .icon-loc:nth-child(9){
-  width: 25px;
-  position: relative;
-  top:-14rem;
-  left:23rem;
-  cursor: pointer;
-}
-
+} */

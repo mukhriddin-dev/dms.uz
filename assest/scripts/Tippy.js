@@ -1,62 +1,71 @@
-tippy('#nukus', {
-  content: 'Nukus',
+// 1
+
+tippy("#nukus", {
+  content: "Nukus",
 });
 
-tippy('#navoi', {
-  content: 'Navoi',
+// 2
+tippy("#navoi", {
+  content: "Navoi",
 });
 
-tippy('#navoi2', {
-  content: 'Navoi',
+// 3
+tippy("#xorazm", {
+  content: "Xorazm",
 });
 
+// 4
 
-
-
-tippy('#samarkand', {
-  content: 'Samarqand',
+tippy("#samarkand", {
+  content: "Samarqand",
 });
 
-
-tippy('#sirdaryo', {
-  content: 'Sirdaryo',
+// 5
+tippy("#sirdaryo", {
+  content: "Sirdaryo",
 });
 
-
-tippy('#buhoro', {
-  content: "Buhoro",
+// 6
+tippy("#buhoro", {
+  content: "Buxoro",
 });
 
-
-tippy('#jizzakx', {
+// 7
+tippy("#jizzakx", {
   content: "Jizzax",
 });
 
+// 8
 
-
-
-tippy('#toshkent', {
+tippy("#toshkent", {
   content: "Toshkent",
 });
 
-
-tippy('#fergan', {
+// 9
+tippy("#fergan", {
   content: "Farg'ona",
 });
 
+// 10
 
-
-
-
-tippy('#fergan', {
-  content: "Farg'ona",
+tippy("#namangan", {
+  content: "Namangan",
 });
 
+// 11
 
-
-
-tippy('#fergan', {
-  content: "Farg'ona",
+tippy("#andijon", {
+  content: "Andijon",
 });
 
+// 12
 
+tippy("#qashqadaryo", {
+  content: "Qashqadaryo",
+});
+
+// 13
+
+tippy("#surxondaryo", {
+  content: "Surxondaryo",
+});

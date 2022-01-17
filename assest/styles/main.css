@@ -8,9 +8,9 @@ body {
   font-size: 16px;
 }
 
-/* .container {
-  max-width: 1110px !important;
-} */
+.container {
+  max-width: 1150px !important;
+}
 
 .size-24 {
   font-size: 24px;
