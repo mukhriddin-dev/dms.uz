@@ -56,7 +56,9 @@ ul li {
 .cabinet-btn:hover {
   background-color: #017637;
 }
-
+.cabinet-btn .user_icon{
+  display: none;
+}
 .cabinet-btn__text {
   color: #fff;
   text-align: center;
@@ -698,3 +700,8 @@ footer {
   text-align: center;
   margin-top: 20px;
 }
+
+
+/* header */
+
+
