@@ -96,3 +96,84 @@
   background-color: #017637;
   box-shadow: 0 20px 40px 0 rgba(0, 147, 68, 0.25);
 }
+
+.icon-container{
+  position: relative;
+  /* width: 100px;
+  height: 100px; */
+  
+}
+
+.icon-container .icon-loc:nth-child(1){
+  width: 25px;
+  position: relative;
+  top:-23rem;
+  left:5rem;
+  cursor: pointer;
+}
+
+.icon-container .icon-loc:nth-child(2){
+  width: 25px;
+  position: relative;
+  top:-16rem;
+  left:14rem;
+  cursor: pointer;
+}
+
+.icon-container .icon-loc:nth-child(3){
+  width: 25px;
+  position: relative;
+  top:-19rem;
+  left:20rem;
+  cursor: pointer;
+}
+
+.icon-container .icon-loc:nth-child(4){
+  width: 25px;
+  position: relative;
+  top:-10rem;
+  left:21rem;
+  cursor: pointer;
+}
+
+
+.icon-container .icon-loc:nth-child(5){
+  width: 25px;
+  position: relative;
+  top:-10rem;
+  left:23rem;
+  cursor: pointer;
+}
+
+.icon-container .icon-loc:nth-child(6){
+  width: 25px;
+  position: relative;
+  top:-11rem;
+  left:10rem;
+  cursor: pointer;
+}
+
+.icon-container .icon-loc:nth-child(7){
+  width: 25px;
+  position: relative;
+  top:-12rem;
+  left:21rem;
+  cursor: pointer;
+}
+
+.icon-container .icon-loc:nth-child(8){
+  width: 25px;
+  position: relative;
+  top:-15rem;
+  left:22rem;
+  cursor: pointer;
+}
+
+.icon-container .icon-loc:nth-child(9){
+  width: 25px;
+  position: relative;
+  top:-14rem;
+  left:23rem;
+  cursor: pointer;
+}
+
