@@ -31,225 +31,56 @@
 
   <title>www.dms.uz</title>
 
-  <style>
-    nav {
-      /* height: 6rem; */
-      width: 100vw;
-      /* background-color: #131418; */
-      /* box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2); */
-      /* display: flex; */
-      /* position: fixed; */
-      z-index: 10;
-    }
-
-    /*Styling logo*/
-    /* .logo {
-        padding: 1vh 1vw;
-        text-align: center;
-      }
-      .logo img {
-        height: 5rem;
-        width: 5rem;
-      } */
-
-    /*Styling Links*/
-    .nav-links {
-      display: flex;
-      list-style: none;
-      /* width: 88vw; */
-      padding: 0 0.7vw;
-      justify-content: space-evenly;
-      align-items: center;
-      text-transform: uppercase;
-    }
-
-    .nav-links li a {
-      text-decoration: none;
-      /* margin: 0 0.7vw; */
-    }
-
-    /* .nav-links li a:hover {
-        color: #61dafb;
-      } */
-    .nav-links li {
-      position: relative;
-    }
-
-    /* .nav-links li a::before {
-        content: "";
-        display: block;
-        height: 3px;
-        width: 0%;
-        background-color: #61dafb;
-        position: absolute;
-        transition: all ease-in-out 250ms;
-        margin: 0 0 0 10%;
-      } */
-    .nav-links li a:hover::before {
-      /* width: 80%; */
-    }
-
-    /*Styling Hamburger Icon*/
-    .hamburger div {
-      width: 30px;
-      height: 3px;
-      background: #f2f5f7;
-      margin: 5px;
-      transition: all 0.3s ease;
-    }
-
-    .hamburger {
-      display: none;
-    }
-
-    /*Stying for small screens*/
-    @media screen and (max-width: 992px) {
-      nav {
-        position: fixed;
-        z-index: 3;
-      }
-
-      .hamburger {
-        display: block;
-        position: absolute;
-        cursor: pointer;
-        right: 5%;
-        top: 50%;
-        transform: translate(-5%, -50%);
-        z-index: 2;
-        transition: all 0.7s ease;
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        background-color: red;
-      }
-
-      .nav-links {
-        position: fixed;
-        background: #009344;
-        height: 100vh;
-        width: 100%;
-        flex-direction: column;
-        clip-path: circle(50px at 90% -20%);
-        -webkit-clip-path: circle(50px at 90% -10%);
-        transition: all 1s ease-out;
-        pointer-events: none;
-      }
-
-      .nav-links.open {
-        clip-path: circle(1200px at 90% -10%);
-        -webkit-clip-path: circle(1200px at 90% -10%);
-        pointer-events: all;
-        top: 0;
-        left: 0;
-      }
-
-      .nav-links li {
-        opacity: 0;
-      }
-
-      .nav-links li:nth-child(1) {
-        transition: all 0.5s ease 0.2s;
-      }
-
-      .nav-links li:nth-child(2) {
-        transition: all 0.5s ease 0.4s;
-      }
-
-      .nav-links li:nth-child(3) {
-        transition: all 0.5s ease 0.6s;
-      }
-
-      .nav-links li:nth-child(4) {
-        transition: all 0.5s ease 0.7s;
-      }
-
-      .nav-links li:nth-child(5) {
-        transition: all 0.5s ease 0.8s;
-      }
-
-      .nav-links li:nth-child(6) {
-        transition: all 0.5s ease 0.9s;
-        margin: 0;
-      }
-
-      .nav-links li:nth-child(7) {
-        transition: all 0.5s ease 1s;
-        margin: 0;
-      }
-
-      li.fade {
-        opacity: 1;
-      }
-    }
-
-    /*Animating Hamburger Icon on Click*/
-    .toggle .line1 {
-      transform: rotate(-45deg) translate(-5px, 6px);
-    }
-
-    .toggle .line2 {
-      transition: all 0.7s ease;
-      width: 0;
-    }
-
-    .toggle .line3 {
-      transform: rotate(45deg) translate(-5px, -6px);
-    }
-  </style>
 </head>
 
 <body>
   <!-- ------------------------------- Header -------------------------------- -->
-  <header>
-    <nav class="container-fluid">
-      <div class="hamburger">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
-      </div>
-      <ul class="nav-links">
-        <div class="logo">
-          <img src="./assest/images/logo/logo.png" alt="Logo Image" class="logo-img" />
+  <!-- <nav class="navbar" style="background-color: yellowgreen;">
+    <div class="container">
+      <section class="wrapper">
+   
+        <button type="button" class="burger" id="burger">
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+        </button>
+        <div class="menu" id="menu">
+          <ul class="menu-inner">
+            <a href="./index.html" class="brand"> <img src="./assest/images/logo/logo.png" alt="Logo Image" class="logo-img" /></a>
+            <li>
+              <a href="#" class="menu-link">Главная</a>
+            </li>
+            <li>
+              <a href="./assest/pages/about.html" class="menu-link">О компании</a>
+            </li>
+            <li>
+              <a href="./assest/pages/treking.html" class="menu-link">Трекинг</a>
+            </li>
+            <li>
+              <a href="./assest/pages/calculator.html" class="menu-link">Калькулятор</a>
+            </li>
+            <li>
+              <a href="./assest/pages/tarif.html" class="menu-link">Тарифы</a>
+            </li>
+            <li>
+              <a href="./assest/pages/news.html" class="menu-link">Новости</a>
+            </li>
+            <li>
+              <a href="./assest/pages/filial.html" class="menu-link">Филиалы</a>
+            </li>
+            <li>
+              <a href="./assest/pages/contact.html" class="menu-link">Контакты</a>
+            </li>
+            <div class="cabinet-btn">
+              <p class="cabinet-btn__text">Личный кабинет</p>
+            </div>
+          </ul>
+          
         </div>
-        <li>
-          <a href="#" class="menu__link">Главная</a>
-        </li>
-        <li>
-          <a href="./assest/pages/about.html" class="menu__link">О компании</a>
-        </li>
-        <li>
-          <a href="./assest/pages/treking.html" class="menu__link">Трекинг</a>
-        </li>
-        <li>
-          <a href="./assest/pages/calculator.html" class="menu__link">Калькулятор</a>
-        </li>
-        <li>
-          <a href="./assest/pages/tarif.html" class="menu__link">Тарифы</a>
-        </li>
-        <li>
-          <a href="./assest/pages/news.html" class="menu__link">Новости</a>
-        </li>
-        <li>
-          <a href="./assest/pages/filial.html" class="menu__link">Филиалы</a>
-        </li>
-        <li>
-          <a href="./assest/pages/contact.html" class="menu__link">Контакты</a>
-        </li>
-        <!-- Cabinet btn -->
-        <div class="cabinet-btn d-inline-block">
-          <p class="cabinet-btn__text">Личный кабинет</p>
-        </div>
-
-        <!-- active menu btn -->
-        <div class="line">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
-        </div>
-      </ul>
-    </nav>
-  </header>
+      </section>
+    </div>
+  </nav> -->
 
   <!-- ---------------------------- Hero section ----------------------------- -->
   <section class="hero px-3 position-relative2">
@@ -1000,6 +831,7 @@
   <script src="./assest/scripts/news.js"></script>
 
   <!-- ------------------------------- scripts ------------------------------- -->
+  <script src="./assest/scripts/navbar.js"></script>
   <script src="./assest/scripts/calculator.js"></script>
   <script src="./assest/scripts/bootstrap.min.js"></script>
   <script src="./assest/scripts/jQuery.js"></script>

@@ -4,6 +4,7 @@
 @import url(contact.css);
 @import url(news.css);
 @import url(swiper.min.css);
+@import url(navbar.css);
 
 *,
 *::after,
@@ -45,8 +46,10 @@ ul li {
 /* Cabinet btn style */
 .cabinet-btn {
   border: 1px solid #fff;
-  padding: 10px 30px;
+  /* padding: 10px 30px; */
+  padding: 0 !important;
   /* margin-left: 10px; */
+  margin: 0 !important;
   cursor: pointer;
   transition: 0.3s ease all;
 }
