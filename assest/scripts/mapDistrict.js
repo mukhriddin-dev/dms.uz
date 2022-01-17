@@ -282,3 +282,5 @@ bukhoro.addEventListener('mousedown', ()=>{
                                     <h4>${district[13].tel}</h4>
                                     <a href="#" class="d-inline-block link-btn-map"><t>Посмотреть на карте</t></a>`;
                                     })
+
+                                    // onasini emsin tugadi
