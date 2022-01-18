@@ -13,6 +13,10 @@
 
 /* --------------------------------- Header --------------------------------- */
 
+body {
+  overflow-x: hidden;
+}
+
 header {
   background-color: #009344;
   display: flex;
@@ -77,10 +81,7 @@ ul li {
   margin-bottom: 0;
 }
 
-
 /* burger */
-
-
 
 .menu {
   background-color: transparent;
@@ -91,8 +92,8 @@ ul li {
   width: 50px;
   height: 45px;
   position: relative;
-  top:-27px;
-  left:45px;
+  top: -27px;
+  left: 45px;
 }
 .lines {
   fill: none;
@@ -128,7 +129,6 @@ ul li {
   stroke-dashoffset: -134;
   stroke-width: 6;
 }
-
 
 /* ------------------------------ Hero section ------------------------------ */
 
@@ -586,462 +586,476 @@ footer {
   opacity: 70%;
 }
 
-
 /* ok */
-@media only screen and (max-width: 992px){
-  .header{
+
+@media only screen and (max-width: 870px) {
+  .cabinet-btn {
+    margin-right: 15%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .header {
     display: flex;
     position: relative;
     background: #009344;
     z-index: 88;
-  
+    justify-content: space-between;
   }
 
-  .logo-img{
+  .logo-img {
     width: 110px;
   }
-  .menu{
+  .menu {
     display: flex;
     position: relative;
-    left: 95px;
+    /* left: 95px; */
+    /* left: -10%; */
+    left: 20px;
+    /* right: 50px !important; */
   }
 
-  
-
-  .ul-nav{
+  .ul-nav {
     display: flex;
-    position:absolute;
+    position: absolute;
     flex-direction: column;
     width: 100%;
     max-height: 0px;
     overflow: hidden;
     z-index: 3;
-    top:6rem;
-    transition:  0.3s ease;
+    top: 6rem;
+    transition: 0.3s ease;
     justify-content: space-between;
-    background-color:  #000000b2;
+    background-color: #000000b2;
     backdrop-filter: blur(3px);
-
+    left: 0;
   }
 
-  .ul-nav li:nth-child(1){
+  /* .ul-nav li:nth-child(1) {
     margin: 15px 0px 15px 60px;
     font-size: 24px;
   }
 
-  .ul-nav li:nth-child(2){
+  .ul-nav li:nth-child(2) {
     margin: 15px 0px 15px 60px;
     font-size: 24px;
   }
 
-  .ul-nav li:nth-child(3){
+  .ul-nav li:nth-child(3) {
     margin: 15px 0px 15px 60px;
     font-size: 24px;
   }
 
-  .ul-nav li:nth-child(4){
+  .ul-nav li:nth-child(4) {
     margin: 15px 0px 15px 60px;
     font-size: 24px;
   }
 
-  .ul-nav li:nth-child(5){
+  .ul-nav li:nth-child(5) {
     margin: 15px 0px 15px 60px;
     font-size: 24px;
   }
 
-  .ul-nav li:nth-child(6){
+  .ul-nav li:nth-child(6) {
     margin: 15px 0px 15px 60px;
     font-size: 24px;
   }
 
-  .ul-nav li:nth-child(7){
+  .ul-nav li:nth-child(7) {
     margin: 15px 0px 15px 60px;
     font-size: 24px;
   }
 
-  .ul-nav li:nth-child(8){
+  .ul-nav li:nth-child(8) {
     margin: 15px 0px 45px 60px;
     font-size: 24px;
     padding-bottom: 15px;
   }
 
-  .ul-nav li a:nth-child(1){
+  .ul-nav li a:nth-child(1) {
     font-size: 24px;
     margin: 14px;
   }
 
-  .ul-nav li a:nth-child(2){
+  .ul-nav li a:nth-child(2) {
     font-size: 24px;
     margin: 14px;
   }
 
-  .ul-nav li a:nth-child(3){
+  .ul-nav li a:nth-child(3) {
     font-size: 24px;
     margin: 14px;
   }
 
-  .ul-nav li a:nth-child(4){
+  .ul-nav li a:nth-child(4) {
     font-size: 24px;
     margin: 14px;
   }
 
-  .ul-nav li a:nth-child(5){
+  .ul-nav li a:nth-child(5) {
     font-size: 24px;
     margin: 14px;
   }
 
-  .ul-nav li a:nth-child(6){
+  .ul-nav li a:nth-child(6) {
     font-size: 24px;
     margin: 14px;
   }
 
-  .ul-nav li a:nth-child(7){
+  .ul-nav li a:nth-child(7) {
     font-size: 24px;
     margin: 14px;
     margin-bottom: 30px;
-  }
+  } */
 
-  .line{
+  .line {
     position: relative;
     right: 1rem;
     display: none;
     width: 36px;
   }
 
-  .line .line1 , .line2 ,  .line3{
-   width: 36px;
-   height: 3.5px;
-   border-radius: 8px;
-   transition: 0.3s ease;
-   
+  .line .line1,
+  .line2,
+  .line3 {
+    width: 36px;
+    height: 3.5px;
+    border-radius: 8px;
+    transition: 0.3s ease;
   }
 
-  
-
-  .cabinet-btn{
+  .cabinet-btn {
     display: inline-block;
     position: relative;
-    left:14rem
+    left: 14rem;
   }
 
-  .user_cabinet{
-    display: inline-block;
+  .user_cabinet {
+    /* display: inline-block; */
     color: #fff;
-    width: 200px;
+    /* width: 200px; */
     display: flex;
     justify-content: flex-end;
   }
 
-  .user_cabinet .user{
+  .user_cabinet .user {
     width: 30px;
     display: none;
     position: relative;
-    
   }
-
 }
 
-
-
-
-@media only screen and (max-width: 768px){
-  .header{
+@media only screen and (max-width: 768px) {
+  .header {
     display: flex;
     position: relative;
     background: #009344;
+    padding-left: 20px;
+    padding-right: 20px;
     z-index: 88;
+    justify-content: space-between;
   }
 
-  .logo-img{
+  .logo-img {
     width: 110px;
   }
 
-  .menu{
+  .menu {
     display: flex;
     position: relative;
     left: 25px;
   }
 
-  .ul-nav{
+  .ul-nav {
     display: flex;
-    position:absolute;
+    position: absolute;
     flex-direction: column;
-    background-color:  #000000b2;
+    background-color: #000000b2;
     backdrop-filter: blur(3px);
     width: 100%;
     max-height: 0px;
     overflow: hidden;
     z-index: 3;
-    top:6rem;
-    transition:  0.3s ease;
+    top: 6rem;
+    transition: 0.3s ease;
     justify-content: space-between;
-
+    left: 0;
   }
 
-  .ul-nav li:nth-child(1){
+  /* .ul-nav li:nth-child(1) {
     margin: 15px 0px 15px 60px;
     font-size: 24px;
   }
 
-  .ul-nav li:nth-child(2){
+  .ul-nav li:nth-child(2) {
     margin: 15px 0px 15px 60px;
     font-size: 24px;
   }
 
-  .ul-nav li:nth-child(3){
+  .ul-nav li:nth-child(3) {
     margin: 15px 0px 15px 60px;
     font-size: 24px;
   }
 
-  .ul-nav li:nth-child(4){
+  .ul-nav li:nth-child(4) {
     margin: 15px 0px 15px 60px;
     font-size: 24px;
   }
 
-  .ul-nav li:nth-child(5){
+  .ul-nav li:nth-child(5) {
     margin: 15px 0px 15px 60px;
     font-size: 24px;
   }
 
-  .ul-nav li:nth-child(6){
+  .ul-nav li:nth-child(6) {
     margin: 15px 0px 15px 60px;
     font-size: 24px;
   }
 
-  .ul-nav li:nth-child(7){
+  .ul-nav li:nth-child(7) {
     margin: 15px 0px 15px 60px;
     font-size: 24px;
   }
 
-  .ul-nav li:nth-child(8){
+  .ul-nav li:nth-child(8) {
     margin: 15px 0px 45px 60px;
     font-size: 24px;
     padding-bottom: 15px;
   }
 
-  .ul-nav li a:nth-child(1){
+  .ul-nav li a:nth-child(1) {
     font-size: 24px;
     margin: 14px;
   }
 
-  .ul-nav li a:nth-child(2){
+  .ul-nav li a:nth-child(2) {
     font-size: 24px;
     margin: 14px;
   }
 
-  .ul-nav li a:nth-child(3){
+  .ul-nav li a:nth-child(3) {
     font-size: 24px;
     margin: 14px;
   }
 
-  .ul-nav li a:nth-child(4){
+  .ul-nav li a:nth-child(4) {
     font-size: 24px;
     margin: 14px;
   }
 
-  .ul-nav li a:nth-child(5){
+  .ul-nav li a:nth-child(5) {
     font-size: 24px;
     margin: 14px;
   }
 
-  .ul-nav li a:nth-child(6){
+  .ul-nav li a:nth-child(6) {
     font-size: 24px;
     margin: 14px;
   }
 
-  .ul-nav li a:nth-child(7){
+  .ul-nav li a:nth-child(7) {
     font-size: 24px;
     margin: 14px;
     margin-bottom: 30px;
-  }
+  } */
 
-  .line{
+  .line {
     position: relative;
     right: 1rem;
     display: none;
     width: 36px;
   }
 
-  .line .line1 , .line2 ,  .line3{
-   width: 36px;
-   height: 3.5px;
-   border-radius: 8px;
-   transition: 0.3s ease;
-   
+  .line .line1,
+  .line2,
+  .line3 {
+    width: 36px;
+    height: 3.5px;
+    border-radius: 8px;
+    transition: 0.3s ease;
   }
 
-  
-
-  .cabinet-btn{
+  .cabinet-btn {
     display: none;
   }
 
-  .user_cabinet{
+  .user_cabinet {
     display: inline-block;
     color: #fff;
-    width: 200px;
+    /* width: 200px; */
     display: flex;
     justify-content: flex-end;
   }
 
-  .user_cabinet .user{
+  .user_cabinet .user {
     width: 30px;
     display: inline-block;
     position: relative;
-    left:0px
+    left: 0px;
   }
-
 }
 
+@media only screen and (max-width: 992px) {
+  .menu__link,
+  .menu__link:hover {
+    display: block;
+    font-size: 1.2rem;
+    margin: 0.5rem;
+  }
+}
 
-@media only screen and (max-width: 576px){
-  .header{
+@media only screen and (max-width: 576px) {
+  .menu__link,
+  .menu__link:hover {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+  }
+
+  .header {
     display: flex;
     position: relative;
     background: #009344;
     z-index: 88;
   }
 
-  .logo-img{
+  .logo-img {
     width: 110px;
   }
 
-  .menu{
+  .menu {
     display: flex;
     position: relative;
-    left: 8px;
+    /* left: 8px; */
   }
 
-  .ul-nav{
+  .ul-nav {
     display: flex;
-    position:absolute;
+    position: absolute;
     flex-direction: column;
-    background-color:  #000000b2;
+    background-color: #000000b2;
     backdrop-filter: blur(3px);
     width: 100%;
     max-height: 0px;
     overflow: hidden;
     z-index: 3;
-    top:6rem;
-    transition:  0.3s ease;
+    top: 6rem;
+    transition: 0.3s ease;
     justify-content: space-between;
-
+    left: 0;
   }
 
-  .ul-nav li:nth-child(1){
+  .ul-nav li a,
+  .ul-nav li {
+    /* margin: 15px 0px 15px 60px; */
+    margin: 10px 0 !important;
+    font-size: 1rem !important;
+  }
+  /* 
+  .ul-nav li:nth-child(2) {
     margin: 15px 0px 15px 60px;
     font-size: 24px;
   }
 
-  .ul-nav li:nth-child(2){
+  .ul-nav li:nth-child(3) {
     margin: 15px 0px 15px 60px;
     font-size: 24px;
   }
 
-  .ul-nav li:nth-child(3){
+  .ul-nav li:nth-child(4) {
     margin: 15px 0px 15px 60px;
     font-size: 24px;
   }
 
-  .ul-nav li:nth-child(4){
+  .ul-nav li:nth-child(5) {
     margin: 15px 0px 15px 60px;
     font-size: 24px;
   }
 
-  .ul-nav li:nth-child(5){
+  .ul-nav li:nth-child(6) {
     margin: 15px 0px 15px 60px;
     font-size: 24px;
   }
 
-  .ul-nav li:nth-child(6){
+  .ul-nav li:nth-child(7) {
     margin: 15px 0px 15px 60px;
     font-size: 24px;
   }
 
-  .ul-nav li:nth-child(7){
-    margin: 15px 0px 15px 60px;
-    font-size: 24px;
-  }
-
-  .ul-nav li:nth-child(8){
+  .ul-nav li:nth-child(8) {
     margin: 15px 0px 45px 60px;
     font-size: 24px;
     padding-bottom: 15px;
   }
 
-  .ul-nav li a:nth-child(1){
+  .ul-nav li a:nth-child(1) {
     font-size: 24px;
     margin: 14px;
   }
 
-  .ul-nav li a:nth-child(2){
+  .ul-nav li a:nth-child(2) {
     font-size: 24px;
     margin: 14px;
   }
 
-  .ul-nav li a:nth-child(3){
+  .ul-nav li a:nth-child(3) {
     font-size: 24px;
     margin: 14px;
   }
 
-  .ul-nav li a:nth-child(4){
+  .ul-nav li a:nth-child(4) {
     font-size: 24px;
     margin: 14px;
   }
 
-  .ul-nav li a:nth-child(5){
+  .ul-nav li a:nth-child(5) {
     font-size: 24px;
     margin: 14px;
   }
 
-  .ul-nav li a:nth-child(6){
+  .ul-nav li a:nth-child(6) {
     font-size: 24px;
     margin: 14px;
   }
 
-  .ul-nav li a:nth-child(7){
+  .ul-nav li a:nth-child(7) {
     font-size: 24px;
     margin: 14px;
     margin-bottom: 30px;
-  }
+  } */
 
-  .line{
+  .line {
     position: relative;
     right: 1rem;
     display: none;
     width: 36px;
   }
 
-  .line .line1 , .line2 ,  .line3{
-   width: 36px;
-   height: 3.5px;
-   border-radius: 8px;
-   transition: 0.3s ease;
-   
+  .line .line1,
+  .line2,
+  .line3 {
+    width: 36px;
+    height: 3.5px;
+    border-radius: 8px;
+    transition: 0.3s ease;
   }
 
-  
-
-  .cabinet-btn{
+  .cabinet-btn {
     display: none;
   }
 
-  .user_cabinet{
+  .user_cabinet {
     display: inline-block;
     color: #fff;
-    width: 200px;
+    /* width: 200px; */
     display: flex;
     justify-content: flex-end;
   }
 
-  .user_cabinet .user{
+  .user_cabinet .user {
     width: 30px;
     display: inline-block;
     position: relative;
-    left:-10px
+    left: -10px;
   }
-
 }
-
-
-
