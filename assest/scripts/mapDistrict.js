@@ -52,7 +52,7 @@ bukhoro.addEventListener("click", () => {
   <h2 class="branch-section-title ">Наши филиалы</h2>
   <h4>Город ${district[0].name}</h4>
   <h4>${district[0].tel}</h4>
-  <a href=${district[0].loc} class="d-inline-block link-btn-map"><t>Посмотреть на карте</t></a>`;
+  <a href=${district[0].loc} target="_blank" class="d-inline-block link-btn-map"><t>Посмотреть на карте</t></a>`;
 });
 
 bukhoro.addEventListener("click", () => {
@@ -60,7 +60,7 @@ bukhoro.addEventListener("click", () => {
     <h2 class="branch-section-title ">Наши филиалы</h2>
     <h4>Город ${district[0].name}</h4>
     <h4>${district[0].tel}</h4>
-    <a href=${district[0].loc} class="d-inline-block link-btn-map"><t>Посмотреть на карте</t></a>`;
+    <a href=${district[0].loc} target="_blank"  class="d-inline-block link-btn-map"><t>Посмотреть на карте</t></a>`;
 });
 
 // khorezem
@@ -71,14 +71,14 @@ khorezem.addEventListener("click", () => {
       <h2 class="branch-section-title ">Наши филиалы</h2>
       <h4>Город ${district[1].name}</h4>
       <h4>${district[1].tel}</h4>
-      <a href=${district[0].loc} class="d-inline-block link-btn-map"><t>Посмотреть на карте</t></a>`;
+      <a href=${district[0].loc} target="_blank" class="d-inline-block link-btn-map"><t>Посмотреть на карте</t></a>`;
 });
 khorezem.addEventListener("mouseover", () => {
   boxDistrict.innerHTML = `
         <h2 class="branch-section-title ">Наши филиалы</h2>
         <h4>Город ${district[1].name}</h4>
         <h4>${district[1].tel}</h4>
-        <a href=${district[1].loc} class="d-inline-block link-btn-map"><t>Посмотреть на карте</t></a>`;
+        <a href=${district[1].loc} target="_blank" class="d-inline-block link-btn-map"><t>Посмотреть на карте</t></a>`;
 });
 
 // karakalpakstan
@@ -89,14 +89,14 @@ karakalpakstan.addEventListener("clikc", () => {
           <h2 class="branch-section-title ">Наши филиалы</h2>
           <h4>Город ${district[2].name}</h4>
           <h4>${district[2].tel}</h4>
-          <a href=${district[2].loc} class="d-inline-block link-btn-map"><t>Посмотреть на карте</t></a>`;
+          <a href=${district[2].loc} target="_blank" class="d-inline-block link-btn-map"><t>Посмотреть на карте</t></a>`;
 });
 karakalpakstan.addEventListener("mouseover", () => {
   boxDistrict.innerHTML = `
             <h2 class="branch-section-title ">Наши филиалы</h2>
             <h4>Город ${district[2].name}</h4>
             <h4>${district[2].tel}</h4>
-            <a href=${district[2].loc} class="d-inline-block link-btn-map"><t>Посмотреть на карте</t></a>`;
+            <a href=${district[2].loc} target="_blank" class="d-inline-block link-btn-map"><t>Посмотреть на карте</t></a>`;
 });
 
 // navoi
@@ -106,14 +106,14 @@ navoi.addEventListener("click", () => {
               <h2 class="branch-section-title ">Наши филиалы</h2>
               <h4>Город ${district[3].name}</h4>
               <h4>${district[3].tel}</h4>
-              <a href=${district[3].loc} class="d-inline-block link-btn-map"><t>Посмотреть на карте</t></a>`;
+              <a href=${district[3].loc} target="_blank"  class="d-inline-block link-btn-map"><t>Посмотреть на карте</t></a>`;
 });
 navoi.addEventListener("mouseover", () => {
   boxDistrict.innerHTML = `
                 <h2 class="branch-section-title ">Наши филиалы</h2>
                 <h4>Город ${district[3].name}</h4>
                 <h4>${district[3].tel}</h4>
-                <a href=${district[3].loc} class="d-inline-block link-btn-map"><t>Посмотреть на карте</t></a>`;
+                <a href=${district[3].loc} target="_blank" class="d-inline-block link-btn-map"><t>Посмотреть на карте</t></a>`;
 });
 
 // samarkand
@@ -123,14 +123,14 @@ samarkand.addEventListener("click", () => {
                   <h2 class="branch-section-title ">Наши филиалы</h2>
                   <h4>Город ${district[4].name}</h4>
                   <h4>${district[4].tel}</h4>
-                  <a href=${district[4].loc} class="d-inline-block link-btn-map"><t>Посмотреть на карте</t></a>`;
+                  <a href=${district[4].loc} target="_blank" class="d-inline-block link-btn-map"><t>Посмотреть на карте</t></a>`;
 });
 samarkand.addEventListener("mouseover", () => {
   boxDistrict.innerHTML = `
                     <h2 class="branch-section-title ">Наши филиалы</h2>
                     <h4>Город ${district[4].name}</h4>
                     <h4>${district[4].tel}</h4>
-                    <a href=${district[4].loc} class="d-inline-block link-btn-map"><t>Посмотреть на карте</t></a>`;
+                    <a href=${district[4].loc} target="_blank" class="d-inline-block link-btn-map"><t>Посмотреть на карте</t></a>`;
 });
 
 //
@@ -142,14 +142,14 @@ kashkadarya.addEventListener("click", () => {
               <h2 class="branch-section-title ">Наши филиалы</h2>
               <h4>Город ${district[5].name}</h4>
               <h4>${district[5].tel}</h4>
-              <a href=${district[0].loc} class="d-inline-block link-btn-map"><t>Посмотреть на карте</t></a>`;
+              <a href=${district[0].loc} target="_blank" class="d-inline-block link-btn-map"><t>Посмотреть на карте</t></a>`;
 });
 kashkadarya.addEventListener("mouseover", () => {
   boxDistrict.innerHTML = `
                 <h2 class="branch-section-title ">Наши филиалы</h2>
                 <h4>Город ${district[5].name}</h4>
                 <h4>${district[5].tel}</h4>
-                <a href=${district[5].loc} class="d-inline-block link-btn-map"><t>Посмотреть на карте</t></a>`;
+                <a href=${district[5].loc} target="_blank" class="d-inline-block link-btn-map"><t>Посмотреть на карте</t></a>`;
 });
 
 // surkhandarya
@@ -159,14 +159,14 @@ surkhandarya.addEventListener("click", () => {
                   <h2 class="branch-section-title ">Наши филиалы</h2>
                   <h4>Город ${district[6].name}</h4>
                   <h4>${district[6].tel}</h4>
-                  <a href=${district[6].loc} class="d-inline-block link-btn-map"><t>Посмотреть на карте</t></a>`;
+                  <a href=${district[6].loc} target="_blank" class="d-inline-block link-btn-map"><t>Посмотреть на карте</t></a>`;
 });
 surkhandarya.addEventListener("mouseover", () => {
   boxDistrict.innerHTML = `
                     <h2 class="branch-section-title ">Наши филиалы</h2>
                     <h4>Город ${district[6].name}</h4>
                     <h4>${district[6].tel}</h4>
-                    <a href=${district[6].loc} class="d-inline-block link-btn-map"><t>Посмотреть на карте</t></a>`;
+                    <a href=${district[6].loc} target="_blank" class="d-inline-block link-btn-map"><t>Посмотреть на карте</t></a>`;
 });
 
 // kashkadarya
@@ -176,14 +176,14 @@ andijon.addEventListener("click", () => {
                       <h2 class="branch-section-title ">Наши филиалы</h2>
                       <h4>Город ${district[7].name}</h4>
                       <h4>${district[7].tel}</h4>
-                      <a href=${district[7].loc} class="d-inline-block link-btn-map"><t>Посмотреть на карте</t></a>`;
+                      <a href=${district[7].loc} target="_blank" class="d-inline-block link-btn-map"><t>Посмотреть на карте</t></a>`;
 });
 andijon.addEventListener("mouseover", () => {
   boxDistrict.innerHTML = `
                         <h2 class="branch-section-title ">Наши филиалы</h2>
                         <h4>Город ${district[7].name}</h4>
                         <h4>${district[7].tel}</h4>
-                        <a href=${district[7].loc} class="d-inline-block link-btn-map"><t>Посмотреть на карте</t></a>`;
+                        <a href=${district[7].loc} target="_blank" class="d-inline-block link-btn-map"><t>Посмотреть на карте</t></a>`;
 });
 
 // farghona
@@ -193,14 +193,14 @@ farghona.addEventListener("click", () => {
                           <h2 class="branch-section-title ">Наши филиалы</h2>
                           <h4>Город ${district[8].name}</h4>
                           <h4>${district[8].tel}</h4>
-                          <a href=${district[8].loc} class="d-inline-block link-btn-map"><t>Посмотреть на карте</t></a>`;
+                          <a href=${district[8].loc} target="_blank" class="d-inline-block link-btn-map"><t>Посмотреть на карте</t></a>`;
 });
 farghona.addEventListener("mouseover", () => {
   boxDistrict.innerHTML = `
                             <h2 class="branch-section-title ">Наши филиалы</h2>
                             <h4>Город ${district[8].name}</h4>
                             <h4>${district[8].tel}</h4>
-                            <a href=${district[8].loc} class="d-inline-block link-btn-map"><t>Посмотреть на карте</t></a>`;
+                            <a href=${district[8].loc} target="_blank" class="d-inline-block link-btn-map"><t>Посмотреть на карте</t></a>`;
 });
 
 // namangan
@@ -210,14 +210,14 @@ namangan.addEventListener("click", () => {
                           <h2 class="branch-section-title ">Наши филиалы</h2>
                           <h4>Город ${district[9].name}</h4>
                           <h4>${district[9].tel}</h4>
-                          <a href=${district[9].loc} class="d-inline-block link-btn-map"><t>Посмотреть на карте</t></a>`;
+                          <a href=${district[9].loc}target="_blank"  target="_blank" class="d-inline-block link-btn-map"><t>Посмотреть на карте</t></a>`;
 });
 namangan.addEventListener("mouseover", () => {
   boxDistrict.innerHTML = `
                             <h2 class="branch-section-title ">Наши филиалы</h2>
                             <h4>Город ${district[9].name}</h4>
                             <h4>${district[9].tel}</h4>
-                            <a href=${district[9].loc} class="d-inline-block link-btn-map"><t>Посмотреть на карте</t></a>`;
+                            <a href=${district[9].loc} target="_blank" class="d-inline-block link-btn-map"><t>Посмотреть на карте</t></a>`;
 });
 
 // jizzakh
@@ -227,7 +227,7 @@ jizzakh.addEventListener("click", () => {
                           <h2 class="branch-section-title ">Наши филиалы</h2>
                           <h4>Город ${district[10].name}</h4>
                           <h4>${district[10].tel}</h4>
-                          <a href=${district[10].loc} class="d-inline-block link-btn-map"><t>Посмотреть на карте</t></a>`;
+                          <a href=${district[10].loc} target="_blank" class="d-inline-block link-btn-map"><t>Посмотреть на карте</t></a>`;
 });
 
 jizzakh.addEventListener("mouseover", () => {
@@ -235,7 +235,7 @@ jizzakh.addEventListener("mouseover", () => {
                             <h2 class="branch-section-title ">Наши филиалы</h2>
                             <h4>Город ${district[10].name}</h4>
                             <h4>${district[10].tel}</h4>
-                            <a href=${district[10].loc} class="d-inline-block link-btn-map"><t>Посмотреть на карте</t></a>`;
+                            <a href=${district[10].loc} target="_blank" class="d-inline-block link-btn-map"><t>Посмотреть на карте</t></a>`;
 });
 
 //  sirdaryo
@@ -245,7 +245,7 @@ sirdaryo.addEventListener("click", () => {
                                   <h2 class="branch-section-title ">Наши филиалы</h2>
                                   <h4>Город ${district[11].name}</h4>
                                   <h4>${district[11].tel}</h4>
-                                  <a href=${district[11].loc} class="d-inline-block link-btn-map"><t>Посмотреть на карте</t></a>`;
+                                  <a href=${district[11].loc} target="_blank"  class="d-inline-block link-btn-map"><t>Посмотреть на карте</t></a>`;
 });
 
 sirdaryo.addEventListener("mouseover", () => {
@@ -253,7 +253,7 @@ sirdaryo.addEventListener("mouseover", () => {
                                     <h2 class="branch-section-title ">Наши филиалы</h2>
                                     <h4>Город ${district[11].name}</h4>
                                     <h4>${district[11].tel}</h4>
-                                    <a href=${district[11].loc} class="d-inline-block link-btn-map"><t>Посмотреть на карте</t></a>`;
+                                    <a href=${district[11].loc} target="_blank"  class="d-inline-block link-btn-map"><t>Посмотреть на карте</t></a>`;
 });
 
 // toshkent
@@ -263,7 +263,7 @@ toshkent.addEventListener("click", () => {
                               <h2 class="branch-section-title ">Наши филиалы</h2>
                               <h4>Город ${district[12].name}</h4>
                               <h4>${district[12].tel}</h4>
-                              <a href=${district[12].loc} class="d-inline-block link-btn-map"><t>Посмотреть на карте</t></a>`;
+                              <a href=${district[12].loc} target="_blank"  class="d-inline-block link-btn-map"><t>Посмотреть на карте</t></a>`;
 });
 
 toshkent.addEventListener("mouseover", () => {
@@ -271,7 +271,7 @@ toshkent.addEventListener("mouseover", () => {
                                 <h2 class="branch-section-title ">Наши филиалы</h2>
                                 <h4>Город ${district[12].name}</h4>
                                 <h4>${district[12].tel}</h4>
-                                <a href=${district[12].loc} class="d-inline-block link-btn-map"><t>Посмотреть на карте</t></a>`;
+                                <a href=${district[12].loc} target="_blank"  class="d-inline-block link-btn-map"><t>Посмотреть на карте</t></a>`;
 });
 
 // toshkentCity.addEventListener("click", () => {
