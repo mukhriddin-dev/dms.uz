@@ -219,7 +219,7 @@ ul li {
 }
 .benefits-section-title {
   font-size: 36px;
-  font-weight: 600;
+  /* font-weight: 600; */
   margin-bottom: 80px;
 }
 
@@ -321,7 +321,7 @@ ul li {
 /* ----------------------------- Product section ---------------------------- */
 .products-section-title {
   font-size: 36px;
-  font-weight: 600;
+  /* font-weight: 600; */
   margin-bottom: 100px;
 }
 .product-box {

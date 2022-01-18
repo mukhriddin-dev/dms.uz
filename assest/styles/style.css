@@ -43,18 +43,18 @@ ul li {
   font-size: 14px;
 }
 
-.cabinet-btn a{
-text-decoration: none;
+.cabinet-btn a {
+  text-decoration: none;
 }
 
-.user_cabinet{
+.user_cabinet {
   display: none;
 }
 
 .cabinet-btn:hover {
   background-color: #017637;
 }
-.cabinet-btn .user_icon{
+.cabinet-btn .user_icon {
   display: none;
 }
 .cabinet-btn__text {
@@ -62,8 +62,6 @@ text-decoration: none;
   text-align: center;
   margin: 0;
 }
-
-
 
 /* HERO SECTION */
 
@@ -324,7 +322,7 @@ input[type="range"]::-webkit-slider-thumb {
 /* ******Products section****** */
 .products-section-title {
   font-size: 36px;
-  font-weight: 600;
+  /* font-weight: 600; */
   margin-bottom: 100px;
 }
 .product-box {
@@ -684,7 +682,4 @@ footer {
   margin-top: 20px;
 }
 
-
 /* header */
-
-
