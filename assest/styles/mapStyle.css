@@ -1,70 +1,61 @@
-.map-div{
-  width: 720px;
-  height: 450px;
- /* background: red; */
-}
+/* map style */
 
-
-.map-div path{
+.map-div path {
   fill: #009344;
   stroke: rgba(0, 0, 0, 0.829);
   stroke-width: 2px;
   transition: fill 0.3s ease;
- 
-  
 }
+
 .map-div path:hover {
   fill: rgba(72, 241, 95, 0.795);
-  stroke:rgb(0, 0, 0);
-  stroke-width:1px;
+  stroke: rgb(0, 0, 0);
+  stroke-width: 1px;
   fill-rule: evenodd;
 }
 
-.map-div path:active{
+.map-div path:active {
   fill: #0f703d;
-  stroke-width:1px;
+  stroke-width: 1px;
   stroke: #fff;
 }
 
-.map-div path:focus{
+.map-div path:focus {
   fill: #0f703d;
-  stroke-width:1px;
+  stroke-width: 1px;
   stroke: #fff;
 }
 
-
-
-
-#bukhoro:active{
+#bukhoro:active {
   margin: 2px;
 }
 
-.boxListdist{
+.boxListdist {
   width: 100%;
   height: 150px;
   background: #009344;
   color: rgb(0, 0, 0);
 }
 
-.boxListdist ul li{
+.boxListdist ul li {
   list-style: none;
 }
 
-#UZ828::after{
-  content:'';
+#UZ828::after {
+  content: "";
   display: inline-block;
   width: 5px;
   height: 5px;
   background: red;
 }
 
-.branch-section-title{
+.branch-section-title {
   font-size: 36px;
   font-weight: 600;
   margin-bottom: 100px;
 }
 
-.link-btn-map{
+.link-btn-map {
   background-color: #009344;
   font-size: 18px;
   text-decoration: none;
@@ -76,17 +67,17 @@
   display: flex;
   align-items: center;
 }
-.link-btn-map t{
+.link-btn-map t {
   position: relative;
-  top:-8px  
+  top: -8px;
 }
 
-.boxDistrict h2{
+.boxDistrict h2 {
   position: relative;
   margin: 2rem 0;
 }
 
-.boxDistrict h4{
+.boxDistrict h4 {
   position: relative;
   margin: 2rem 0;
 }
@@ -97,83 +88,168 @@
   box-shadow: 0 20px 40px 0 rgba(0, 147, 68, 0.25);
 }
 
-.icon-container{
-  position: relative;
-  width: 100px;
-  height: 100px;
-  
-}
-
-.icon-container .icon-loc:nth-child(1){
-  width: 25px;
-  position: relative;
-  top:-23rem;
-  left:5rem;
+.icon-loc {
+  width: 25px !important;
+  position: absolute !important;
   cursor: pointer;
 }
-
-.icon-container .icon-loc:nth-child(2){
-  width: 25px;
-  position: relative;
-  top:-16rem;
-  left:14rem;
-  cursor: pointer;
+/* xorazm */
+#xorazm {
+  position: absolute !important;
+  top: 47% !important;
+  left: 25% !important;
 }
 
-.icon-container .icon-loc:nth-child(3){
-  width: 25px;
-  position: relative;
-  top:-19rem;
-  left:20rem;
-  cursor: pointer;
+#nukus {
+  position: absolute !important;
+  top: 24% !important;
+  left: 15% !important;
 }
 
-.icon-container .icon-loc:nth-child(4){
-  width: 25px;
-  position: relative;
-  top:-10rem;
-  left:21rem;
-  cursor: pointer;
+/* surxondaryo */
+#surxondaryo {
+  right: 32%;
+  left: auto;
+  bottom: 8%;
 }
 
-
-.icon-container .icon-loc:nth-child(5){
-  width: 25px;
-  position: relative;
-  top:-10rem;
-  left:23rem;
-  cursor: pointer;
+/* navoi */
+#navoi {
+  position: absolute !important;
+  top: 45% !important;
+  left: 50% !important;
 }
 
-.icon-container .icon-loc:nth-child(6){
-  width: 25px;
-  position: relative;
-  top:-11rem;
-  left:10rem;
-  cursor: pointer;
+/* samarqand */
+#samarkand {
+  position: absolute !important;
+  top: 68% !important;
+  left: 60% !important;
 }
 
-.icon-container .icon-loc:nth-child(7){
-  width: 25px;
-  position: relative;
-  top:-12rem;
-  left:21rem;
-  cursor: pointer;
+/* sirdaryo */
+#sirdaryo {
+  position: absolute !important;
+  top: 58% !important;
+  left: 72% !important;
 }
 
-.icon-container .icon-loc:nth-child(8){
-  width: 25px;
-  position: relative;
-  top:-15rem;
-  left:22rem;
-  cursor: pointer;
+/* qashqadaryo */
+#qashqadaryo {
+  right: 40%;
+  left: auto;
+  bottom: 15%;
 }
 
-.icon-container .icon-loc:nth-child(9){
-  width: 25px;
-  position: relative;
-  top:-14rem;
-  left:23rem;
-  cursor: pointer;
+/* buhoro */
+#buhoro {
+  right: 55%;
+  left: auto;
+  bottom: 30%;
 }
 
+/* jizzakx */
+#jizzakx {
+  right: 30%;
+  left: auto;
+  bottom: 35%;
+}
+
+/* toshkent */
+#toshkent {
+  right: 18%;
+  left: auto;
+  top: 52%;
+}
+
+/* fergan */
+#fergan {
+  right: 12%;
+  left: auto;
+  top: 59%;
+}
+
+/* namangan */
+#namangan {
+  right: 8%;
+  left: auto;
+  top: 52%;
+}
+
+/* andijon */
+#andijon {
+  right: 2%;
+  left: auto;
+  top: 55%;
+}
+@media only screen and (max-width: 650px) {
+  /* xorazm */
+  #xorazm {
+    position: absolute !important;
+    top: 43% !important;
+    left: 25% !important;
+  }
+
+  /* surxondaryo */
+  #surxondaryo {
+    right: 30%;
+    left: auto;
+    bottom: 8%;
+  }
+
+  /* navoi */
+  #navoi {
+    position: absolute !important;
+    top: 45% !important;
+    left: 50% !important;
+  }
+
+  /* samarqand */
+  #samarkand {
+    position: absolute !important;
+    top: 64% !important;
+    left: 58% !important;
+  }
+
+  /* sirdaryo */
+  #sirdaryo {
+    position: absolute !important;
+    top: 55% !important;
+    left: 72% !important;
+  }
+
+  /* jizzakx */
+  #jizzakx {
+    right: 30%;
+    left: auto;
+    bottom: 35%;
+  }
+
+  /* toshkent */
+  #toshkent {
+    right: 18%;
+    left: auto;
+    top: 47%;
+  }
+
+  /* fergan */
+  #fergan {
+    right: 10%;
+    left: auto;
+    top: 54%;
+  }
+
+  /* namangan */
+  #namangan {
+    right: 8%;
+    left: auto;
+    top: 47%;
+  }
+
+  /* andijon */
+  #andijon {
+    right: 1%;
+    left: auto;
+    top: 50%;
+  }
+}
