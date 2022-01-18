@@ -1,14 +1,17 @@
-const burgerMenu = document.getElementById("burger");
-const navbarMenu = document.getElementById("menu");
+const burgerMenu = document.querySelector(".mn");
+const navbarMenu = document.querySelector(".ul-nav");
+
 
 // Show and Hide Navbar Menu
 burgerMenu.addEventListener("click", () => {
   burgerMenu.classList.toggle("is-active");
   navbarMenu.classList.toggle("is-active");
 
-  if (navbarMenu.classList.contains("is-active")) {
-    navbarMenu.style.maxHeight = navbarMenu.scrollHeight + "px";
-  } else {
-    navbarMenu.removeAttribute("style");
-  }
+  if (navbarMenu.style.maxHeight) {
+    navbarMenu.style.maxHeight = null;
+} else {
+    navbarMenu.style.maxHeight = navbarMenu.scrollHeight +'px';
+}
+console.log(navbarMenu.scrollHeight);
+
 });
