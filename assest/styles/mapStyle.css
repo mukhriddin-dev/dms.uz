@@ -1,9 +1,12 @@
+/* map style */
+
 .map-div path {
   fill: #009344;
   stroke: rgba(0, 0, 0, 0.829);
   stroke-width: 2px;
   transition: fill 0.3s ease;
 }
+
 .map-div path:hover {
   fill: rgba(72, 241, 95, 0.795);
   stroke: rgb(0, 0, 0);
