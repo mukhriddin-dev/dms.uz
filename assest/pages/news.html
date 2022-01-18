@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../../assest/styles/style.css" />
     <link rel="stylesheet" href="../../assest/styles/style.css" />
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    
+    <link rel="stylesheet" href="../../style.css">
     <!-- ------------------ carousel uchun ishlatilgan csslar ------------------ -->
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css'>
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
@@ -26,6 +26,77 @@
   </head>
   <body>
 <!-- ------------------------------- header -------------------------------- -->
+<section  style="position:relative; z-index:9999">
+  <header class="header">
+    
+
+    <div class="logo">
+      <img
+        src="../images/logo/logo.png"
+        alt="Logo Image"
+        class="logo-img"
+      />
+    </div>
+
+    
+    <ul class="ul-nav">
+      <li>
+        <a href="#" class="menu__link">Главная</a>
+      </li>
+      <li>
+        <a href="./about.html" class="menu__link">О компании</a>
+      </li>
+      <li>
+        <a href="./treking.html" class="menu__link">Трекинг</a>
+      </li>
+      <li>
+        <a href="./calculator.html" class="menu__link">Калькулятор</a>
+      </li>
+      <li>
+        <a href="./tarif.html" class="menu__link">Тарифы</a>
+      </li>
+      <li>
+        <a href="./news.html" class="menu__link">Новости</a>
+      </li>
+      <li>
+        <a href="./filial.html" class="menu__link">Филиалы</a>
+      </li>
+      <li>
+        <a href="./contact.html" class="menu__link">Контакты</a>
+      </li>
+    </ul>
+    <!-- Cabinet btn -->
+    <div class="cabinet-btn">
+   <a href="https://www.client.dms.uz">   <p class="cabinet-btn__text">Личный кабинет</p></a>
+    </div>
+    <!-- mobile button uchun -->
+    <div class="user_cabinet">
+<a href="https://www.client.dms.uz"> 
+<img src="../images/icons/user.png" alt="user" class="user">
+</a>
+    </div>
+
+    <!-- active menu btn -->
+    <div class="line">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+
+    <button class="menu mn" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
+      <svg width="100" height="100" viewBox="0 0 100 100">
+        <path class="lines lines1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+        <path class="lines lines2" d="M 20,50 H 80" />
+        <path class="lines lines3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+      </svg>
+    </button>
+
+  </header>
+</section>
+
+
+
+
 
 
       <!-- ---------------------------- News section ----------------------------- -->
@@ -194,5 +265,7 @@
       <!-- News Section JS -->
   <script src="../../assest/scripts/swiper-bundle.min.js"></script>
   <script src="../../assest/scripts/news.js"></script>
+
+  <script src="../scripts/navbar.js"></script>
   </body>
 </html>
