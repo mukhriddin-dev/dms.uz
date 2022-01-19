@@ -20,9 +20,9 @@
     </style>
   </head>
   <body>
-<!-- ------------------------------- Header -------------------------------- -->
+<!-- ------------------------------- header -------------------------------- -->
 <section >
-  <header class="header px-3">
+  <header class="header">
     
 
     <div class="logo">
@@ -33,58 +33,42 @@
       />
     </div>
 
-    <ul class="ul-nav text-center text-lg-start">
+    <ul class="ul-nav">
       <li>
-        <a href="../../index.html" class="menu__link">Главная</a>
+        <a href="#" class="menu__link">Главная</a>
       </li>
       <li>
-        <a href="../pages/about.html" class="menu__link">О компании</a>
+        <a href="./about.html" class="menu__link">О компании</a>
       </li>
       <li>
-        <a href="../pages/treking.html" class="menu__link">Трекинг</a>
+        <a href="./treking.html" class="menu__link">Трекинг</a>
       </li>
       <li>
-        <a href="../pages/calculator.html" class="menu__link">Калькулятор</a>
+        <a href="./calculator.html" class="menu__link">Калькулятор</a>
       </li>
       <li>
-        <a href="../pages/tarif.html" class="menu__link">Тарифы</a>
+        <a href="./tarif.html" class="menu__link">Тарифы</a>
       </li>
       <li>
-        <a href="../pages/news.html" class="menu__link">Новости</a>
+        <a href="./news.html" class="menu__link">Новости</a>
       </li>
       <li>
-        <a href="../pages/filial.html" class="menu__link">Филиалы</a>
+        <a href="./filial.html" class="menu__link">Филиалы</a>
       </li>
       <li>
-        <a href="../pages/contact.html" class="menu__link">Контакты</a>
+        <a href="./contact.html" class="menu__link">Контакты</a>
       </li>
     </ul>
     <!-- Cabinet btn -->
     <div class="cabinet-btn">
-    <a href="https://www.client.dms.uz">  
-       <p class="cabinet-btn__text">Личный кабинет</p>
-      </a>
-     
-    
+   <a href="https://www.client.dms.uz">   <p class="cabinet-btn__text">Личный кабинет</p></a>
     </div>
     <!-- mobile button uchun -->
- 
-      <div class="user_cabinet align-items-center">
-      <a href="https://www.client.dms.uz"> 
-        <img src="../images/icons/user.png" alt="user" class="user">
-      </a>
-      
-      
-      <button class="menu mn me-3" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
-        <svg width="100" height="100" viewBox="0 0 100 100">
-          <path class="lines lines1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
-          <path class="lines lines2" d="M 20,50 H 80" />
-          <path class="lines lines3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
-        </svg>
-      </button>
+    <div class="user_cabinet">
+<a href="https://www.client.dms.uz"> 
+<img src="../images/icons/user.png" alt="user" class="user">
+</a>
     </div>
-  
- 
 
     <!-- active menu btn -->
     <div class="line">
@@ -93,14 +77,20 @@
       <div class="line3"></div>
     </div>
 
-   
+    <button class="menu mn" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
+      <svg width="100" height="100" viewBox="0 0 100 100">
+        <path class="lines lines1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+        <path class="lines lines2" d="M 20,50 H 80" />
+        <path class="lines lines3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+      </svg>
+    </button>
 
   </header>
 </section>
 
     <!-- ---------------------------- About section ---------------------------- -->
 <section>
-  <div class="container mt-5">
+  <div class="container">
     <h2 class="main-section-title">О нашей компании</h2>
     <div class="row">
       <div class="col-12 col-lg-7">
