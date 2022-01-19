@@ -18,7 +18,7 @@ body {
 }
 /* loader */
 
-.loader{
+.loader {
   width: 100%;
   height: 100vh;
   display: flex;
@@ -41,61 +41,75 @@ body {
   background-color: #009344;
   float: left;
   -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
-          animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out; 
+  animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
 }
 .sk-cube-grid .sk-cube1 {
   -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s; }
+  animation-delay: 0.2s;
+}
 .sk-cube-grid .sk-cube2 {
   -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s; }
+  animation-delay: 0.3s;
+}
 .sk-cube-grid .sk-cube3 {
   -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s; }
+  animation-delay: 0.4s;
+}
 .sk-cube-grid .sk-cube4 {
   -webkit-animation-delay: 0.1s;
-          animation-delay: 0.1s; }
+  animation-delay: 0.1s;
+}
 .sk-cube-grid .sk-cube5 {
   -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s; }
+  animation-delay: 0.2s;
+}
 .sk-cube-grid .sk-cube6 {
   -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s; }
+  animation-delay: 0.3s;
+}
 .sk-cube-grid .sk-cube7 {
   -webkit-animation-delay: 0s;
-          animation-delay: 0s; }
+  animation-delay: 0s;
+}
 .sk-cube-grid .sk-cube8 {
   -webkit-animation-delay: 0.1s;
-          animation-delay: 0.1s; }
+  animation-delay: 0.1s;
+}
 .sk-cube-grid .sk-cube9 {
   -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s; }
+  animation-delay: 0.2s;
+}
 
 @-webkit-keyframes sk-cubeGridScaleDelay {
-  0%, 70%, 100% {
+  0%,
+  70%,
+  100% {
     -webkit-transform: scale3D(1, 1, 1);
-            transform: scale3D(1, 1, 1);
-  } 35% {
+    transform: scale3D(1, 1, 1);
+  }
+  35% {
     -webkit-transform: scale3D(0, 0, 1);
-            transform: scale3D(0, 0, 1); 
+    transform: scale3D(0, 0, 1);
   }
 }
 
 @keyframes sk-cubeGridScaleDelay {
-  0%, 70%, 100% {
+  0%,
+  70%,
+  100% {
     -webkit-transform: scale3D(1, 1, 1);
-            transform: scale3D(1, 1, 1);
-  } 35% {
+    transform: scale3D(1, 1, 1);
+  }
+  35% {
     -webkit-transform: scale3D(0, 0, 1);
-            transform: scale3D(0, 0, 1);
-  } 
+    transform: scale3D(0, 0, 1);
+  }
 }
 /* animated */
 
-.user-img{
+.user-img {
   transition: 0.3s ease-in;
 }
-
 
 /* loader end */
 header {
@@ -154,7 +168,7 @@ ul li {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  color: #ffff; 
+  color: #ffff;
   width: 120px;
   position: absolute;
   right: 16%;
@@ -165,21 +179,18 @@ ul li {
   background-color: #017637;
 }
 
-.lang-btn a{
+.lang-btn a {
   position: relative;
-  top:8px;
+  top: 8px;
   color: #ffff;
   text-decoration: none;
-  
 }
 
-
-.lang{
+.lang {
   display: none;
 }
 
-
-.tel{
+.tel {
   width: 320px;
   display: flex;
   flex-direction: column;
@@ -188,14 +199,12 @@ ul li {
   color: #ffff;
   position: absolute;
   right: 24%;
-  top:23px;
+  top: 23px;
   margin: 0;
 }
-.tel p{
+.tel p {
   margin: 0;
 }
-
-
 
 /* active menu btn */
 .line {
@@ -264,31 +273,27 @@ ul li {
   stroke-width: 6;
 }
 
-
 /* tab menu */
 
-.nav_content{
-width: 100%;
-min-height: 100vh;
-background: #263238;
-opacity: 0.5;
-position: absolute;
-z-index: 45;
+.nav_content {
+  width: 100%;
+  min-height: 100vh;
+  background: #263238;
+  opacity: 0.5;
+  position: absolute;
+  z-index: 45;
 }
 
-.db_none{
+.db_none {
   /* display: none; */
   visibility: hidden;
 }
 
-.opc{
-display: none;
-height: 0;
+.opc {
+  display: none;
+  height: 0;
 }
 /*  fade anime */
-
-
-
 
 /* ------------------------------ Hero section ------------------------------ */
 
@@ -402,18 +407,16 @@ height: 0;
   background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='100' ry='100' stroke='%23009344FF' stroke-width='2' stroke-dasharray='5' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) ;
+  transform: translate(-50%, -50%);
 }
 .circle-card__img {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) rotate(-45deg);
+  /* transform: translate(-50%, -50%) rotate(-45deg); */
   width: 65%;
-  transition: 0.8s transform cubic-bezier(0.87, 0.03, 0.25, 1.08) ;
+  /* transition: 0.8s transform cubic-bezier(0.87, 0.03, 0.25, 1.08) ; */
 }
-
-
 
 .circle-card-box__title {
   font-size: 14px;
@@ -429,18 +432,16 @@ height: 0;
   font-weight: 500;
 }
 
-.truck-img {
+/* .truck-img {
   width: 50%;
   transform: translateX(-650px) scale(0.5);
   transition: transform 0.7s ease;
+} */
 
-}
-
-.biker{
+/* .biker {
   transform: translateX(-420px) scale(0.5);
   transition: transform 1s ease;
-
-}
+} */
 
 @media only screen and (min-width: 992px) {
   .benefits-card-item:nth-child(2n) {
@@ -828,17 +829,15 @@ footer {
     left: 0;
   }
 
-  
   .ul-nav li a,
   .ul-nav li {
     margin: 10px 0 !important;
     font-size: 20px !important;
   }
 
-  .ul-nav li:last-child{
+  .ul-nav li:last-child {
     padding-bottom: 25px;
   }
- 
 
   .line {
     position: relative;
@@ -874,28 +873,27 @@ footer {
     position: relative;
   }
 
-
-  .lang{
+  .lang {
     display: block;
     padding: 2px;
   }
 
-  .lang span{
+  .lang span {
     margin: 4px;
-    background:rgba(0, 0, 0, 0.295) ;
+    background: rgba(0, 0, 0, 0.295);
     padding: 5px 19px;
     border-radius: 2px;
     border: 1px solid rgba(197, 197, 197, 0.315);
   }
 
-  .lang span:active{
+  .lang span:active {
     margin: 4px;
-    background:rgba(0, 0, 0, 0.267) ;
+    background: rgba(0, 0, 0, 0.267);
     padding: 5px 19px;
     border-radius: 3px;
   }
 
-  .lang span a{
+  .lang span a {
     font-size: 17px;
     text-decoration: none;
     text-transform: uppercase;
@@ -946,7 +944,7 @@ footer {
     font-size: 20px !important;
   }
 
-  .ul-nav li:last-child{
+  .ul-nav li:last-child {
     padding-bottom: 25px;
   }
 
@@ -1041,7 +1039,6 @@ footer {
     font-size: 20px !important;
   }
 
-
   .line {
     position: relative;
     right: 1rem;
@@ -1076,4 +1073,3 @@ footer {
     left: -10px;
   }
 }
-
