@@ -9,7 +9,7 @@ const reg1 = document.querySelector('#reg1'),
   btnS = document.querySelectorAll('.btnS'),
   cost=document.querySelector('.cost');
 
-console.log(priceList);
+
 
 reg1.addEventListener('change', (e) => {
   priceList[0].innerHTML = `Откуда: ${e.target.value}`

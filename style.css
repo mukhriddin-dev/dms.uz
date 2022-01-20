@@ -118,8 +118,9 @@ header {
   justify-content: center;
   align-items: center;
   padding: 26px 0;
-  position: relative;
   z-index: 99;
+  width: 100%;
+  transition: all 0.4s ease;
 }
 
 .logo-img {
@@ -136,10 +137,17 @@ ul li {
   margin: 0 15px;
 }
 
-.menu__link,
-.menu__link:hover {
+.menu__link
+{
   text-decoration: none;
   color: #fff;
+  font-size: 14px;
+  transition: 0.2s ease;
+}
+
+.menu__link:hover{
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.623);
   font-size: 14px;
 }
 
@@ -268,7 +276,7 @@ ul li {
   color: #ffff;
   position: absolute;
   right: 24%;
-  top: 23px;
+  top: 32px;
   margin: 0;
 }
 .tel p {
@@ -362,7 +370,18 @@ ul li {
   display: none;
   height: 0;
 }
-/*  fade anime */
+/*  fade anime  & card hover*/
+
+.card-img-top{
+  position: relative;
+  transition: 0.3s ease-in;
+  filter: brightness(95%);
+}
+
+.card-img-top:hover{
+  filter: brightness(100%);
+  cursor: pointer;
+}
 
 /* ------------------------------ Hero section ------------------------------ */
 

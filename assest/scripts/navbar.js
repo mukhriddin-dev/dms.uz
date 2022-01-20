@@ -1,6 +1,7 @@
 const burgerMenu = document.querySelector(".mn");
 const navbarMenu = document.querySelector(".ul-nav");
 const loader = document.querySelector(".loader");
+const header = document.querySelector("header");
 
 window.addEventListener("DOMContentLoaded", () => {
   setTimeout(() => (loader.style.display = "none"), 500);
@@ -34,10 +35,6 @@ window.addEventListener("DOMContentLoaded", () => {
 window.addEventListener("scroll", () => {
   const userImage = document.querySelector(".user-img");
 
-  const cardImg = document.querySelectorAll(".circle-card__imgs");
-  const trucCar = document.querySelector(".truck-imgs");
-  const biker = document.querySelector(".bikers");
-
   const st = Math.round(window.scrollY);
 
   if (st > 15) {
@@ -46,23 +43,12 @@ window.addEventListener("scroll", () => {
     userImage.style.transform = "translateX(0px)";
   }
 
-  if (st > 645) {
-    cardImg.forEach(
-      (item) =>
-        (item.style.transform = "translate(-50%, -50%) rotate(0deg) scale(1.2)")
-    );
-  } else {
-    cardImg.forEach(
-      (item) =>
-        (item.style.transform = "translate(-50%, -50%) rotate(-45deg) scale(1)")
-    );
+  if(st>450){
+    header.style.position = 'fixed';
+    header.style.boxShadow = "0px 1px 15px rgba(0,0,0,0.2)"
+  }
+  else{
+    header.style.position = '';
   }
 
-  if (st > 1150) {
-    trucCar.style.transform = "translateX(0px) scale(1)";
-  }
-
-  if (st > 2800) {
-    biker.style.transform = "translateX(0px) scale(1)";
-  }
 });
