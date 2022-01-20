@@ -537,7 +537,7 @@
                       <input type="text" class="form-control text-center" placeholder="Ваше имя" required />
                     </div>
                     <div class="form-group mb-3">
-                      <input type="text" class="form-control text-center" placeholder="Ваш номер телефона" required />
+                      <input placeholder="+998 (__) ___-____" data-slots="_" class="form-control text-center"> 
                     </div>
                     <button type="submit" class="btn btn-success d-block butn butn3">
                       Оставить заявку
@@ -862,13 +862,12 @@
         <div class="col-12 col-md-6 offset-md-3 offset-lg-0 col-lg-4">
           <div class="col-12">
             <h3 class="footer-menu__title">Оставьте свою заявку</h3>
-            <form>
+            <form autocomplete="off">
               <div class="form-group mb-3">
                 <input type="text" class="form-control text-center" placeholder="Ваше имя" required />
               </div>
               <div class="form-group mb-3">
-                <input type="text" class="form-control text-center" id="organization_phone" name="organization_phone"  required placeholder="(+998) 99-000-00-00" value="+998">
-                <!-- <input type="text" class="form-control text-center" id="phone" placeholder="Ваш номер телефона" required /> -->
+                <input placeholder="+998 (__) ___-____" data-slots="_" class="form-control text-center"> 
               </div>
               <button type="submit" class="btn btn-success d-block butn">
                 Оставить заявку
@@ -908,11 +907,40 @@
   </footer>
   <!-- navbar js -->
  
+
+  <!-- phone mask -->
 <script>
-    document.getElementById('organization_phone').addEventListener('input', function (e) {
-    var x = e.target.value.replace(/\D/g, '').match(/(\d{0,3})(\d{0,2})(\d{0,3})(\d{0,2})(\d{0,2})/);
-    e.target.value = '+' + x[1] + ' (' + x[2] + ') ' + x[3] + ' ' + x[4] + '' + x[5];
-  });
+
+document.addEventListener('DOMContentLoaded', () => {
+    for (const el of document.querySelectorAll("[placeholder][data-slots]")) {
+        const pattern = el.getAttribute("placeholder"),
+            slots = new Set(el.dataset.slots || "_"),
+            prev = (j => Array.from(pattern, (c,i) => slots.has(c)? j=i+1: j))(0),
+            first = [...pattern].findIndex(c => slots.has(c)),
+            accept = new RegExp(el.dataset.accept || "\\d", "g"),
+            clean = input => {
+                input = input.match(accept) || [];
+                return Array.from(pattern, c =>
+                    input[0] === c || slots.has(c) ? input.shift() || c : c
+                );
+            },
+            format = () => {
+                const [i, j] = [el.selectionStart, el.selectionEnd].map(i => {
+                    i = clean(el.value.slice(0, i)).findIndex(c => slots.has(c));
+                    return i<0? prev[prev.length-1]: back? prev[i-1] || first: i;
+                });
+                el.value = clean(el.value).join``;
+                el.setSelectionRange(i, j);
+                back = false;
+            };
+        let back = false;
+        el.addEventListener("keydown", (e) => back = e.key === "Backspace");
+        el.addEventListener("input", format);
+        el.addEventListener("focus", format);
+        el.addEventListener("blur", () => el.value === pattern && (el.value=""));
+    }
+});
+  
 </script>
 
   <!-- News Section JS -->
@@ -934,13 +962,7 @@
   <script src="./assest/scripts/Navbar.js"></script>
 <!-- ------------------------------- aos  js ------------------------------- -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  $(document).ready(function ($) {
-  $("#phone").mask("+998 (__) ___ - __ - __", {
-    placeholder: "+998 (90) 123-45-67",
-  });
-});
-</script>
+
 
 <script>
   AOS.init();

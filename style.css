@@ -118,7 +118,8 @@ header {
   justify-content: center;
   align-items: center;
   padding: 26px 0;
-  z-index: 99;
+  z-index: 999999;
+  position: relative;
   width: 100%;
   transition: all 0.4s ease;
 }

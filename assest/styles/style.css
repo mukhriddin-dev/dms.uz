@@ -21,6 +21,8 @@ header {
   justify-content: center;
   align-items: center;
   padding: 26px 0;
+  z-index: 999;
+  position: relative;
 }
 
 .logo-img {
