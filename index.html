@@ -867,7 +867,8 @@
                 <input type="text" class="form-control text-center" placeholder="Ваше имя" required />
               </div>
               <div class="form-group mb-3">
-                <input type="text" class="form-control text-center" placeholder="Ваш номер телефона" required />
+                <input type="text" class="form-control text-center" id="organization_phone" name="organization_phone"  required placeholder="(+998) 99-000-00-00" value="+998">
+                <!-- <input type="text" class="form-control text-center" id="phone" placeholder="Ваш номер телефона" required /> -->
               </div>
               <button type="submit" class="btn btn-success d-block butn">
                 Оставить заявку
@@ -907,7 +908,12 @@
   </footer>
   <!-- navbar js -->
  
-
+<script>
+    document.getElementById('organization_phone').addEventListener('input', function (e) {
+    var x = e.target.value.replace(/\D/g, '').match(/(\d{0,3})(\d{0,2})(\d{0,3})(\d{0,2})(\d{0,2})/);
+    e.target.value = '+' + x[1] + ' (' + x[2] + ') ' + x[3] + ' ' + x[4] + '' + x[5];
+  });
+</script>
 
   <!-- News Section JS -->
   <script src="./assest/scripts/swiper-bundle.min.js"></script>
@@ -928,7 +934,13 @@
   <script src="./assest/scripts/Navbar.js"></script>
 <!-- ------------------------------- aos  js ------------------------------- -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
+<script>
+  $(document).ready(function ($) {
+  $("#phone").mask("+998 (__) ___ - __ - __", {
+    placeholder: "+998 (90) 123-45-67",
+  });
+});
+</script>
 
 <script>
   AOS.init();

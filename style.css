@@ -137,15 +137,14 @@ ul li {
   margin: 0 15px;
 }
 
-.menu__link
-{
+.menu__link {
   text-decoration: none;
   color: #fff;
   font-size: 14px;
   transition: 0.2s ease;
 }
 
-.menu__link:hover{
+.menu__link:hover {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.623);
   font-size: 14px;
@@ -157,7 +156,7 @@ ul li {
   padding: 10px 30px;
   margin-left: 40px;
   cursor: pointer;
-  transition: 0.3s ease hover;
+  transition: 0.3s ease background-color;
 }
 .cabinet-btn:hover {
   background-color: #017637;
@@ -174,7 +173,7 @@ ul li {
 .lang-btn {
   border: 1px solid #fff;
   cursor: pointer;
-  transition: 0.3s ease all;
+  transition: 0.3s ease;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -372,13 +371,13 @@ ul li {
 }
 /*  fade anime  & card hover*/
 
-.card-img-top{
+.card-img-top {
   position: relative;
   transition: 0.3s ease-in;
   filter: brightness(95%);
 }
 
-.card-img-top:hover{
+.card-img-top:hover {
   filter: brightness(100%);
   cursor: pointer;
 }
@@ -780,12 +779,19 @@ input[type="range"]::-webkit-slider-thumb {
   margin-top: 50px;
 }
 
-.social-link-item,
-.social-link-item:hover {
+.social-link-item {
   font-size: 2rem;
   color: #000000;
   text-decoration: none;
+  transition: 0.3s ease color;
 }
+
+.social-link-item:hover {
+  font-size: 2rem;
+  color: #009344;
+  text-decoration: none;
+}
+
 .social-link-item:nth-child(2) {
   margin: 0 40px;
 }
@@ -910,7 +916,7 @@ footer {
     overflow: hidden;
     z-index: 3;
     top: 6rem;
-    transition: 0.3s ease;
+    /* transition: 0.3s ease all; */
     justify-content: space-between;
     background-color: #000000b2;
     backdrop-filter: blur(3px);
@@ -940,7 +946,7 @@ footer {
     width: 36px;
     height: 3.5px;
     border-radius: 8px;
-    transition: 0.3s ease;
+    transition: 0.3s ease all;
   }
 
   .cabinet-btn {
@@ -1021,7 +1027,7 @@ footer {
     overflow: hidden;
     z-index: 3;
     top: 6rem;
-    transition: 0.3s ease;
+    transition: 0.3s ease color;
     justify-content: space-between;
     left: 0;
   }

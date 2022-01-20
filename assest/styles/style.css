@@ -5,6 +5,7 @@
 @import url(news.css);
 @import url(swiper.min.css);
 @import url(navbar.css);
+@import url(pagination.css);
 
 *,
 *::after,
@@ -128,7 +129,7 @@ ul li {
   text-decoration: none;
   padding: 24px 77px;
   color: #fff;
-  transition: 0.3s ease all;
+  transition: 0.3s ease background-color;
   letter-spacing: 1.2;
 }
 
@@ -518,12 +519,19 @@ input[type="range"]::-webkit-slider-thumb {
   margin-top: 50px;
 }
 
-.social-link-item,
-.social-link-item:hover {
+.social-link-item {
   font-size: 2rem;
   color: #000000;
   text-decoration: none;
+  transition: 0.3s ease color;
 }
+
+.social-link-item:hover {
+  font-size: 2rem;
+  color: #009344;
+  text-decoration: none;
+}
+
 .social-link-item:nth-child(2) {
   margin: 0 40px;
 }
