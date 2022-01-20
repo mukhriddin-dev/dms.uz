@@ -85,3 +85,19 @@ body {
   background-color: #017637;
   border: none;
 }
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #cfffeb;
+  border-left: 1px solid rgba(0, 0, 0, 0.274);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3fb886;
+  width: 5px;
+  display: block;
+  border-radius: 4px;
+}
