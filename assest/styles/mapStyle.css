@@ -253,3 +253,10 @@
     top: 50%;
   }
 }
+
+
+.maping{
+  fill: #000000;
+  stroke-width: 1px;
+  stroke: #fff;
+}

@@ -33,6 +33,7 @@ let boxDistrict = document.querySelector(".boxDistrict");
 let sendBtn = document.querySelector('.boxDistrict a')
 
 const path=document.querySelectorAll('.map-div a');
+const map = document.querySelector('.map-div');
 // console.log(sendBtn.getAttribute('href'));
 
 // setter=()=>{
@@ -43,6 +44,38 @@ const path=document.querySelectorAll('.map-div a');
 // 
 
 // console.log(sendBtn)
+
+
+
+
+// function hider(){
+//   path.forEach(item => item.classList.remove('act'))
+// }
+
+// hider();
+
+// function shower(i=0){
+//   path[i].classList.add('act');
+// }
+// shower()
+
+// map.addEventListener('click', (event) => {
+
+//   if (event.target && event.target.classList.contains("menu__link"))
+//   {
+//     menuLink.forEach((item, i) => {
+//       if (event.target == item)
+//       {
+//        hider()
+//         shower(i);
+//       }
+//     });
+
+//   }
+
+// })
+
+
 
 
 // bukhoro

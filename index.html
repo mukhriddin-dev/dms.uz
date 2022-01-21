@@ -22,11 +22,11 @@
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="./assest/styles/swiper.min.css" />
   <link rel="stylesheet" href="./assest/styles/Hamburger.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
+  <!-- ------------------------------- aos js -------------------------------- -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-<!-- ------------------------------- aos js -------------------------------- -->
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-  
 
   <title>www.dms.uz</title>
 
@@ -61,7 +61,7 @@
 
       <ul class="ul-nav text-center text-lg-start ">
         <li>
-          <a href="#" class="menu__link">Главная</a>
+          <a href="#" class="menu__link act">Главная</a>
         </li>
         <li>
           <a href="./assest/pages/about.html" class="menu__link">О компании</a>
@@ -76,7 +76,7 @@
           <a href="./assest/pages/tarif.html" class="menu__link">Тарифы</a>
         </li>
         <li>
-          <a href="./assest/pages/news.html" class="menu__link">Новости</a>
+          <a href="#" class="menu__link">Новости</a>
         </li>
         <li>
           <a href="./assest/pages/filial.html" class="menu__link">Филиалы</a>
@@ -91,12 +91,15 @@
       </ul>
       <!-- Cabinet btn -->
 
+
+
+
       <div class="cabinet-btn ">
         <a href="https://www.client.dms.uz">
           <p class="cabinet-btn__text">Личный кабинет</p>
         </a>
       </div>
- 
+
       <!-- <div class="lang-btn opc">
         <a href="#">
           <p class="lang-btn__text">RUS </p>
@@ -107,22 +110,22 @@
         </a>
       </div> -->
 
- 
-    <div class="tel opc">
-      <p>Позвоните нам:</p>
-      <p>+998 (99) 999-99-99</p>
-    </div>
 
-    <div class="lang-btn opc ">
-      <a href="#">
-        <p class="lang-btn__text">RUS </p>
-      </a>
-      <span>/</span>
-      <a href="#">
-        <p class="lang-btn__text">UZB</p>
-      </a>
-    </div>
-  
+      <div class="tel opc">
+        <p>Позвоните нам:</p>
+        <p>+998 (99) 999-99-99</p>
+      </div>
+
+      <div class="lang-btn opc ">
+        <a href="#">
+          <p class="lang-btn__text">RUS </p>
+        </a>
+        <span>/</span>
+        <a href="#">
+          <p class="lang-btn__text">UZB</p>
+        </a>
+      </div>
+
 
       <!-- mobile button uchun -->
 
@@ -165,6 +168,12 @@
 
   </section>
 
+  <div class="top-btn">
+    <i class="fas fa-arrow-up"></i>
+  </div>
+
+
+ 
   <!-- ---------------------------- Hero section ----------------------------- -->
   <section class="hero px-3 position-relative2">
     <div class="hero-info-box container">
@@ -196,7 +205,8 @@
         <!-- hero img -->
         <div class="col-12 col-md-5 d-none d-md-block">
           <div class="hero-img2 ">
-            <img src="./assest/images/img/users.png" alt="" class="user-img img-fluid" width="100%" style="max-height: 610px;" />
+            <img src="./assest/images/img/users.png" alt="" class="user-img img-fluid" width="100%"
+              style="max-height: 610px;" />
           </div>
         </div>
         <div class="row mt-5">
@@ -226,7 +236,7 @@
             Краткое описание в двух строках
           </span>
         </div>
-        <div  class="col-lg-2 col-md-4 col-sm-6 col-12 benefits-card-item mx-auto">
+        <div class="col-lg-2 col-md-4 col-sm-6 col-12 benefits-card-item mx-auto">
           <div data-aos="fade-down" class="cirle-card-box d-block mx-auto">
             <img src="./assest/images/icons/push.svg" alt="" class="circle-card__img" />
           </div>
@@ -282,8 +292,9 @@
           </span>
         </div>
       </div>
-      <div data-aos="fade-right"><img  src="./assest/images/icons/truck_mock.svg" alt="" class="d-block mx-auto truck-img" /></div>
-      
+      <div data-aos="fade-right"><img src="./assest/images/icons/truck_mock.svg" alt=""
+          class="d-block mx-auto truck-img" /></div>
+
     </div>
   </section>
 
@@ -326,7 +337,7 @@
     <div class="row">
       <div class="col-12 col-sm-6 col-lg-4">
         <div data-aos="fade-up" class="product-box d-block mx-auto text-center">
-          <div  class="product-box-img d-block mx-auto">
+          <div class="product-box-img d-block mx-auto">
             <img src="./assest/images/img/furinuture.png" alt="" class="d-block mx-auto" />
           </div>
           <div class="product-info">
@@ -537,7 +548,7 @@
                       <input type="text" class="form-control text-center" placeholder="Ваше имя" required />
                     </div>
                     <div class="form-group mb-3">
-                      <input placeholder="+998 (__) ___-____" data-slots="_" class="form-control text-center"> 
+                      <input placeholder="+998 (__) ___-____" data-slots="_" class="form-control text-center">
                     </div>
                     <button type="submit" class="btn btn-success d-block butn butn3">
                       Оставить заявку
@@ -640,7 +651,7 @@
               </path>
             </a>
 
-            <a xlink:title="Ургенч">
+            <a xlink:title="Ургенч" class="maping acts">
               <path
                 d="M365 365.3l9.5 10.7 1.9 2.9 0.7 2.6-3 6.5-12.1 15.1-0.1-0.1-0.5-1.8-0.3-0.7-2.2-2.9-0.8-1.6-1.2-4.7-0.7-1.1-1.9-2.1-0.6-1-0.5-1.6-0.6-3.5-1.9-6.5-0.6-1.5 0.4-0.6-0.3-1.1-0.1-5.4-0.2-1.6-0.5-1.3-4.3-7.2-1.1-1.2-13-9.6-5-2.2-5.7-1.5-2.1-0.3-1.3 0.7-0.8 1.6-0.6 2.7-1.4 0.8-1.1 2.5-1.7 1.8-2 1-2.2 0.1-2.3-1-6-4.3-1.1 0-3.4 0.6-0.3-0.7-0.2-0.7-0.2-0.2-1.1 1.9-0.4 0.4-0.4 0.4-2.8-2.9-4-1-11.7 0.7-7.1 2.4-3.5 0-2-0.5-1.6-1.2-3.2-3.2-3.5-2.6-5.6-2.9-6.4-3.3-1.6-1.6-0.4-1.8 0.7-6.3 0.5-1.3 0.7-1.1 1-0.9 2.4-1.2 0.8-0.9-0.5-1.5-3.9-5.5-1.7-3.4-0.6-2.8 1.5-2.1 1.6-1.1 1.8-0.2 2.2 0.7 2 1.3 1.2 0.5 0.9-0.1 0.6-1-0.1-1.1-0.5-1.1-0.7-0.9-0.8-0.7-2.8-1.7-0.9-0.9-0.6-1 0.7-0.7 0.6-1.8-0.1-0.8-0.6-1.4-0.2-0.3-0.1-0.4 0.2-0.3 0.4-0.3 0.9-0.2 1.6-0.1 1.2-0.5 3-2.1 1.1-1 0.3-0.2 1-0.1 1.2 0.9 0.6 0.4 2.9 0.7 2.9 0.3 0.8 0.7 0.2 1.6 0 3.5 0.5 1.3 1.5 2.4 0.7 2 1.6 2.9 0.8 1.1 1 0.7 1.3 0.3 2.7 0 1 0.6 0.6 1.3 1 3 1.5 2.7 1.9 2.1 13.7 12.5 1.5 0.3 0.8 0.3 0.6 0.5 2.1 2.3 1.8 1.7 1.3 0.5 3.4 0.6 1.1 0.7 3.1 3.4 0.7 1.1 0.7 2.3 0.9 0.4 0.4 0.3 1.3 0.5 1.5-0.1 1-0.8 2.3-4.5 1-1.1 0.9-0.7 1-0.5 1.2-0.3 3.1 0 11.1 2.7 2.8 1.2 2.7 1.6 3.4 2.6 9.9 11 6.9 11.1 0.3 0.2 0.8 0.5 0.8 0.3 3.1-1z"
                 id="UZB355" name="Khorezm">
@@ -767,7 +778,11 @@
     <!-- Slider main container -->
     <div class="position-relative container-fluid">
       <div class="container swiper-container" style="overflow: hidden; margin-bottom: 100px">
+        <div class="sw-box">
+          
+        </div>
         <div class="swiper-wrapper">
+
           <div class="swiper-slide">
             <img class="card-img-top" src="./assest/images/img/Rectangle1.png" alt="Card image cap" />
             <div class="card-body">
@@ -776,6 +791,7 @@
               <a href="#" class="btn btn-primary">Читать далее</a>
             </div>
           </div>
+
           <div class="swiper-slide">
             <img class="card-img-top" src="./assest/images/img/Rectangle2.png" alt="Card image cap" />
             <div class="card-body">
@@ -784,6 +800,7 @@
               <a href="#" class="btn btn-primary">Читать далее</a>
             </div>
           </div>
+
           <div class="swiper-slide">
             <img class="card-img-top" src="./assest/images/img/Rectangle3.png" alt="Card image cap" />
             <div class="card-body">
@@ -792,6 +809,7 @@
               <a href="#" class="btn btn-primary">Читать далее</a>
             </div>
           </div>
+
           <div class="swiper-slide">
             <img class="card-img-top" src="./assest/images/img/Rectangle1.png" alt="Card image cap" />
             <div class="card-body text-start">
@@ -802,6 +820,7 @@
               <a href="#" class="btn btn-primary">Читать далее</a>
             </div>
           </div>
+
           <div class="swiper-slide">
             <img class="card-img-top" src="./assest/images/img/Rectangle2.png" alt="Card image cap" />
             <div class="card-body">
@@ -810,6 +829,7 @@
               <a href="#" class="btn btn-primary">Читать далее</a>
             </div>
           </div>
+
         </div>
       </div>
       <div class="swiper-button-prev"></div>
@@ -867,7 +887,7 @@
                 <input type="text" class="form-control text-center" placeholder="Ваше имя" required />
               </div>
               <div class="form-group mb-3">
-                <input placeholder="+998 (__) ___-____" data-slots="_" class="form-control text-center"> 
+                <input placeholder="+998 (__) ___-____" data-slots="_" class="form-control text-center">
               </div>
               <button type="submit" class="btn btn-success d-block butn">
                 Оставить заявку
@@ -896,7 +916,7 @@
             ООО “DMS EXPRESS” все права защищены
           </p>
         </div>
-      
+
         <div class="col-12 col-md-6">
           <p class="copyight-text text-center text-md-end">
             Разработано с ♡ в Media Solutions
@@ -906,42 +926,42 @@
     </div>
   </footer>
   <!-- navbar js -->
- 
+
 
   <!-- phone mask -->
-<script>
+  <script>
 
-document.addEventListener('DOMContentLoaded', () => {
-    for (const el of document.querySelectorAll("[placeholder][data-slots]")) {
+    document.addEventListener('DOMContentLoaded', () => {
+      for (const el of document.querySelectorAll("[placeholder][data-slots]")) {
         const pattern = el.getAttribute("placeholder"),
-            slots = new Set(el.dataset.slots || "_"),
-            prev = (j => Array.from(pattern, (c,i) => slots.has(c)? j=i+1: j))(0),
-            first = [...pattern].findIndex(c => slots.has(c)),
-            accept = new RegExp(el.dataset.accept || "\\d", "g"),
-            clean = input => {
-                input = input.match(accept) || [];
-                return Array.from(pattern, c =>
-                    input[0] === c || slots.has(c) ? input.shift() || c : c
-                );
-            },
-            format = () => {
-                const [i, j] = [el.selectionStart, el.selectionEnd].map(i => {
-                    i = clean(el.value.slice(0, i)).findIndex(c => slots.has(c));
-                    return i<0? prev[prev.length-1]: back? prev[i-1] || first: i;
-                });
-                el.value = clean(el.value).join``;
-                el.setSelectionRange(i, j);
-                back = false;
-            };
+          slots = new Set(el.dataset.slots || "_"),
+          prev = (j => Array.from(pattern, (c, i) => slots.has(c) ? j = i + 1 : j))(0),
+          first = [...pattern].findIndex(c => slots.has(c)),
+          accept = new RegExp(el.dataset.accept || "\\d", "g"),
+          clean = input => {
+            input = input.match(accept) || [];
+            return Array.from(pattern, c =>
+              input[0] === c || slots.has(c) ? input.shift() || c : c
+            );
+          },
+          format = () => {
+            const [i, j] = [el.selectionStart, el.selectionEnd].map(i => {
+              i = clean(el.value.slice(0, i)).findIndex(c => slots.has(c));
+              return i < 0 ? prev[prev.length - 1] : back ? prev[i - 1] || first : i;
+            });
+            el.value = clean(el.value).join``;
+            el.setSelectionRange(i, j);
+            back = false;
+          };
         let back = false;
         el.addEventListener("keydown", (e) => back = e.key === "Backspace");
         el.addEventListener("input", format);
         el.addEventListener("focus", format);
-        el.addEventListener("blur", () => el.value === pattern && (el.value=""));
-    }
-});
-  
-</script>
+        el.addEventListener("blur", () => el.value === pattern && (el.value = ""));
+      }
+    });
+
+  </script>
 
   <!-- News Section JS -->
   <script src="./assest/scripts/swiper-bundle.min.js"></script>
@@ -960,13 +980,13 @@ document.addEventListener('DOMContentLoaded', () => {
   <script src="https://unpkg.com/tippy.js@6"></script>
   <script src="./assest/scripts/Tippy.js"></script>
   <script src="./assest/scripts/Navbar.js"></script>
-<!-- ------------------------------- aos  js ------------------------------- -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- ------------------------------- aos  js ------------------------------- -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 
-<script>
-  AOS.init();
-</script>
+  <script>
+    AOS.init();
+  </script>
 
 </body>
 
