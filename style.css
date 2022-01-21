@@ -155,6 +155,7 @@ ul li {
 .act{
   font-weight: 600;
 }
+
 .act::after{
   content: "";
   display: block;
@@ -430,7 +431,7 @@ ul li {
 .card-img-top {
   position: relative;
   transition: 0.3s ease-in;
-  filter: brightness(95%);
+  filter: brightness(85%);
 }
 
 .card-img-top:hover {
@@ -965,6 +966,18 @@ footer {
     left: 20px;
   }
 
+  .act{
+    font-weight: 400;
+    text-decoration: underline;
+    line-height: 25px;
+  }
+  
+  .act::after{
+    content: "";
+    display: none;
+
+  }
+  
   .ul-nav {
     display: flex;
     position: absolute;
@@ -1074,6 +1087,17 @@ footer {
     left: 25px;
   }
 
+  .act{
+    font-weight: 400;
+    text-decoration: underline;
+    line-height: 25px;
+  }
+  
+  .act::after{
+    content: "";
+    display: none;
+
+  }
   .ul-nav {
     display: flex;
     position: absolute;
@@ -1167,6 +1191,18 @@ footer {
   .menu {
     display: flex;
     position: relative;
+  }
+
+  .act{
+    font-weight: 400;
+    text-decoration: underline;
+    line-height: 25px;
+  }
+  
+  .act::after{
+    content: "";
+    display: none;
+
   }
 
   .ul-nav {

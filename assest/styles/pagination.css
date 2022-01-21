@@ -51,3 +51,8 @@
   color: #fff;
   background: #017637;
 }
+
+
+.nw{
+  filter:brightness(15%)
+}
