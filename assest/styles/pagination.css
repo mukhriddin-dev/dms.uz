@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
+
 .pagination ul {
   width: 100%;
   display: flex;
@@ -8,9 +9,10 @@
   padding: 8px;
   border-radius: 50px;
   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 4rem;
 }
 .pagination ul li {
-  color: #20b2aa;
+  color: #017637;
   list-style: none;
   line-height: 45px;
   text-align: center;
@@ -47,5 +49,5 @@
 .pagination ul li:first-child:hover,
 .pagination ul li:last-child:hover {
   color: #fff;
-  background: #20b2aa;
+  background: #017637;
 }
