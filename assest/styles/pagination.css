@@ -26,8 +26,8 @@ a:hover {
 
 .pagination-hover-overlay {
   background-color: #017637;
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   border-radius: 5px;
   position: absolute;
   top: 50%;
@@ -42,8 +42,8 @@ a:hover {
 .pagination .icon-pagination {
   color: rgba(0, 0, 0, 0.5);
   font-size: 11px;
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -81,8 +81,8 @@ a:hover {
 .pagination-page-number {
   border-radius: 5px;
   color: black;
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
